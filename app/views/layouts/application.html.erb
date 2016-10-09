@@ -236,13 +236,15 @@
             <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
           </a>
           <ul class="dropdown-menu dropdown-user">
-            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-            </li>
-            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-            </li>
+            <% if user_signed_in? %>
+              <li><a href="#"><i class="fa fa-user fa-fw"></i> Профиль</a></li>
+              <li><a href="#"><i class="fa fa-gear fa-fw"></i> Настройки</a></li>
             <li class="divider"></li>
-            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-            </li>
+            <li><a href="../users/sign_out" data-method="delete"><i class="fa fa-sign-out fa-fw"></i> Выйти</a></li>
+            <% else %>
+                <li><a href="../users/sign_in"><i class="fa fa-sign-in fa-fw"></i> Войти</a></li>
+                <li><a href="../users/sign_up"><i class="fa fa-plus-circle fa-fw"></i> Зарегистрироваться</a></li>
+            <% end %>
           </ul>
           <!-- /.dropdown-user -->
         </li>
@@ -345,6 +347,10 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
+            <!-- Вывод уведомлений и предупреждений -->
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
+
             <%= yield %>
           </div>
           <!-- /.col-lg-12 -->
