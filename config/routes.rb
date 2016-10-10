@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :question_cards
+  resources :tasks_groups
+  resources :tasks
   devise_for :users
   root 'main_page#index'
 

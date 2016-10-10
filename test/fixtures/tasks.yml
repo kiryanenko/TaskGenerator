@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: 1
+  title: MyString
+  description: MyText
+  task: MyText
+  answer: MyText
+  subject: 1
+  date: 2016-10-10 20:57:19
+  removed: false
+
+two:
+  user: 1
+  title: MyString
+  description: MyText
+  task: MyText
+  answer: MyText
+  subject: 1
+  date: 2016-10-10 20:57:19
+  removed: false

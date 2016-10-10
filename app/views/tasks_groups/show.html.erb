@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @tasks_group.user %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @tasks_group.subject %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @tasks_group.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tasks_group.description %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @tasks_group.date %>
+</p>
+
+<p>
+  <strong>Removed:</strong>
+  <%= @tasks_group.removed %>
+</p>
+
+<%= link_to 'Edit', edit_tasks_group_path(@tasks_group) %> |
+<%= link_to 'Back', tasks_groups_path %>

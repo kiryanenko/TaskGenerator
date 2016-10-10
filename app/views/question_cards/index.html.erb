@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Question Cards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Subject</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Question card</th>
+      <th>Date</th>
+      <th>Removed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @question_cards.each do |question_card| %>
+      <tr>
+        <td><%= question_card.user %></td>
+        <td><%= question_card.subject %></td>
+        <td><%= question_card.title %></td>
+        <td><%= question_card.description %></td>
+        <td><%= question_card.question_card %></td>
+        <td><%= question_card.date %></td>
+        <td><%= question_card.removed %></td>
+        <td><%= link_to 'Show', question_card %></td>
+        <td><%= link_to 'Edit', edit_question_card_path(question_card) %></td>
+        <td><%= link_to 'Destroy', question_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Question Card', new_question_card_path %>

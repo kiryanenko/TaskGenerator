@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @question_card.user %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @question_card.subject %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @question_card.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @question_card.description %>
+</p>
+
+<p>
+  <strong>Question card:</strong>
+  <%= @question_card.question_card %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @question_card.date %>
+</p>
+
+<p>
+  <strong>Removed:</strong>
+  <%= @question_card.removed %>
+</p>
+
+<%= link_to 'Edit', edit_question_card_path(@question_card) %> |
+<%= link_to 'Back', question_cards_path %>

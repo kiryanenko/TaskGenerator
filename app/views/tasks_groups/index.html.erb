@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tasks Groups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Subject</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Date</th>
+      <th>Removed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks_groups.each do |tasks_group| %>
+      <tr>
+        <td><%= tasks_group.user %></td>
+        <td><%= tasks_group.subject %></td>
+        <td><%= tasks_group.title %></td>
+        <td><%= tasks_group.description %></td>
+        <td><%= tasks_group.date %></td>
+        <td><%= tasks_group.removed %></td>
+        <td><%= link_to 'Show', tasks_group %></td>
+        <td><%= link_to 'Edit', edit_tasks_group_path(tasks_group) %></td>
+        <td><%= link_to 'Destroy', tasks_group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tasks Group', new_tasks_group_path %>
