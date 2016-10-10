@@ -1,0 +1,2 @@
+class GeneratedTask < ApplicationRecord
+end

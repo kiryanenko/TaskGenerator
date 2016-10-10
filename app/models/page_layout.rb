@@ -1,0 +1,2 @@
+class PageLayout < ApplicationRecord
+end
