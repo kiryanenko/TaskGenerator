@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: 1
+  name: MyString
+  type: 1
+  formula: MyString
+
+two:
+  task: 1
+  name: MyString
+  type: 1
+  formula: MyString
