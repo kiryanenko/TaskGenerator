@@ -1,0 +1,2 @@
+class VariableType < ApplicationRecord
+end

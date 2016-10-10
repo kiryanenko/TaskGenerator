@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  generated_task: 1
+  variable: 1
+  value: 1.5
+
+two:
+  generated_task: 1
+  variable: 1
+  value: 1.5
