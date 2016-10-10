@@ -348,8 +348,18 @@
         <div class="row">
           <div class="col-lg-12">
             <!-- Вывод уведомлений и предупреждений -->
-            <p class="notice"><%= notice %></p>
-            <p class="alert"><%= alert %></p>
+            <% if notice %>
+                <div class="alert alert-info alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  <%= notice %>
+                </div>
+            <% end %>
+            <% if alert %>
+                <div class="alert alert-danger alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  <%= alert %>
+                </div>
+            <% end %>
 
             <%= yield %>
           </div>
