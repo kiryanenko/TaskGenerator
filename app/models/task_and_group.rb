@@ -1,0 +1,2 @@
+class TaskAndGroup < ApplicationRecord
+end

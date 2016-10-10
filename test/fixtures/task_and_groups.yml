@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: 1
+  group: 1
+
+two:
+  task: 1
+  group: 1
