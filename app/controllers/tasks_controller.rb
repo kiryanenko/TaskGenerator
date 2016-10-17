@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
-  before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: [:new, :show, :edit]
+  before_action :set_task, only: [:show, :edit]
 
   # GET /tasks
   # GET /tasks.json
@@ -24,7 +25,9 @@ class TasksController < ApplicationController
   # POST /tasks
   # POST /tasks.json
   def create
-    @task = Task.new(task_params)
+    task = task_params
+    task[:date] = Time.now
+    @task = Task.new(task)
 
     respond_to do |format|
       if @task.save
@@ -39,27 +42,27 @@ class TasksController < ApplicationController
 
   # PATCH/PUT /tasks/1
   # PATCH/PUT /tasks/1.json
-  def update
-    respond_to do |format|
-      if @task.update(task_params)
-        format.html { redirect_to @task, notice: 'Task was successfully updated.' }
-        format.json { render :show, status: :ok, location: @task }
-      else
-        format.html { render :edit }
-        format.json { render json: @task.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # def update
+  #   respond_to do |format|
+  #     if @task.update(task_params)
+  #       format.html { redirect_to @task, notice: 'Task was successfully updated.' }
+  #       format.json { render :show, status: :ok, location: @task }
+  #     else
+  #       format.html { render :edit }
+  #       format.json { render json: @task.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
   # DELETE /tasks/1
   # DELETE /tasks/1.json
-  def destroy
-    @task.destroy
-    respond_to do |format|
-      format.html { redirect_to tasks_url, notice: 'Task was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
+  # def destroy
+  #   @task.destroy
+  #   respond_to do |format|
+  #     format.html { redirect_to tasks_url, notice: 'Task was successfully destroyed.' }
+  #     format.json { head :no_content }
+  #   end
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -69,6 +72,6 @@ class TasksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.require(:task).permit(:user, :title, :description, :task, :answer, :subject, :date, :removed)
+      params.require(:task).permit(:title, :description, :task, :answer, :subject)
     end
 end
