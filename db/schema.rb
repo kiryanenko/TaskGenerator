@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161010192015) do
+ActiveRecord::Schema.define(version: 20161017203056) do
 
   create_table "calculated_variables", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "task"
@@ -99,9 +99,9 @@ ActiveRecord::Schema.define(version: 20161010192015) do
     t.text     "answer",      limit: 65535
     t.integer  "subject"
     t.datetime "date"
-    t.boolean  "removed"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.boolean  "removed",                   default: false
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
   end
 
   create_table "tasks_groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

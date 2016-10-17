@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
-  before_filter :authenticate_user!, only: [:new, :show, :edit]
-  before_action :set_task, only: [:show, :edit]
+  before_filter :authenticate_user!, only: [:new, :show, :edit, :destroy]
+  before_action :set_task, only: [:show, :edit, :destroy]
 
   # GET /tasks
   # GET /tasks.json
@@ -28,9 +28,12 @@ class TasksController < ApplicationController
     task = task_params
     task[:date] = Time.now
     @task = Task.new(task)
+    variables = params.require(:task).permit(:variables).reject{ |variable|
+      variable[:name] || variable[:type] || variable[:from] == '' || variable[:to] == ''
+    }
 
     respond_to do |format|
-      if @task.save
+      if @task.save && variables.all?{ |variable| Variable.new(variable).save }
         format.html { redirect_to @task, notice: 'Task was successfully created.' }
         format.json { render :show, status: :created, location: @task }
       else
@@ -56,18 +59,23 @@ class TasksController < ApplicationController
 
   # DELETE /tasks/1
   # DELETE /tasks/1.json
-  # def destroy
-  #   @task.destroy
-  #   respond_to do |format|
-  #     format.html { redirect_to tasks_url, notice: 'Task was successfully destroyed.' }
-  #     format.json { head :no_content }
-  #   end
-  # end
+  def destroy
+    respond_to do |format|
+      if @task.update(removed: true)
+        format.html { redirect_to tasks_url, notice: 'Task was successfully destroyed.' }
+        format.json { head :no_content }
+      else
+        format.html { render :show }
+        format.json { render json: @task.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_task
       @task = Task.find(params[:id])
+      @variables = Variable.where(task: @task.id)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
