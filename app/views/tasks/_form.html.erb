@@ -1,61 +1,54 @@
 
 
 <%= form_for(task) do |f| %>
-  <% if task.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
+    <% if task.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
 
-      <ul>
-      <% task.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+          <ul>
+            <% task.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control', placeholder: :title%>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title, class: 'form-control', placeholder: :title%>
-  </div>
 
     <div class="field">
       <%= f.label :subject %>
       <%= f.text_field :subject, class: 'form-control', placeholder: :task %>
     </div>
 
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description, class: 'form-control', placeholder: :description %>
-  </div>
-
-  <div class="field">
-    <%= f.label :task %>
-    <%= f.text_area :task, class: 'form-control', placeholder: :task %>
-  </div>
-
-  <h4>Переменные
-    <button type="button" class="btn btn-success btn-circle" style="margin-left: 20px"><i class="fa fa-plus"></i>
-    </button>
-  </h4>
-
-    <div class="form-group input-group col-lg-4">
-      <span class="input-group-addon">$</span>
-      <%= text_field_tag :name, 'Имя переменной', autofocus: true, class: 'form-control', placeholder: 'Email'%>
-    </div>
-    <div class="form-group input-group col-lg-2">
-      <span class="input-group-addon">от</span>
-      <%= text_field_tag :email,'Имя переменной', autofocus: true, class: 'form-control', placeholder: 'Email'%>
+    <div class="field">
+      <%= f.label :description %>
+      <%= f.text_area :description, class: 'form-control', placeholder: :description %>
     </div>
 
-  <div class="field">
-    <%= f.label :answer %>
-    <%= f.text_area :answer, class: 'form-control', placeholder: :task %>
-  </div>
+    <div class="field">
+      <%= f.label :task %>
+      <%= f.text_area :task, class: 'form-control', placeholder: :task %>
+    </div>
+
+    <h4>Переменные
+      <button type="button" class="btn btn-success btn-circle" style="margin-left: 20px"><i class="fa fa-plus"></i>
+      </button>
+    </h4>
+    <%= render 'variable' %>
+
+
+    <div class="field">
+      <%= f.label :answer %>
+      <%= f.text_area :answer, class: 'form-control', placeholder: :task %>
+    </div>
 
     <p>
-  <div class="actions">
-    <%= f.submit class: 'btn btn-default'%>
-    <%= link_to 'Back', :back %>
-  </div>
+    <div class="actions">
+      <%= f.submit class: 'btn btn-default'%>
+      <%= link_to 'Back', :back %>
+    </div>
 
 <% end %>
