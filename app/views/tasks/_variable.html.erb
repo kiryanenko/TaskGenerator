@@ -6,7 +6,7 @@
       <div class="form">
         <div class="input-group">
           <span class="input-group-addon">$</span>
-          <%= text_field_tag :name, 'Имя переменной', autofocus: true, class: 'form-control', placeholder: 'Email'%>
+          <%= text_field_tag :name, class: 'form-control', placeholder: 'Имя переменной'%>
         </div>
       </div>
     </div>
@@ -14,7 +14,7 @@
       <div class="form">
         <div class="input-group">
           <span class="input-group-addon">тип</span>
-          <%= select_tag :type, 'Тип переменной', autofocus: true, class: 'form-control', placeholder: 'Email'%>
+          <%= select_tag :type, class: 'form-control', placeholder: 'Тип переменной'%>
         </div>
       </div>
     </div>
@@ -24,9 +24,9 @@
           <span class="input-group-addon">от</span>
 
           <table><tr><td>
-            <%= text_field_tag :to,'Нижняя граница', autofocus: true, class: 'form-control', placeholder: 'Email'%>
+            <%= text_field_tag :to, class: 'form-control', placeholder: 'Нижняя граница'%>
           </td><td>
-            <%= select_tag :to,'Размерность', autofocus: true, class: 'form-control', placeholder: 'Email'%>
+            <%= select_tag :to, class: 'form-control', placeholder: 'Размерность'%>
           </td></tr></table>
         </div>
       </div>
@@ -36,9 +36,9 @@
         <div class="input-group">
           <span class="input-group-addon">до</span>
           <table><tr><td>
-            <%= text_field_tag :from,'Верхняя граница', autofocus: true, class: 'form-control', placeholder: 'Email'%>
+            <%= text_field_tag :from, class: 'form-control', placeholder: 'Верхняя граница'%>
           </td><td>
-            <%= select_tag :from,'Размерность', autofocus: true, class: 'form-control', placeholder: 'Email'%>
+            <%= select_tag :from, class: 'form-control', placeholder: 'Размерность'%>
           </td></tr></table>
         </div>
       </div>

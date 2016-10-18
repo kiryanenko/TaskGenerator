@@ -16,6 +16,7 @@ class TasksController < ApplicationController
   # GET /tasks/new
   def new
     @task = Task.new
+    2.times { @task.variables.build}
   end
 
   # GET /tasks/1/edit
@@ -27,6 +28,7 @@ class TasksController < ApplicationController
   def create
     task = task_params
     task[:date] = Time.now
+    task[:user] = current_user.id
     @task = Task.new(task)
     variables = params.require(:task).permit(:variables).reject{ |variable|
       variable[:name] || variable[:type] || variable[:from] == '' || variable[:to] == ''

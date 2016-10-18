@@ -12,41 +12,25 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :user %>
-    <%= f.number_field :user %>
-  </div>
-
-  <div class="field">
-    <%= f.label :subject %>
-    <%= f.number_field :subject %>
-  </div>
-
-  <div class="field">
     <%= f.label :title %>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class: 'form-control', placeholder: :title %>
   </div>
-
+    <div class="field">
+      <%= f.label :subject %>
+      <%= f.number_field :subject, class: 'form-control', placeholder: :subject %>
+    </div>
   <div class="field">
     <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, class: 'form-control', placeholder: :description %>
   </div>
 
   <div class="field">
     <%= f.label :question_card %>
-    <%= f.text_area :question_card %>
-  </div>
-
-  <div class="field">
-    <%= f.label :date %>
-    <%= f.datetime_select :date %>
-  </div>
-
-  <div class="field">
-    <%= f.label :removed %>
-    <%= f.check_box :removed %>
+    <%= f.text_area :question_card, class: 'form-control', placeholder: :question_card %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: 'btn btn-default'%>
+    <%= link_to 'Back', :back %>
   </div>
 <% end %>
