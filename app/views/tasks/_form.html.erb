@@ -28,7 +28,7 @@
 
     <div class="field">
       <%= f.label :task %>
-      <%= f.bootsy_area :task %>
+      <%= f.bootsy_area :task, class: 'form-control', rows: 10 %>
     </div>
 
 
@@ -81,7 +81,7 @@
                   <table><tr><td>
                     <%= v.text_field :from, class: 'form-control', placeholder: 'Верхняя граница'%>
                   </td><td>
-                    <%= v.select :dimension_from, options_for_select([['Lisbon', 1], ['Madrid', 2]]),class: 'form-control'%>
+                    <%= v.select :dimension_from, options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control'%>
                   </td></tr></table>
                 </div>
               </div>
@@ -94,7 +94,7 @@
 
     <div class="field">
       <%= f.label :answer %>
-      <%= f.text_area :answer, class: 'form-control', placeholder: :answer %>
+      <%= f.bootsy_area :answer, class: 'form-control', rows: 5 %>
     </div>
 
     <p>
