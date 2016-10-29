@@ -13,6 +13,15 @@ class TasksController < ApplicationController
   def show
   end
 
+  def my_tasks
+    @tasks = Task.where(user: current_user.id).map{ |task| {id: task.id, title: task.title} }
+    respond_to do |format|
+      format.json do
+        render json: {type: @tasks.class.to_s, value: @tasks}
+      end
+    end
+  end
+
   # GET /tasks/new
   def new
     @task = Task.new

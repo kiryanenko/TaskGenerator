@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
   resources :question_cards
   resources :tasks_groups
+  get 'tasks/my_tasks'
   resources :tasks
+
   devise_for :users
   root 'main_page#index'
 

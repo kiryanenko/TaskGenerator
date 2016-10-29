@@ -28,7 +28,12 @@
 
     <div class="field">
       <%= f.label :task %>
-      <%= f.bootsy_area :task, class: 'form-control', rows: 10 %>
+      <%= f.text_area :task, name: "task", id: "task", rows: 10, cols: 80 %>
+      <script>
+        // Replace the <textarea id="editor1"> with a CKEditor
+        // instance, using default configuration.
+        CKEDITOR.replace( 'task' );
+      </script>
     </div>
 
 
@@ -94,7 +99,7 @@
 
     <div class="field">
       <%= f.label :answer %>
-      <%= f.bootsy_area :answer, class: 'form-control', rows: 5 %>
+      <%= f.text_area :answer, class: 'form-control', rows: 5 %>
     </div>
 
     <p>
