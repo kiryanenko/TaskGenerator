@@ -39,7 +39,7 @@ CKEDITOR.plugins.add('task', {
                 success: function (data) {//возвращаемый результат от сервера
                   var element = CKEDITOR.dom.element.createFromHtml(
                       '<div class="task" task_id="' + taskValue + '">' +
-                          '<b>Блок задачи: ' + data.title + '</b> <hr>' +
+                          '<b>Блок задачи: ' + data.title + '</b><hr>' +
                           '<p>' + data.task + '</p>' +
                       '</div>'
                   );

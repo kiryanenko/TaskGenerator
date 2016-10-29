@@ -1,6 +1,8 @@
 class QuestionCardsController < ApplicationController
   before_action :set_question_card, only: [:show, :edit, :update, :destroy]
 
+  require 'nokogiri'
+
   # GET /question_cards
   # GET /question_cards.json
   def index
@@ -24,10 +26,22 @@ class QuestionCardsController < ApplicationController
   # POST /question_cards
   # POST /question_cards.json
   def create
-    @question_card = QuestionCard.new(question_card_params)
+    card = question_card_params
+    card[:date] = Time.now
+    card[:user] = current_user.id
+    @question_card = QuestionCard.new(card)
 
     respond_to do |format|
       if @question_card.save
+        doc = Nokogiri::HTML(card[:question_card])
+        doc.css('.task').each do |task|
+          taskInCard = TaskInCard.new(card: @question_card.id, task: task['task_id'], is_group: false)
+          taskInCard.save
+          task['id'] = taskInCard.id.to_s
+        end
+        @question_card.question_card = doc.to_html
+        @question_card.save
+
         format.html { redirect_to @question_card, notice: 'Question card was successfully created.' }
         format.json { render :show, status: :created, location: @question_card }
       else
@@ -69,6 +83,6 @@ class QuestionCardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_card_params
-      params.require(:question_card).permit(:user, :subject, :title, :description, :question_card, :date, :removed)
+      params.permit(:subject, :title, :description, :question_card)
     end
 end
