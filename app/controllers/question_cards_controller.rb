@@ -1,5 +1,5 @@
 class QuestionCardsController < ApplicationController
-  before_action :set_question_card, only: [:show, :edit, :update, :destroy]
+  before_action :set_question_card, only: [:show, :edit, :update, :destroy, :generate]
 
   require 'nokogiri'
 
@@ -59,6 +59,31 @@ class QuestionCardsController < ApplicationController
         format.json { render :show, status: :ok, location: @question_card }
       else
         format.html { render :edit }
+        format.json { render json: @question_card.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def generate
+    card = question_card_params
+    card[:user] = current_user.id
+    @question_card = QuestionCard.new(card)
+
+    respond_to do |format|
+      if @question_card.save
+        doc = Nokogiri::HTML(card[:question_card])
+        doc.css('.task').each do |task|
+          taskInCard = TaskInCard.new(card: @question_card.id, task: task['task_id'], is_group: false)
+          taskInCard.save
+          task['id'] = taskInCard.id.to_s
+        end
+        @question_card.question_card = doc.to_html
+        @question_card.save
+
+        format.html { redirect_to @question_card, notice: 'Question card was successfully created.' }
+        format.json { render :show, status: :created, location: @question_card }
+      else
+        format.html { render :new }
         format.json { render json: @question_card.errors, status: :unprocessable_entity }
       end
     end

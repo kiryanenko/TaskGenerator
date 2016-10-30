@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :generations
   resources :question_cards
   resources :tasks_groups
   get 'tasks/my_tasks'

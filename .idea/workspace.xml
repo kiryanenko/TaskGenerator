@@ -2,626 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f899de3c-2e22-427a-ad7b-11704ad7426e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/CHANGES.md" afterPath="$PROJECT_DIR$/public/ckeditor/CHANGES.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/public/ckeditor/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/build-config.js" afterPath="$PROJECT_DIR$/public/ckeditor/build-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/public/ckeditor/ckeditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/contents.css" afterPath="$PROJECT_DIR$/public/ckeditor/contents.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/lang/en.js" afterPath="$PROJECT_DIR$/public/ckeditor/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/lang/ru.js" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/dialogs/dialog.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/dialogs/dialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/css/editor.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/css/editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/css/spectrum.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/css/spectrum.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/fmathFormulaFonts.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/fmathFormulaFonts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-Bold.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-Bold.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-Bold.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-Bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-BoldItalic.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-BoldItalic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-BoldItalic.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-BoldItalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-Italic.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-Italic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-Italic.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck-Italic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXDoubleStruck.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXFraktur-Bold.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXFraktur-Bold.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXFraktur-Bold.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXFraktur-Bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXFraktur.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXFraktur.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXFraktur.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXFraktur.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Bold-Unicode.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Bold-Unicode.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Bold-Unicode.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Bold-Unicode.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Bold.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Bold.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Bold.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-BoldItalic-Unicode.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-BoldItalic-Unicode.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-BoldItalic-Unicode.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-BoldItalic-Unicode.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-BoldItalic.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-BoldItalic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-BoldItalic.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-BoldItalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Italic-Unicode.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Italic-Unicode.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Italic-Unicode.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Italic-Unicode.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Italic.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Italic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Italic.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Italic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Regular-Unicode.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Regular-Unicode.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Regular-Unicode.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Regular-Unicode.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Regular.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Regular.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Regular.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXGeneral-Regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXMonospace.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXMonospace.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXMonospace.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXMonospace.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-Bold.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-Bold.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-Bold.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-Bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-BoldItalic.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-BoldItalic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-BoldItalic.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-BoldItalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-Italic.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-Italic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-Italic.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif-Italic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXSansSerif.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXScript-Bold.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXScript-Bold.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXScript-Bold.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXScript-Bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXScript.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXScript.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXScript.svg" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/fonts/stix/STIXScript.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/README.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/comment/comment.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/comment/comment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/comment/continuecomment.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/comment/continuecomment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/dialog/dialog.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/dialog/dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/dialog/dialog.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/dialog/dialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/display/fullscreen.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/display/fullscreen.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/display/fullscreen.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/display/fullscreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/display/panel.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/display/panel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/display/placeholder.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/display/placeholder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/display/rulers.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/display/rulers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/closebrackets.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/closebrackets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/closetag.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/closetag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/continuelist.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/continuelist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/matchbrackets.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/matchbrackets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/matchtags.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/matchtags.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/trailingspace.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/edit/trailingspace.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/brace-fold.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/brace-fold.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/comment-fold.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/comment-fold.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/foldcode.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/foldcode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/foldgutter.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/foldgutter.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/foldgutter.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/foldgutter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/indent-fold.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/indent-fold.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/markdown-fold.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/markdown-fold.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/xml-fold.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/fold/xml-fold.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/anyword-hint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/anyword-hint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/css-hint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/css-hint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/html-hint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/html-hint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/javascript-hint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/javascript-hint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/show-hint.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/show-hint.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/show-hint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/show-hint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/sql-hint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/sql-hint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/xml-hint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/hint/xml-hint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/coffeescript-lint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/coffeescript-lint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/css-lint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/css-lint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/javascript-lint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/javascript-lint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/json-lint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/json-lint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/lint.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/lint.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/lint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/lint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/yaml-lint.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/lint/yaml-lint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/merge/merge.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/merge/merge.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/merge/merge.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/merge/merge.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/mode/loadmode.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/mode/loadmode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/mode/multiplex.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/mode/multiplex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/mode/multiplex_test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/mode/multiplex_test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/mode/overlay.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/mode/overlay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/mode/simple.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/mode/simple.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/runmode/colorize.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/runmode/colorize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/runmode/runmode-standalone.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/runmode/runmode-standalone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/runmode/runmode.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/runmode/runmode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/runmode/runmode.node.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/runmode/runmode.node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/scroll/annotatescrollbar.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/scroll/annotatescrollbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/scroll/scrollpastend.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/scroll/scrollpastend.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/scroll/simplescrollbars.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/scroll/simplescrollbars.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/scroll/simplescrollbars.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/scroll/simplescrollbars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/search/match-highlighter.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/search/match-highlighter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/search/matchesonscrollbar.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/search/matchesonscrollbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/search/matchesonscrollbar.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/search/matchesonscrollbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/search/search.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/search/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/search/searchcursor.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/search/searchcursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/selection/active-line.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/selection/active-line.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/selection/mark-selection.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/selection/mark-selection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/selection/selection-pointer.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/selection/selection-pointer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/tern/tern.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/tern/tern.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/tern/tern.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/tern/tern.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/tern/worker.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/tern/worker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/wrap/hardwrap.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/addon/wrap/hardwrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/lib/codemirror.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/lib/codemirror.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/lib/codemirror.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/lib/codemirror.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/apl/apl.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/apl/apl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/apl/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/apl/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/asciiarmor/asciiarmor.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/asciiarmor/asciiarmor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/asciiarmor/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/asciiarmor/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/asterisk/asterisk.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/asterisk/asterisk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/asterisk/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/asterisk/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/clike/clike.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/clike/clike.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/clike/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/clike/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/clike/scala.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/clike/scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/clojure/clojure.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/clojure/clojure.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/clojure/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/clojure/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cmake/cmake.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cmake/cmake.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cmake/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cmake/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cobol/cobol.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cobol/cobol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cobol/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cobol/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/coffeescript/coffeescript.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/coffeescript/coffeescript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/coffeescript/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/coffeescript/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/commonlisp/commonlisp.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/commonlisp/commonlisp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/commonlisp/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/commonlisp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/css.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/less.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/less.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/less_test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/less_test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/scss.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/scss.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/scss_test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/scss_test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/css/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cypher/cypher.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cypher/cypher.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cypher/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/cypher/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/d/d.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/d/d.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/d/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/d/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dart/dart.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dart/dart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dart/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dart/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/diff/diff.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/diff/diff.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/diff/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/diff/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/django/django.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/django/django.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/django/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/django/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dockerfile/dockerfile.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dockerfile/dockerfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dockerfile/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dockerfile/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dtd/dtd.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dtd/dtd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dtd/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dtd/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dylan/dylan.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dylan/dylan.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dylan/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/dylan/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ebnf/ebnf.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ebnf/ebnf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ebnf/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ebnf/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ecl/ecl.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ecl/ecl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ecl/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ecl/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/eiffel/eiffel.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/eiffel/eiffel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/eiffel/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/eiffel/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/erlang/erlang.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/erlang/erlang.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/erlang/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/erlang/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/fortran/fortran.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/fortran/fortran.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/fortran/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/fortran/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gas/gas.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gas/gas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gas/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gas/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gfm/gfm.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gfm/gfm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gfm/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gfm/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gfm/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gfm/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gherkin/gherkin.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gherkin/gherkin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gherkin/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/gherkin/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/go/go.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/go/go.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/go/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/go/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/groovy/groovy.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/groovy/groovy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/groovy/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/groovy/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haml/haml.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haml/haml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haml/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haml/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haml/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haml/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/handlebars/handlebars.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/handlebars/handlebars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/handlebars/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/handlebars/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haskell/haskell.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haskell/haskell.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haskell/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haskell/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haxe/haxe.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haxe/haxe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haxe/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/haxe/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/htmlembedded/htmlembedded.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/htmlembedded/htmlembedded.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/htmlembedded/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/htmlembedded/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/htmlmixed/htmlmixed.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/htmlmixed/htmlmixed.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/htmlmixed/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/htmlmixed/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/http/http.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/http/http.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/http/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/http/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/idl/idl.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/idl/idl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/idl/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/idl/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/jade/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/jade/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/jade/jade.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/jade/jade.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/javascript/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/javascript/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/javascript/javascript.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/javascript/javascript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/javascript/json-ld.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/javascript/json-ld.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/javascript/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/javascript/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/javascript/typescript.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/javascript/typescript.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/jinja2/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/jinja2/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/jinja2/jinja2.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/jinja2/jinja2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/julia/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/julia/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/julia/julia.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/julia/julia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/kotlin/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/kotlin/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/kotlin/kotlin.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/kotlin/kotlin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/livescript/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/livescript/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/livescript/livescript.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/livescript/livescript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/lua/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/lua/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/lua/lua.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/lua/lua.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/markdown/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/markdown/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/markdown/markdown.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/markdown/markdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/markdown/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/markdown/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/meta.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/meta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mirc/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mirc/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mirc/mirc.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mirc/mirc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mllike/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mllike/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mllike/mllike.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mllike/mllike.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/modelica/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/modelica/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/modelica/modelica.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/modelica/modelica.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mumps/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mumps/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mumps/mumps.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/mumps/mumps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/nginx/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/nginx/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/nginx/nginx.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/nginx/nginx.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ntriples/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ntriples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ntriples/ntriples.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ntriples/ntriples.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/octave/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/octave/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/octave/octave.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/octave/octave.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pascal/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pascal/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pascal/pascal.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pascal/pascal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pegjs/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pegjs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pegjs/pegjs.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pegjs/pegjs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/perl/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/perl/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/perl/perl.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/perl/perl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/php/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/php/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/php/php.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/php/php.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/php/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/php/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pig/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pig/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pig/pig.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/pig/pig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/properties/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/properties/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/properties/properties.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/properties/properties.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/puppet/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/puppet/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/puppet/puppet.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/puppet/puppet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/python/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/python/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/python/python.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/python/python.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/q/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/q/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/q/q.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/q/q.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/r/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/r/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/r/r.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/r/r.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rpm/changes/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rpm/changes/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rpm/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rpm/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rpm/rpm.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rpm/rpm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rst/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rst/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rst/rst.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rst/rst.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ruby/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ruby/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ruby/ruby.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ruby/ruby.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ruby/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/ruby/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rust/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rust/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rust/rust.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/rust/rust.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sass/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sass/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sass/sass.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sass/sass.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/scheme/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/scheme/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/scheme/scheme.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/scheme/scheme.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/shell/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/shell/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/shell/shell.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/shell/shell.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/shell/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/shell/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sieve/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sieve/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sieve/sieve.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sieve/sieve.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/slim/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/slim/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/slim/slim.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/slim/slim.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/slim/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/slim/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/smalltalk/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/smalltalk/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/smalltalk/smalltalk.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/smalltalk/smalltalk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/smarty/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/smarty/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/smarty/smarty.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/smarty/smarty.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/solr/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/solr/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/solr/solr.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/solr/solr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/soy/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/soy/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/soy/soy.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/soy/soy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sparql/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sparql/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sparql/sparql.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sparql/sparql.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/spreadsheet/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/spreadsheet/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/spreadsheet/spreadsheet.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/spreadsheet/spreadsheet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sql/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sql/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sql/sql.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/sql/sql.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/stex/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/stex/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/stex/stex.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/stex/stex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/stex/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/stex/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/stylus/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/stylus/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/stylus/stylus.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/stylus/stylus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tcl/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tcl/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tcl/tcl.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tcl/tcl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/textile/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/textile/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/textile/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/textile/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/textile/textile.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/textile/textile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiddlywiki/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiddlywiki/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiddlywiki/tiddlywiki.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiddlywiki/tiddlywiki.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiddlywiki/tiddlywiki.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiddlywiki/tiddlywiki.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiki/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiki/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiki/tiki.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiki/tiki.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiki/tiki.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tiki/tiki.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/toml/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/toml/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/toml/toml.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/toml/toml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tornado/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tornado/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tornado/tornado.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/tornado/tornado.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/troff/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/troff/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/troff/troff.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/troff/troff.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/turtle/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/turtle/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/turtle/turtle.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/turtle/turtle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/vb/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/vb/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/vb/vb.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/vb/vb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/vbscript/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/vbscript/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/vbscript/vbscript.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/vbscript/vbscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/velocity/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/velocity/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/velocity/velocity.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/velocity/velocity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/verilog/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/verilog/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/verilog/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/verilog/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/verilog/verilog.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/verilog/verilog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xml/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xml/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xml/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xml/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xml/xml.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xml/xml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xquery/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xquery/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xquery/test.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xquery/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xquery/xquery.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/xquery/xquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/yaml/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/yaml/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/yaml/yaml.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/yaml/yaml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/z80/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/z80/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/z80/z80.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/mode/z80/z80.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/3024-day.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/3024-day.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/3024-night.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/3024-night.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/ambiance-mobile.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/ambiance-mobile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/ambiance.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/ambiance.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/base16-dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/base16-dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/base16-light.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/base16-light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/blackboard.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/blackboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/cobalt.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/cobalt.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/colorforth.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/colorforth.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/eclipse.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/eclipse.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/elegant.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/elegant.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/erlang-dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/erlang-dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/lesser-dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/lesser-dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/liquibyte.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/liquibyte.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/mbo.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/mbo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/mdn-like.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/mdn-like.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/midnight.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/midnight.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/monokai.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/monokai.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/neat.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/neat.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/neo.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/neo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/night.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/night.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/paraiso-dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/paraiso-dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/paraiso-light.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/paraiso-light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/pastel-on-dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/pastel-on-dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/rubyblue.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/rubyblue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/solarized.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/solarized.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/the-matrix.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/the-matrix.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/tomorrow-night-bright.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/tomorrow-night-bright.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/tomorrow-night-eighties.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/tomorrow-night-eighties.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/twilight.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/twilight.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/vibrant-ink.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/vibrant-ink.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/xq-dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/xq-dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/xq-light.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/xq-light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/zenburn.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/codemirror/theme/zenburn.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/fmathEditorC.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/fmathEditorC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/fmathEditorJQuery.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/fmathEditorJQuery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/AUTHORS.txt" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/AUTHORS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/black-tie/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/black-tie/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/black-tie/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/black-tie/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/black-tie/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/black-tie/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/blitzer/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/blitzer/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/blitzer/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/blitzer/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/blitzer/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/blitzer/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/cupertino/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/cupertino/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/cupertino/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/cupertino/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/cupertino/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/cupertino/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dark-hive/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dark-hive/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dark-hive/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dark-hive/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dark-hive/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dark-hive/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dot-luv/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dot-luv/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dot-luv/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dot-luv/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dot-luv/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/dot-luv/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/eggplant/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/eggplant/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/eggplant/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/eggplant/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/eggplant/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/eggplant/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/excite-bike/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/excite-bike/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/excite-bike/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/excite-bike/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/excite-bike/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/excite-bike/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/flick/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/flick/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/flick/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/flick/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/flick/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/flick/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/hot-sneaks/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/hot-sneaks/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/hot-sneaks/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/hot-sneaks/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/hot-sneaks/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/hot-sneaks/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/humanity/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/humanity/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/humanity/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/humanity/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/humanity/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/humanity/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/le-frog/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/le-frog/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/le-frog/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/le-frog/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/le-frog/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/le-frog/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/mint-choc/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/mint-choc/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/mint-choc/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/mint-choc/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/mint-choc/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/mint-choc/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/overcast/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/overcast/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/overcast/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/overcast/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/overcast/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/overcast/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/pepper-grinder/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/pepper-grinder/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/pepper-grinder/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/pepper-grinder/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/pepper-grinder/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/pepper-grinder/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/redmond/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/redmond/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/redmond/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/redmond/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/redmond/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/redmond/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/smoothness/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/smoothness/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/smoothness/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/smoothness/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/smoothness/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/smoothness/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/south-street/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/south-street/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/south-street/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/south-street/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/south-street/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/south-street/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/start/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/start/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/start/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/start/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/start/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/start/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/sunny/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/sunny/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/sunny/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/sunny/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/sunny/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/sunny/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/swanky-purse/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/swanky-purse/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/swanky-purse/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/swanky-purse/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/swanky-purse/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/swanky-purse/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/trontastic/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/trontastic/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/trontastic/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/trontastic/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/trontastic/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/trontastic/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-darkness/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-darkness/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-darkness/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-darkness/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-darkness/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-darkness/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-lightness/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-lightness/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-lightness/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-lightness/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-lightness/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/ui-lightness/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/vader/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/vader/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/vader/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/vader/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/vader/theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui-themes/themes/vader/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/external/jquery/jquery.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/external/jquery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.min.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.structure.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.structure.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.structure.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.structure.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.theme.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.theme.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery-ui/jquery-ui.theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/lang/en.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/spectrum.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/js/spectrum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/onlyEditor.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/FMathEditor/editor/onlyEditor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/CHANGES.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/CHANGES.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/README.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/README.ru.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/README.ru.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/arta.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/arta.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/ascetic.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/ascetic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.light.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.light.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.light.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.light.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.light.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/brown_paper.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/brown_paper.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/docco.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/docco.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/far.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/far.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/foundation.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/foundation.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/github.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/github.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/googlecode.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/googlecode.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/idea.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/idea.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/ir_black.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/ir_black.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/magula.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/magula.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/mono-blue.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/mono-blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/obsidian.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/obsidian.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.light.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/pojoaque.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/pojoaque.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/railscasts.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/railscasts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/rainbow.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/rainbow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/school_book.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/school_book.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_dark.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_light.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/sunburst.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/sunburst.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-blue.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-bright.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-bright.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-eighties.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-eighties.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/vs.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/vs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/xcode.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/xcode.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/zenburn.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/codesnippet/lib/highlight/styles/zenburn.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/colordialog/dialogs/colordialog.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/colordialog/dialogs/colordialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/eqneditor/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/eqneditor/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/eqneditor/dialogs/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/eqneditor/dialogs/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/eqneditor/dialogs/lang/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/eqneditor/dialogs/lang/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imagepaste/docs/install.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imagepaste/docs/install.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imagepaste/docs/styles.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imagepaste/docs/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageresize/LICENSE.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageresize/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageresize/README.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageresize/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/LICENSE.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/README.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/check_permission.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/check_permission.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/create.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/dist/jquery.lazyload.min.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/dist/jquery.lazyload.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/dist/js.cookie-2.0.3.min.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/dist/js.cookie-2.0.3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/dist/sweetalert.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/dist/sweetalert.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/dist/sweetalert.min.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/dist/sweetalert.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/function.js" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/function.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/imgbrowser.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/imgbrowser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/imgdelete.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/imgdelete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/imgupload.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/imgupload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/login.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/loginindex.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/loginindex.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/logout.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/new.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/new.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/pluginconfig.php" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/pluginconfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/styles.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/styles.min.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/imageuploader/styles.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/lineheight/README.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/lineheight/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/lineheight/readme.txt" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/lineheight/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/LICENSE.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/README.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/pbckcode/CHANGELOG.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/pbckcode/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/pbckcode/README.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/pbckcode/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/pbckcode/dialogs/style.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/pbckcode/dialogs/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/preview/preview.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/preview/preview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/CHANGELOG.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/LICENSE.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/README.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/dialogs/toolbar.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/dialogs/toolbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/templates/dialogs/templates.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/templates/dialogs/templates.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/LICENSE.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/README.md" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/ciframe.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/ciframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/wsc.css" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/wsc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/css/samples.css" afterPath="$PROJECT_DIR$/public/ckeditor/samples/css/samples.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/js/sample.js" afterPath="$PROJECT_DIR$/public/ckeditor/samples/js/sample.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/ajax.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/ajax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/api.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/api.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/appendto.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/appendto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/assets/posteddata.php" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/assets/posteddata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/codesnippet/codesnippet.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/codesnippet/codesnippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/datafiltering.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/datafiltering.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/dialog/assets/my_dialog.js" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/dialog/assets/my_dialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/dialog/dialog.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/dialog/dialog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/divreplace.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/divreplace.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/enterkey/enterkey.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/enterkey/enterkey.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/htmlwriter/outputforflash.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/htmlwriter/outputforflash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/htmlwriter/outputhtml.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/htmlwriter/outputhtml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/inlineall.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/inlineall.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/inlinebycode.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/inlinebycode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/inlinetextarea.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/inlinetextarea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/jquery.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/jquery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/magicline/magicline.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/magicline/magicline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/mathjax/mathjax.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/mathjax/mathjax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/readonly.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/readonly.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/replacebyclass.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/replacebyclass.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/replacebycode.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/replacebycode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/sample.css" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/sample.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/sample.js" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/sample.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/sample_posteddata.php" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/sample_posteddata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/tabindex.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/tabindex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/texzilla/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/texzilla/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/toolbar/toolbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/uicolor.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/uicolor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/uilanguages.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/uilanguages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/wysiwygarea/fullpage.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/wysiwygarea/fullpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/old/xhtmlstyle.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/old/xhtmlstyle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterPath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/css/fontello.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterPath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/index.html" afterPath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterPath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterPath="$PROJECT_DIR$/public/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_ie.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_ie.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_ie7.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_ie8.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_iequirks.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_iequirks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_gecko.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_gecko.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_ie.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_ie.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_ie7.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_ie8.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_iequirks.css" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_iequirks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/skins/moono/readme.md" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/styles.js" afterPath="$PROJECT_DIR$/public/ckeditor/styles.js" />
-    </list>
-    <list id="6a001d42-222e-4a1a-805b-2e35feedde03" name="Failed commit: Default" comment="question_card show">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/.editorconfig" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/.editorconfig" />
-    </list>
-    <list id="d921a479-c601-4c28-8c27-1a3dbdf3754f" name="Failed commit: Default (2)" comment="question_card show">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/.jscsrc" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/.jscsrc" />
-    </list>
-    <list id="33e08052-0c1e-4c97-b0d3-21933c7e0d85" name="Failed commit: Default (3)" comment="question_card show">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/.jshintrc" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/bootstrap-switch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/generations.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap-switch.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/generations.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/generations_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/generations_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/generations/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/generations/_generation.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/generations/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/generations/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/generations/index.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/generations/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/generations/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/generations/show.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20161030170355_add_coloumn_to_generation.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/generations_controller_test.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/db/migrate/20161010190136_create_generations.rb" afterPath="$PROJECT_DIR$/db/migrate/20161030143204_create_generations.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/question_cards_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/question_cards_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/question_cards/show.html.erb" afterPath="$PROJECT_DIR$/app/views/question_cards/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="TaskGenerator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -648,38 +52,8 @@
       <file leaf-file-name="question_cards_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/question_cards_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/question_cards/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="32" column="14" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/ckeditor/styles.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contents.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/ckeditor/contents.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="29" column="33" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -688,17 +62,27 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/question_cards/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            <state relative-caret-position="320">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#td#1;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".jshintrc" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/.jshintrc">
+      <file leaf-file-name="20161030170355_add_coloumn_to_generation.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20161030170355_add_coloumn_to_generation.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generations.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/generations.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -707,23 +91,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/main_page/index.html.erb">
+      <file leaf-file-name="application.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1221">
-              <caret line="90" column="10" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
+            <state relative-caret-position="340">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.erb">
+      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -732,18 +116,28 @@
       <file leaf-file-name="tasks_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="93" column="27" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="27" />
+            <state relative-caret-position="60">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <file leaf-file-name="generations_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/generations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1760">
-              <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+            <state relative-caret-position="540">
+              <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -777,21 +171,23 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.sass" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/public/ckeditor/config.js" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/public/ckeditor/plugins/task/dialogs/task.js" />
         <option value="$PROJECT_DIR$/public/ckeditor/plugins/task/plugin.js" />
         <option value="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/question_cards_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/question_cards/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tasks/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/main_page/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/question_cards.scss" />
+        <option value="$PROJECT_DIR$/app/controllers/question_cards_controller.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/views/question_cards/show.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20161030170355_add_coloumn_to_generation.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/generations_controller.rb" />
       </list>
     </option>
   </component>
@@ -866,25 +262,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckeditor" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -901,6 +279,10 @@
               <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -913,90 +295,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="question_cards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main_page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1051,6 +349,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TaskGenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TaskGenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1294,7 +614,7 @@
       <workItem from="1477677609813" duration="2765000" />
       <workItem from="1477690024235" duration="2159000" />
       <workItem from="1477732853369" duration="34033000" />
-      <workItem from="1477818755916" duration="7951000" />
+      <workItem from="1477818755916" duration="22284000" />
     </task>
     <task id="LOCAL-00001" summary="add authorization">
       <created>1476055902929</created>
@@ -1419,7 +739,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110581000" />
+    <option name="totallyTimeSpent" value="124914000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1436,16 +756,16 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2966538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32620817" sideWeight="0.519305" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33550185" sideWeight="0.51287" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32620817" sideWeight="0.48069498" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32620817" sideWeight="0.47812098" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330855" sideWeight="0.494852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33550185" sideWeight="0.494852" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33550185" sideWeight="0.48713" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1453,26 +773,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5025" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806692" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330855" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33550185" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12483913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1528,41 +828,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20161010190603_create_variable_types.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/variable_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20161010190834_create_dimensions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/dimension.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20161010191050_create_generated_variables.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/generated_variable.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1701,25 +966,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/ckeditor/ckeditor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="680" column="308" selection-start-line="680" selection-start-column="308" selection-end-line="680" selection-end-column="308" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1734,14 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
           <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1764,14 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1760">
-          <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1800,24 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="93" column="27" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#5;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/question_cards.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1830,14 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/question_cards/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1858,28 +1067,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/.jshintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/question_cards/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20161030143204_create_generations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/generation.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/generations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/question_cards_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+        <state relative-caret-position="280">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/question_cards/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state relative-caret-position="320">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#td#1;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/ckeditor/plugins/pastefromexcel/.jshintrc">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20161030170355_add_coloumn_to_generation.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/generations.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding />
         </state>
       </provider>

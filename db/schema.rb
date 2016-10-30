@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161019092404) do
+ActiveRecord::Schema.define(version: 20161030170355) do
 
   create_table "calculated_variables", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "task"
@@ -45,11 +45,12 @@ ActiveRecord::Schema.define(version: 20161019092404) do
   end
 
   create_table "generations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "user"
-    t.integer  "task"
-    t.integer  "page_layout"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "user_id"
+    t.integer  "question_card_id"
+    t.integer  "page_layout_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.boolean  "orientation"
   end
 
   create_table "page_layouts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
