@@ -27,7 +27,6 @@ class QuestionCardsController < ApplicationController
   # POST /question_cards.json
   def create
     card = question_card_params
-    card[:date] = Time.now
     card[:user] = current_user.id
     @question_card = QuestionCard.new(card)
 
@@ -83,6 +82,6 @@ class QuestionCardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_card_params
-      params.permit(:subject, :title, :description, :question_card)
+      params.require(:question_card).permit(:subject, :title, :description, :question_card)
     end
 end

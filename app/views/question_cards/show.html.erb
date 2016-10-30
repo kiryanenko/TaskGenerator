@@ -1,39 +1,58 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @question_card.user %>
-</p>
 
-<p>
-  <strong>Subject:</strong>
-  <%= @question_card.subject %>
-</p>
-
-<p>
-  <strong>Title:</strong>
+<h1 class="page-header" >
+  <table width="100%"><tr>
+    <td>
   <%= @question_card.title %>
-</p>
+    </td>
+    <td width="270px" align="right">
+      <a href="#" ><button type="button" class="btn btn-success">Добавить к себе</button></a>
+      <a href="#" ><button type="button" class="btn btn-primary">Сгенерировать</button></a>
+    </td>
+  </tr></table>
+</h1>
 
-<p>
-  <strong>Description:</strong>
-  <%= @question_card.description %>
-</p>
+<table width="100%">
+  <tr>
+    <td>
+      <p>
+        <strong>User:</strong>
+        <%= @question_card.user %>
+      </p>
+    </td>
+    <td>
+      <p style="text-align: right;">
+        <%= @question_card.created_at %>
+      </p>
+    </td>
+  </tr>
+</table>
 
-<p>
-  <strong>Question card:</strong>
-  <%= @question_card.question_card %>
-</p>
+<h5>
+  <strong>Предмет: </strong>
+  <%= @question_card.subject %>
+</h5>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Описание
+  </div>
+  <div class="panel-body">
+    <%= @question_card.description %>
+  </div>
+</div>
 
-<p>
-  <strong>Date:</strong>
-  <%= @question_card.date %>
-</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Билет
+  </div>
+  <div class="panel-body">
+    <%= raw @question_card.question_card %>
+  </div>
+</div>
 
-<p>
-  <strong>Removed:</strong>
-  <%= @question_card.removed %>
-</p>
+
+
+
 
 <%= link_to 'Edit', edit_question_card_path(@question_card) %> |
 <%= link_to 'Back', question_cards_path %>
