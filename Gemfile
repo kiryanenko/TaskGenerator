@@ -50,4 +50,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'devise'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 

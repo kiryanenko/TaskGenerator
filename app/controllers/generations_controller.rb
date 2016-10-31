@@ -1,6 +1,6 @@
 class GenerationsController < ApplicationController
   before_filter :authenticate_user!
-  before_action :set_generation, only: [:show, :destroy]
+  before_action :set_generation, only: [:show, :destroy, :question_card]
 
   # GET /generations
   # GET /generations.json
@@ -11,6 +11,20 @@ class GenerationsController < ApplicationController
   # GET /generations/1
   # GET /generations/1.json
   def show
+  end
+
+  # GET /generations/1/question_card
+  # GET /generations/1/question_card.pdf
+  def question_card
+    @card = QuestionCard.find(@generation.question_card_id).question_card
+
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "question_card"   # Excluding ".pdf" extension.
+
+      end
+    end
   end
 
   # GET /generations/new
@@ -25,7 +39,8 @@ class GenerationsController < ApplicationController
   # POST /generations
   # POST /generations.json
   def create
-    gen_params = params.permit(:question_card_id, :page_layout_id, :orientation)
+    gen_params = params.permit(:question_card_id, :page_layout_id)
+    gen_params[:orientation] = !params.require(:number_variants).nil?
     gen_params[:user_id] = current_user.id
     @generation = Generation.new(gen_params)
 
