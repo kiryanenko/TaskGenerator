@@ -11,6 +11,7 @@ class GenerationsController < ApplicationController
   # GET /generations/1
   # GET /generations/1.json
   def show
+    @question_card = QuestionCard.find(@generation.question_card_id)
   end
 
   # GET /generations/1/question_card

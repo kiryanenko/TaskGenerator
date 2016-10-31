@@ -1,19 +1,94 @@
 <p id="notice"><%= notice %></p>
+<h1 class="page-header">Сгенерированные билеты</h1>
 
-<p>
-  <strong>User:</strong>
-  <%= @generation.user_id %>
-</p>
+<table width="100%">
+  <tr>
+    <td>
+      <p>
+        <strong>User:</strong>
+        <%= @generation.user_id %>
+      </p>
+    </td>
+    <td>
+      <p style="text-align: right;">
+        <%= @generation.created_at %>
+      </p>
+    </td>
+  </tr>
+</table>
 
-<p>
-  <strong>Question card:</strong>
-  <%= @generation.question_card_id %>
-</p>
+<h2><%= @question_card.title %></h2>
+<p><b>Предмет:</b> <%= @question_card.subject %></p>
+<p><b>Описание:</b> <%= @question_card.description %></p>
+<p><b>Количество вариантов:</b> <%=  %></p>
 
-<p>
-  <strong>Page layout:</strong>
-  <%= @generation.page_layout_id %>
-</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Генератор билетов
+  </div>
+  <!-- /.panel-heading -->
+  <div class="panel-body">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#cards" data-toggle="tab" aria-expanded="false">Билеты</a>
+      </li>
+      <li class=""><a href="#answers" data-toggle="tab" aria-expanded="false">Ответы</a>
+      </li>
+    </ul>
 
-<%= link_to 'Edit', edit_generation_path(@generation) %> |
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="cards">
+        <div class="row">
+        <div class="col-md-4">
+          <h4>Настройки генератора</h4>
+        <%= form_tag("/generations/#{@generation.id}/question_card.pdf", method: 'get', id: 'form-generator-cards') do %>
+          <input type="checkbox" name="orientation" data-off-text="Альбомная" data-on-text="Книжная" data-label-text="Ориентация" checked><br><br>
+          <script>$("[name='orientation']").bootstrapSwitch();</script>
+          <%= label_tag('Компановка на странице') %>
+          <%= select_tag :page_layout_id,  options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control' %>
+              <br>
+              <button type="submit" class="btn btn-success btn-block"><i class="fa fa-download fa-fw"></i> Сгенерировать PDF'</button>
+          <% end %>
+        </div>
+        </div><br>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            Предпросмотр
+          </div>
+          <div class="panel-body">
+          <%= raw @question_card.question_card %>
+            </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="answers">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Настройки генератора</h4>
+            <%= form_tag("/generations/#{@generation.id}/answers.pdf", method: 'get', id: 'form-generator-answers') do %>
+                <input type="checkbox" name="orientation" data-off-text="Альбомная" data-on-text="Книжная" data-label-text="Ориентация" checked><br><br>
+                <script>$("[name='orientation']").bootstrapSwitch();</script>
+                <%= label_tag('Компановка на странице') %>
+                <%= select_tag :page_layout_id,  options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control' %>
+                <br>
+                <button type="submit" class="btn btn-success btn-block"><i class="fa fa-download fa-fw"></i> Сгенерировать PDF'</button>
+            <% end %>
+          </div>
+        </div><br>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            Предпросмотр
+          </div>
+          <div class="panel-body">
+            <%= raw @question_card.question_card %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.panel-body -->
+</div>
+
+
 <%= link_to 'Back', generations_path %>

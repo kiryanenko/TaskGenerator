@@ -11,10 +11,6 @@
             <%= hidden_field_tag :question_card_id, @question_card.id %>
             <%= label_tag('Количество вариантов') %>
             <%= number_field_tag :number_variants, 1, class: 'form-control' %><br>
-            <input type="checkbox" name="orientation" data-off-text="Альбомная" data-on-text="Книжная" data-label-text="Ориентация" checked><br><br>
-            <script>$("[name='orientation']").bootstrapSwitch();</script>
-            <%= label_tag('Компановка на странице') %>
-            <%= select_tag :page_layout_id,  options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control' %>
         <% end %>
       </div>
       <div class="modal-footer">
