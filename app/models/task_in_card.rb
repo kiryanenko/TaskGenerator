@@ -1,2 +1,0 @@
-class TaskInCard < ApplicationRecord
-end

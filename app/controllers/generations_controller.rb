@@ -17,7 +17,21 @@ class GenerationsController < ApplicationController
   # GET /generations/1/question_card
   # GET /generations/1/question_card.pdf
   def question_card
-    @card = QuestionCard.find(@generation.question_card_id).question_card
+    template = QuestionCard.find(@generation.question_card_id).question_card
+    @cards = Variant.where(generation: @generation.id).each do |v|
+      card = template
+      card.gsub('$V', v.number.to_s)
+
+      doc = Nokogiri::HTML(template)
+      doc.css('.task').each do |task|
+        t = GeneratedTask.find_by(
+            task_in_card: task[:id].to_i,
+            variant: v.id
+        ).task
+        task.text = Task.find( t ).task
+      end
+      doc.to_html
+    end
 
     respond_to do |format|
       format.html
@@ -40,21 +54,19 @@ class GenerationsController < ApplicationController
   # POST /generations
   # POST /generations.json
   def create
-    gen_params = params.permit(:question_card_id, :page_layout_id)
-    gen_params[:orientation] = !params.require(:number_variants).nil?
+    gen_params = params.permit(:question_card_id)
     gen_params[:user_id] = current_user.id
     @generation = Generation.new(gen_params)
 
     respond_to do |format|
       if @generation.save
-        tasksInCard = TaskInCard.where(card: gen_params[:question_card_id])
+        card = QuestionCard.find(@generation.question_card_id).question_card
+        tasksInCard = Nokogiri::HTML(card).css('.task')
         params.require(:number_variants).to_i.times do |i|
           variant = Variant.new(number: i + 1, generation: @generation.id)
           variant.save
           tasksInCard.each do |task|
-            p variant
-            p task
-            GeneratedTask.new(variant: variant.id, task: task.id).save
+            GeneratedTask.new(variant: variant.id, task: task[:id].to_s).save
           end
         end
 

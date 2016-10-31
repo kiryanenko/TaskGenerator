@@ -84,14 +84,6 @@ ActiveRecord::Schema.define(version: 20161030170355) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "task_in_cards", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "card"
-    t.integer  "task"
-    t.boolean  "is_group"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "tasks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user"
     t.string   "title"

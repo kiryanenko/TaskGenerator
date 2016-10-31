@@ -33,11 +33,7 @@ class QuestionCardsController < ApplicationController
     respond_to do |format|
       if @question_card.save
         doc = Nokogiri::HTML(card[:question_card])
-        doc.css('.task').each do |task|
-          taskInCard = TaskInCard.new(card: @question_card.id, task: task['task_id'], is_group: false)
-          taskInCard.save
-          task['id'] = taskInCard.id.to_s
-        end
+        doc.css('.task').each_with_index { |task, i| task['id'] = i.to_s }
         @question_card.question_card = doc.to_html
         @question_card.save
 

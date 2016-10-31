@@ -1,2 +1,4 @@
 <meta charset="UTF-8">
-<%= raw @card %>
+<% @cards.each do |card| %>
+  <%= raw card %>
+<% end %>
