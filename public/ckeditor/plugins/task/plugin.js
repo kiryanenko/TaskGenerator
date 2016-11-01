@@ -31,6 +31,7 @@ CKEDITOR.plugins.add('task', {
             minHeight : 200,
             onOk: function() {
               var taskValue = this.getContentElement( 'task', 'taskValue').getInputElement().getValue();
+              var taskName = this.getContentElement( 'task', 'taskName').getInputElement().getValue();
               $.ajax({
                 type: 'get',//тип запроса: get,post либо head
                 url: '../tasks/'+taskValue+'.json',//url адрес файла обработчика
@@ -38,8 +39,7 @@ CKEDITOR.plugins.add('task', {
                 response: 'text',//тип возвращаемого ответа text либо xml
                 success: function (data) {//возвращаемый результат от сервера
                   var element = CKEDITOR.dom.element.createFromHtml(
-                      '<div class="task" task_id="' + taskValue + '">' +
-                          '<b>Блок задачи: ' + data.title + '</b><hr>' +
+                      '<div class="task" task_id="'+taskValue+'" task_name="'+taskName+'" data-title="Блок с задачей № '+taskName+': '+data.title+'">' +
                           '<p>' + data.task + '</p>' +
                       '</div>'
                   );
@@ -51,18 +51,23 @@ CKEDITOR.plugins.add('task', {
               id : 'task',
               label : 'First Tab',
               title : 'First Tab',
-              elements : [{
-                id : 'taskValue',
-                type : 'select',
-                items: titles,
-                label: 'Задача'
-              }]
+              elements : [
+                {
+                  id : 'taskName',
+                  type : 'text',
+                  label: 'Идентификатор (номер) задачи'
+                },
+                {
+                  id : 'taskValue',
+                  type : 'select',
+                  items: titles,
+                  label: 'Задача'
+                }
+              ]
             }]
           };
         });
       }
     });
-
-    CKEDITOR.dialog.add('task', this.path + 'dialogs/task.js');
   }
 });

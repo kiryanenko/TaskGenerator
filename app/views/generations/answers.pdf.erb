@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+<% @answers.each do |v| %>
+    <h1>Вариант № <%= v[:variant] %></h1>
+    <% v[:tasks_in_card].each do |t| %>
+        <h2>Задача № <%= t[:name] %></h2>
+        <h3>Условие:</h3>
+        <%= raw t[:task].task  %>
+        <h3>Решение:</h3>
+        <%= raw t[:task].answer  %>
+    <% end %>
+    <hr>
+<% end %>

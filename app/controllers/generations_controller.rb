@@ -1,6 +1,6 @@
 class GenerationsController < ApplicationController
   before_filter :authenticate_user!
-  before_action :set_generation, only: [:show, :destroy, :question_card]
+  before_action :set_generation, only: [:show, :destroy, :question_card, :answers]
 
   # GET /generations
   # GET /generations.json
@@ -43,9 +43,21 @@ class GenerationsController < ApplicationController
   # GET /generations/1/answers
   # GET /generations/1/answers.pdf
   def answers
-    @cards = Variant.where(generation: @generation.id).map do |v|
-      card = template.gsub('$V', v.number.to_s)
-
+    card = QuestionCard.find(@generation.question_card_id).question_card
+    @answers = Variant.where(generation: @generation.id).map do |v|
+      tasks = Nokogiri::HTML(card).css('.task').map do |task|
+        {
+            name: task[:task_name],
+            task: Task.find( GeneratedTask.find_by(
+              task_in_card: task[:id].to_i,
+              variant_id: v.id
+            ).task_id )
+        }
+      end
+      {
+          variant: v.number,
+          tasks_in_card: tasks
+      }
     end
 
     respond_to do |format|
