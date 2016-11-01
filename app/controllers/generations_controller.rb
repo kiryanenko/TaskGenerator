@@ -18,17 +18,15 @@ class GenerationsController < ApplicationController
   # GET /generations/1/question_card.pdf
   def question_card
     template = QuestionCard.find(@generation.question_card_id).question_card
-    @cards = Variant.where(generation: @generation.id).each do |v|
-      card = template
-      card.gsub('$V', v.number.to_s)
+    @cards = Variant.where(generation: @generation.id).map do |v|
+      card = template.gsub('$V', v.number.to_s)
 
-      doc = Nokogiri::HTML(template)
+      doc = Nokogiri::HTML(card)
       doc.css('.task').each do |task|
-        t = GeneratedTask.find_by(
+        task.inner_html = Task.find( GeneratedTask.find_by(
             task_in_card: task[:id].to_i,
-            variant: v.id
-        ).task
-        task.text = Task.find( t ).task
+            variant_id: v.id
+        ).task_id ).task
       end
       doc.to_html
     end
@@ -37,6 +35,23 @@ class GenerationsController < ApplicationController
       format.html
       format.pdf do
         render pdf: "question_card"   # Excluding ".pdf" extension.
+
+      end
+    end
+  end
+
+  # GET /generations/1/answers
+  # GET /generations/1/answers.pdf
+  def answers
+    @cards = Variant.where(generation: @generation.id).map do |v|
+      card = template.gsub('$V', v.number.to_s)
+
+    end
+
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "answers"   # Excluding ".pdf" extension.
 
       end
     end
@@ -66,7 +81,7 @@ class GenerationsController < ApplicationController
           variant = Variant.new(number: i + 1, generation: @generation.id)
           variant.save
           tasksInCard.each do |task|
-            GeneratedTask.new(variant: variant.id, task: task[:id].to_s).save
+            GeneratedTask.new(variant_id: variant.id, task_in_card: task[:id].to_s, task_id: task[:task_id].to_s).save
           end
         end
 

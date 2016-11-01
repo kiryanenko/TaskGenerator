@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161030170355) do
+ActiveRecord::Schema.define(version: 20161101140930) do
 
   create_table "calculated_variables", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "task"
@@ -30,10 +30,11 @@ ActiveRecord::Schema.define(version: 20161030170355) do
   end
 
   create_table "generated_tasks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "variant"
-    t.integer  "task"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "task_id"
+    t.integer  "task_in_card"
+    t.integer  "variant_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "generated_variables", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

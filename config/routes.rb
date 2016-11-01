@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/generations/:id/question_card', to: 'generations#question_card'
+  get '/generations/:id/answers', to: 'generations#answers'
   resources :generations
   resources :question_cards
   resources :tasks_groups
