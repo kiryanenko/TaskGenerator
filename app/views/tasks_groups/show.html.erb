@@ -31,7 +31,7 @@
     <td>
       <p>
         <strong>Пользователь:</strong>
-        <%= @tasks_group.user %>
+        <i><a target="_blank" href="http://<%= @tasks_group.get_user.email %>"><%= @tasks_group.get_user.email %></a> </i>
       </p>
     </td>
     <td>

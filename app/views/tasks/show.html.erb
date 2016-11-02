@@ -1,14 +1,3 @@
-<!-- Скрипт для инициализации элементов на странице, имеющих атрибут data-toggle="tooltip" -->
-<script>
-  // после загрузки страницы
-  $(function () {
-    // инициализировать все элементы на страницы, имеющих атрибут data-toggle="tooltip", как компоненты tooltip
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-</script>
-
-<p id="notice"><%= notice %></p>
-
 <h1 class="page-header" >
   <table width="100%"><tr>
     <td>
@@ -45,8 +34,8 @@
   <tr>
     <td>
       <p>
-        <strong>User:</strong>
-        <%= @task.user %>
+        <strong>Пользователь:</strong>
+        <i><a target="_blank" href="http://<%= @task.get_user.email %>"><%= @task.get_user.email %></a> </i>
       </p>
     </td>
     <td>

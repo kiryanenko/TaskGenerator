@@ -323,6 +323,14 @@
   <!-- Custom Theme JavaScript -->
   <script src="../dist/js/sb-admin-2.js"></script>
 
+  <!-- Скрипт для инициализации элементов на странице, имеющих атрибут data-toggle="tooltip" -->
+  <script>
+    // после загрузки страницы
+    $(function () {
+      // инициализировать все элементы на страницы, имеющих атрибут data-toggle="tooltip", как компоненты tooltip
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 
   </body>
 </html>
