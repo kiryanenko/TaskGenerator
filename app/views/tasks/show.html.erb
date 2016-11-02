@@ -1,44 +1,93 @@
+<!-- Скрипт для инициализации элементов на странице, имеющих атрибут data-toggle="tooltip" -->
+<script>
+  // после загрузки страницы
+  $(function () {
+    // инициализировать все элементы на страницы, имеющих атрибут data-toggle="tooltip", как компоненты tooltip
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @task.user %>
-</p>
+<h1 class="page-header" >
+  <table width="100%"><tr>
+    <td>
+      <b>Задача:</b> <%= @task.title %>
+    </td>
+    <td width="220px" align="right">
+      <% if current_user.id == @task.user %>
+          <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
+            <i class="fa fa-edit"></i>
+          </button>
 
-<p>
-  <strong>Title:</strong>
-  <%= @task.title %>
-</p>
+          <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip" title="Удалить">
+            <i class="fa fa-trash-o"></i>
+          </button>
+      <% end %>
 
-<p>
-  <strong>Description:</strong>
-  <%= @task.description %>
-</p>
+      <button type="button" class="btn btn-success btn-circle btn-outline" data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">
+        <i class="fa fa-plus-square"></i>
+      </button>
 
-<p>
-  <strong>Task:</strong>
-  <%= @task.task %>
-</p>
+      <% unless current_user.id == @task.user %>
+          <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
+            <i class="fa fa-plus"></i>
+          </button>
+      <% end %>
+      <!--<button class="btn btn-primary" data-toggle="modal" data-target="#generateModal">-->
+        <!--Сгенерировать-->
+      <!--</button>-->
+    </td>
+  </tr></table>
+</h1>
 
-<p>
-  <strong>Answer:</strong>
-  <%= @task.answer %>
-</p>
+<table width="100%">
+  <tr>
+    <td>
+      <p>
+        <strong>User:</strong>
+        <%= @task.user %>
+      </p>
+    </td>
+    <td>
+      <p style="text-align: right;">
+        <%= @task.created_at %>
+      </p>
+    </td>
+  </tr>
+</table>
 
-<p>
-  <strong>Subject:</strong>
+<h5>
+  <strong>Предмет: </strong>
   <%= @task.subject %>
-</p>
+</h5>
 
-<p>
-  <strong>Date:</strong>
-  <%= @task.date %>
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Описание:
+  </div>
+  <div class="panel-body">
+    <%= @task.description %>
+  </div>
+</div>
 
-<p>
-  <strong>Removed:</strong>
-  <%= @task.removed %>
-</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Условие задачи:
+  </div>
+  <div class="panel-body">
+    <%= raw @task.task %>
+  </div>
+</div>
+
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    Решение:
+  </div>
+  <div class="panel-body">
+    <%= raw @task.answer %>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>

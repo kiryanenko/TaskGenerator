@@ -1,3 +1,12 @@
+<!-- Скрипт для инициализации элементов на странице, имеющих атрибут data-toggle="tooltip" -->
+<script>
+  // после загрузки страницы
+  $(function () {
+    // инициализировать все элементы на страницы, имеющих атрибут data-toggle="tooltip", как компоненты tooltip
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
 <!-- .modal-dialog -->
 <div class="modal fade" id="generateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
   <div class="modal-dialog">
@@ -26,11 +35,27 @@
 <h1 class="page-header" >
   <table width="100%"><tr>
     <td>
-  <%= @question_card.title %>
+      <b>Билет:</b> <%= @question_card.title %>
     </td>
-    <td width="270px" align="right">
-      <a href="#" ><button type="button" class="btn btn-success">Добавить к себе</button></a>
+    <td width="220px" align="right">
+      <% if current_user.id == @question_card.user %>
+        <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
+          <i class="fa fa-edit"></i>
+        </button>
 
+        <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip" title="Удалить">
+          <i class="fa fa-times"></i>
+        </button>
+      <% end %>
+
+      <!--<button type="button" class="btn btn-info btn-circle btn-outline" data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">-->
+        <!--<i class="fa fa-tasks"></i>-->
+      <!--</button>-->
+      <% unless current_user.id == @question_card.user %>
+        <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
+          <i class="fa fa-plus"></i>
+        </button>
+      <% end %>
       <button class="btn btn-primary" data-toggle="modal" data-target="#generateModal">
         Сгенерировать
       </button>
@@ -58,6 +83,7 @@
   <strong>Предмет: </strong>
   <%= @question_card.subject %>
 </h5>
+
 <div class="panel panel-default">
   <div class="panel-heading">
     Описание
@@ -75,10 +101,6 @@
     <%= raw @question_card.question_card %>
   </div>
 </div>
-
-
-
-
 
 <%= link_to 'Edit', edit_question_card_path(@question_card) %> |
 <%= link_to 'Back', question_cards_path %>
