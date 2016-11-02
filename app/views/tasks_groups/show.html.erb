@@ -1,34 +1,60 @@
-<p id="notice"><%= notice %></p>
+<h1 class="page-header" >
+  <table width="100%"><tr>
+    <td>
+      <b>Билет:</b> <%= @tasks_group.title %>
+    </td>
+    <td width="220px" align="right">
+      <% if current_user.id == @tasks_group.user %>
+          <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
+            <i class="fa fa-edit"></i>
+          </button>
 
-<p>
-  <strong>User:</strong>
-  <%= @tasks_group.user %>
-</p>
+          <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip" title="Удалить">
+            <i class="fa fa-times"></i>
+          </button>
+      <% end %>
 
-<p>
-  <strong>Subject:</strong>
+      <!--<button type="button" class="btn btn-info btn-circle btn-outline" data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">-->
+      <!--<i class="fa fa-tasks"></i>-->
+      <!--</button>-->
+      <% unless current_user.id == @tasks_group.user %>
+          <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
+            <i class="fa fa-plus"></i>
+          </button>
+      <% end %>
+    </td>
+  </tr></table>
+</h1>
+
+<table width="100%">
+  <tr>
+    <td>
+      <p>
+        <strong>Пользователь:</strong>
+        <%= @tasks_group.user %>
+      </p>
+    </td>
+    <td>
+      <p style="text-align: right;">
+          <%= @tasks_group.created_at %>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<h5>
+  <strong>Предмет: </strong>
   <%= @tasks_group.subject %>
-</p>
+</h5>
 
-<p>
-  <strong>Title:</strong>
-  <%= @tasks_group.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @tasks_group.description %>
-</p>
-
-<p>
-  <strong>Date:</strong>
-  <%= @tasks_group.date %>
-</p>
-
-<p>
-  <strong>Removed:</strong>
-  <%= @tasks_group.removed %>
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Описание
+  </div>
+  <div class="panel-body">
+    <%= @tasks_group.description %>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_tasks_group_path(@tasks_group) %> |
 <%= link_to 'Back', tasks_groups_path %>

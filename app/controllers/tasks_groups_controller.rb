@@ -24,7 +24,9 @@ class TasksGroupsController < ApplicationController
   # POST /tasks_groups
   # POST /tasks_groups.json
   def create
-    @tasks_group = TasksGroup.new(tasks_group_params)
+    group = tasks_group_params
+    group[:user] = current_user.id
+    @tasks_group = TasksGroup.new(group)
 
     respond_to do |format|
       if @tasks_group.save
