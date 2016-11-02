@@ -1,12 +1,10 @@
 class CreateCalculatedVariables < ActiveRecord::Migration[5.0]
   def change
     create_table :calculated_variables do |t|
-      t.integer :task
+      t.belongs_to :tasks, index: true
       t.string :name
-      t.integer :type
+      t.belongs_to :variable_types, index: true
       t.string :formula
-
-      t.timestamps
     end
   end
 end

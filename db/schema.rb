@@ -78,13 +78,6 @@ ActiveRecord::Schema.define(version: 20161101140930) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "task_and_groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "task"
-    t.integer  "group"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "tasks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user"
     t.string   "title"
@@ -99,14 +92,21 @@ ActiveRecord::Schema.define(version: 20161101140930) do
   end
 
   create_table "tasks_groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "user"
+    t.integer  "users_id"
     t.integer  "subject"
     t.string   "title"
     t.text     "description", limit: 65535
-    t.datetime "date"
-    t.boolean  "removed"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.boolean  "removed",                   default: false
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
+    t.index ["users_id"], name: "index_tasks_groups_on_users_id", using: :btree
+  end
+
+  create_table "tasks_groups_tasks", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "tasks_groups_id"
+    t.integer "tasks_id"
+    t.index ["tasks_groups_id"], name: "index_tasks_groups_tasks_on_tasks_groups_id", using: :btree
+    t.index ["tasks_id"], name: "index_tasks_groups_tasks_on_tasks_id", using: :btree
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
