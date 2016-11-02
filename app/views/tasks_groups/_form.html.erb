@@ -11,37 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :user %>
-    <%= f.number_field :user %>
-  </div>
+    <div class="field">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control', placeholder: :title%>
+    </div>
 
-  <div class="field">
-    <%= f.label :subject %>
-    <%= f.number_field :subject %>
-  </div>
+    <div class="field">
+      <%= f.label :subject %>
+      <%= f.text_field :subject, class: 'form-control', placeholder: :subject %>
+    </div>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
-
-  <div class="field">
-    <%= f.label :date %>
-    <%= f.datetime_select :date %>
-  </div>
-
-  <div class="field">
-    <%= f.label :removed %>
-    <%= f.check_box :removed %>
-  </div>
-
+    <div class="field">
+      <%= f.label :description %>
+      <%= f.text_area :description, class: 'form-control', placeholder: :description %>
+    </div>
+<br>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: 'btn btn-default'%>
   </div>
 <% end %>
