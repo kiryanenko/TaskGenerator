@@ -12,104 +12,94 @@
 
 ActiveRecord::Schema.define(version: 20161101140930) do
 
-  create_table "calculated_variables", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "task"
-    t.string   "name"
-    t.integer  "type"
-    t.string   "formula"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "calculated_variables", force: :cascade do |t|
+    t.integer "task_id"
+    t.string  "name",             null: false
+    t.integer "variable_type_id"
+    t.string  "formula"
+    t.index ["task_id"], name: "index_calculated_variables_on_task_id", using: :btree
+    t.index ["variable_type_id"], name: "index_calculated_variables_on_variable_type_id", using: :btree
   end
 
-  create_table "dimensions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "variable_type"
-    t.integer  "exponent"
-    t.string   "dimension"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
-  create_table "generated_tasks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "task_id"
-    t.integer  "task_in_card"
-    t.integer  "variant_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  create_table "generated_variables", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "generated_task"
-    t.integer  "variable"
-    t.float    "value",          limit: 24
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
-  end
-
-  create_table "generations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "user_id"
-    t.integer  "question_card_id"
-    t.integer  "page_layout_id"
+  create_table "dimensions", force: :cascade do |t|
+    t.integer  "variable_type_id"
+    t.integer  "exponent",         null: false
+    t.string   "dimension",        null: false
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-    t.boolean  "orientation"
+    t.index ["variable_type_id"], name: "index_dimensions_on_variable_type_id", using: :btree
   end
 
-  create_table "page_layouts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "page_layout"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+  create_table "generated_tasks", force: :cascade do |t|
+    t.integer "task_id"
+    t.integer "task_in_card", null: false
+    t.integer "variant_id"
+    t.index ["task_id"], name: "index_generated_tasks_on_task_id", using: :btree
+    t.index ["variant_id"], name: "index_generated_tasks_on_variant_id", using: :btree
   end
 
-  create_table "question_cards", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "user"
+  create_table "generations", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "question_card_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.index ["question_card_id"], name: "index_generations_on_question_card_id", using: :btree
+    t.index ["user_id"], name: "index_generations_on_user_id", using: :btree
+  end
+
+  create_table "question_cards", force: :cascade do |t|
+    t.integer  "user_id"
     t.integer  "subject"
-    t.string   "title"
-    t.text     "description",   limit: 65535
-    t.text     "question_card", limit: 65535
-    t.datetime "date"
-    t.boolean  "removed"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.string   "title",                         null: false
+    t.text     "description"
+    t.text     "question_card",                 null: false
+    t.boolean  "removed",       default: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.index ["user_id"], name: "index_question_cards_on_user_id", using: :btree
   end
 
-  create_table "subjects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "subject"
+  create_table "subjects", force: :cascade do |t|
+    t.string   "subject",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "tasks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "user"
-    t.string   "title"
-    t.text     "description", limit: 65535
-    t.text     "task",        limit: 65535
-    t.text     "answer",      limit: 65535
+  create_table "tasks", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "title",                       null: false
+    t.text     "description"
+    t.text     "task",                        null: false
+    t.text     "answer"
     t.integer  "subject"
-    t.datetime "date"
-    t.boolean  "removed",                   default: false
-    t.datetime "created_at",                                null: false
-    t.datetime "updated_at",                                null: false
+    t.boolean  "removed",     default: false, null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.index ["user_id"], name: "index_tasks_on_user_id", using: :btree
   end
 
-  create_table "tasks_groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "users_id"
+  create_table "tasks_groups", force: :cascade do |t|
+    t.integer  "user_id"
     t.integer  "subject"
-    t.string   "title"
-    t.text     "description", limit: 65535
-    t.boolean  "removed",                   default: false
-    t.datetime "created_at",                                null: false
-    t.datetime "updated_at",                                null: false
-    t.index ["users_id"], name: "index_tasks_groups_on_users_id", using: :btree
+    t.string   "title",                       null: false
+    t.text     "description"
+    t.boolean  "removed",     default: false, null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.index ["user_id"], name: "index_tasks_groups_on_user_id", using: :btree
   end
 
-  create_table "tasks_groups_tasks", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "tasks_groups_id"
-    t.integer "tasks_id"
-    t.index ["tasks_groups_id"], name: "index_tasks_groups_tasks_on_tasks_groups_id", using: :btree
-    t.index ["tasks_id"], name: "index_tasks_groups_tasks_on_tasks_id", using: :btree
+  create_table "tasks_groups_tasks", id: false, force: :cascade do |t|
+    t.integer "tasks_group_id"
+    t.integer "task_id"
+    t.index ["task_id"], name: "index_tasks_groups_tasks_on_task_id", using: :btree
+    t.index ["tasks_group_id"], name: "index_tasks_groups_tasks_on_tasks_group_id", using: :btree
   end
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -126,29 +116,30 @@ ActiveRecord::Schema.define(version: 20161101140930) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
-  create_table "variable_types", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "type"
+  create_table "variable_types", force: :cascade do |t|
+    t.string   "type",       null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "variables", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "task_id"
-    t.string   "name"
-    t.integer  "type"
-    t.float    "from",           limit: 24
-    t.integer  "dimension_from"
-    t.float    "to",             limit: 24
-    t.integer  "dimension_to"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+  create_table "variables", force: :cascade do |t|
+    t.integer "task_id"
+    t.string  "name",              null: false
+    t.integer "variable_type_id"
+    t.float   "from"
+    t.integer "dimension_from_id"
+    t.float   "to"
+    t.integer "dimension_to_id"
+    t.index ["dimension_from_id"], name: "index_variables_on_dimension_from_id", using: :btree
+    t.index ["dimension_to_id"], name: "index_variables_on_dimension_to_id", using: :btree
+    t.index ["task_id"], name: "index_variables_on_task_id", using: :btree
+    t.index ["variable_type_id"], name: "index_variables_on_variable_type_id", using: :btree
   end
 
-  create_table "variants", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "number"
-    t.integer  "generation"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "variants", force: :cascade do |t|
+    t.integer "number",        null: false
+    t.integer "generation_id"
+    t.index ["generation_id"], name: "index_variants_on_generation_id", using: :btree
   end
 
 end

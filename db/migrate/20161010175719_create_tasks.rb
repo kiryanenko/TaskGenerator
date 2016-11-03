@@ -1,13 +1,13 @@
 class CreateTasks < ActiveRecord::Migration[5.0]
   def change
     create_table :tasks do |t|
-      t.belongs_to :users, index: true
-      t.string :title
+      t.belongs_to :user, index: true
+      t.string :title, null: false
       t.text :description
-      t.text :task
+      t.text :task, null: false
       t.text :answer
       t.integer :subject
-      t.boolean :removed, default: false
+      t.boolean :removed, default: false, null: false
 
       t.timestamps
     end
