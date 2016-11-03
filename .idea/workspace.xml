@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f899de3c-2e22-427a-ad7b-11704ad7426e" name="Default" comment="Change ALL migrations">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TaskGenerator.iml" afterPath="$PROJECT_DIR$/.idea/TaskGenerator.iml" />
+    <list default="true" id="f899de3c-2e22-427a-ad7b-11704ad7426e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161010175719_create_tasks.rb" afterPath="$PROJECT_DIR$/db/migrate/20161010175719_create_tasks.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161010175911_create_tasks_groups.rb" afterPath="$PROJECT_DIR$/db/migrate/20161010175911_create_tasks_groups.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161010180222_create_question_cards.rb" afterPath="$PROJECT_DIR$/db/migrate/20161010180222_create_question_cards.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161010184329_create_variables.rb" afterPath="$PROJECT_DIR$/db/migrate/20161010184329_create_variables.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161010184802_create_subjects.rb" afterPath="$PROJECT_DIR$/db/migrate/20161010184802_create_subjects.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161010192015_create_calculated_variables.rb" afterPath="$PROJECT_DIR$/db/migrate/20161010192015_create_calculated_variables.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161030143204_create_generations.rb" afterPath="$PROJECT_DIR$/db/migrate/20161030143204_create_generations.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20161101140930_create_generated_tasks.rb" afterPath="$PROJECT_DIR$/db/migrate/20161101140930_create_generated_tasks.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="TaskGenerator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -567,7 +554,7 @@
       <workItem from="1478071487519" duration="10386000" />
       <workItem from="1478089911613" duration="4046000" />
       <workItem from="1478114717873" duration="6268000" />
-      <workItem from="1478202971505" duration="10756000" />
+      <workItem from="1478202971505" duration="10765000" />
     </task>
     <task id="LOCAL-00001" summary="add authorization">
       <created>1476055902929</created>
@@ -758,11 +745,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478123677969</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Change ALL migrations">
+      <created>1478217390087</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1478217390087</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190875000" />
+    <option name="totallyTimeSpent" value="190884000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
