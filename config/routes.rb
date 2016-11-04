@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :question_cards
 
   match 'tasks_groups/:id/add_task', to: 'tasks_groups#add_task', via: [:put]
+  match 'tasks_groups/:id/remove_task', to: 'tasks_groups#remove_task', via: [:delete]
   resources :tasks_groups
 
   get 'tasks/my_tasks'

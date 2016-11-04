@@ -331,7 +331,12 @@
     // после загрузки страницы
     $(function () {
       // инициализировать все элементы на страницы, имеющих атрибут data-toggle="tooltip", как компоненты tooltip
-      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="confirmation"]').confirmation({
+        singleton:true,
+        btnOkLabel: 'Да', btnCancelLabel: 'Нет',
+        btnOkClass: 'btn-sm btn-primary', btnCancelClass: 'btn-sm btn-default'
+      });
     })
   </script>
 

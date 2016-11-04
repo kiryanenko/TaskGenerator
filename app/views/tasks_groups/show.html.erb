@@ -3,14 +3,14 @@
     <td>
       <b>Группа задач:</b> <%= @tasks_group.title %>
     </td>
-    <td width="220px" align="right">
+    <td width="200px" align="right">
       <% if current_user == @tasks_group.user %>
           <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
             <i class="fa fa-edit"></i>
           </button>
 
           <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip" title="Удалить">
-            <i class="fa fa-times"></i>
+            <i class="fa fa-trash-o"></i>
           </button>
       <% end %>
 
@@ -56,26 +56,32 @@
   </div>
 </div>
 
-<div class="panel panel-info">
+<div class="panel panel-primary">
   <div class="panel-heading">
     Задачи входящие в эту группу
   </div>
   <!-- .panel-heading -->
   <div class="panel-body">
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="tasks_in_group">
       <%= 'В данную группу еще не добавлены задачи' if @tasks_group.tasks.size == 0 %>
       <% @tasks_group.tasks.each_with_index do |task, i| %>
-        <div class="panel panel-primary">
+        <div class="panel panel-default" id="task_<%= task.id %>">
           <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= i %>">
-                <%= task.title %>
-              </a>
-            </h4>
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#tasks_in_group" href="#collapse<%= i %>">
+                    <%= task.title %>
+                  </a>
+                    <button type="button" class="close" aria-hidden="true" data-toggle="confirmation"
+                            data-on-confirm="remove_task" group="<%= @tasks_group.id %>" task_id="<%= task.id %>"
+                            data-placement="left" title="Вы уверены, что хотите убрать задачу из группы?">×</button></a>
+                </h4>
           </div>
           <div id="collapse<%= i %>" class="panel-collapse collapse <%= 'in' if i == 0 %>">
             <div class="panel-body">
               <%= task.description %>
+              <div style="padding-top: 10px;">
+                <a href="/tasks/<%= task.id %>" ><button type="button" class="btn btn-default btn-sm">Перейти к задаче</button></a>
+              </div>
             </div>
           </div>
         </div>
@@ -87,3 +93,38 @@
 
 <%= link_to 'Edit', edit_tasks_group_path(@tasks_group) %> |
 <%= link_to 'Back', tasks_groups_path %>
+
+<!-- Скрипт для инициализации элементов на странице, имеющих атрибут data-toggle="confirmation-remove-task-from-group" -->
+<script>
+  // после загрузки страницы
+  $(function () {
+    // инициализировать все элементы на страницы, имеющих атрибут data-toggle="tooltip", как компоненты tooltip
+    $('[data-toggle="confirmation-remove-task-from-group"]').confirmation({
+      singleton:true,
+      btnOkLabel: 'Да', btnCancelLabel: 'Нет',
+      btnOkClass: 'btn-sm btn-primary', btnCancelClass: 'btn-sm btn-default',
+      buttons: [
+        {
+          label: 'Approved',
+          class: 'btn btn-xs btn-success',
+          icon: 'glyphicon glyphicon-ok'
+        },
+        {
+          label: 'Rejected',
+          class: 'btn btn-xs btn-danger',
+          icon: 'glyphicon glyphicon-remove'
+        },
+        {
+          label: 'Need review',
+          class: 'btn btn-xs btn-warning',
+          icon: 'glyphicon glyphicon-search'
+        },
+        {
+          label: 'Decide later',
+          class: 'btn btn-xs btn-default',
+          icon: 'glyphicon glyphicon-time'
+        }
+      ]
+    });
+  })
+</script>

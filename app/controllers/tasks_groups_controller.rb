@@ -1,6 +1,6 @@
 class TasksGroupsController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :show, :edit, :destroy]
-  before_action :set_tasks_group, only: [:show, :edit, :update, :destroy, :add_task]
+  before_action :set_tasks_group, only: [:show, :edit, :update, :destroy, :add_task, :remove_task]
 
   # GET /tasks_groups
   # GET /tasks_groups.json
@@ -57,11 +57,19 @@ class TasksGroupsController < ApplicationController
   def add_task
     @tasks_group.tasks << Task.find( params.require(:task_id) )
     respond_to do |format|
-      unless @tasks_group.errors.any?
-        format.json { render json: {msg: "Задача успешно добавлена в группу: #{@tasks_group.title}"}, status: :ok }
+      if !@tasks_group.errors.any?
+        format.json { render json: {notice: "Задача успешно добавлена в группу: #{@tasks_group.title}"}, status: :ok }
       else
         format.json { render json: @tasks_group.errors, status: :unprocessable_entity }
       end
+    end
+  end
+
+  # DELETE /tasks_groups/1/remove_task.json
+  def remove_task
+    @tasks_group.tasks.delete( params.require(:task_id) )
+    respond_to do |format|
+      format.json { render json: {notice: "Задача успешно удалена из группы: #{@tasks_group.title}"}, status: :ok }
     end
   end
 
