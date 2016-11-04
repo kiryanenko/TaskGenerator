@@ -1,10 +1,10 @@
 <h1 class="page-header" >
   <table width="100%"><tr>
     <td>
-      <b>Билет:</b> <%= @tasks_group.title %>
+      <b>Группа задач:</b> <%= @tasks_group.title %>
     </td>
     <td width="220px" align="right">
-      <% if current_user.id == @tasks_group.user %>
+      <% if current_user == @tasks_group.user %>
           <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
             <i class="fa fa-edit"></i>
           </button>
@@ -17,7 +17,7 @@
       <!--<button type="button" class="btn btn-info btn-circle btn-outline" data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">-->
       <!--<i class="fa fa-tasks"></i>-->
       <!--</button>-->
-      <% unless current_user.id == @tasks_group.user %>
+      <% unless current_user == @tasks_group.user %>
           <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
             <i class="fa fa-plus"></i>
           </button>
@@ -31,7 +31,7 @@
     <td>
       <p>
         <strong>Пользователь:</strong>
-        <i><a target="_blank" href="http://<%= @tasks_group.get_user.email %>"><%= @tasks_group.get_user.email %></a> </i>
+        <i><a target="_blank" href="http://<%= @tasks_group.user.email %>"><%= @tasks_group.user.email %></a> </i>
       </p>
     </td>
     <td>
@@ -54,6 +54,35 @@
   <div class="panel-body">
     <%= @tasks_group.description %>
   </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    Задачи входящие в эту группу
+  </div>
+  <!-- .panel-heading -->
+  <div class="panel-body">
+    <div class="panel-group" id="accordion">
+      <%= 'В данную группу еще не добавлены задачи' if @tasks_group.tasks.size == 0 %>
+      <% @tasks_group.tasks.each_with_index do |task, i| %>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= i %>">
+                <%= task.title %>
+              </a>
+            </h4>
+          </div>
+          <div id="collapse<%= i %>" class="panel-collapse collapse <%= 'in' if i == 0 %>">
+            <div class="panel-body">
+              <%= task.description %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <!-- .panel-body -->
 </div>
 
 <%= link_to 'Edit', edit_tasks_group_path(@tasks_group) %> |

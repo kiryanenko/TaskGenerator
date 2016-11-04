@@ -129,6 +129,6 @@ class GenerationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def generation_params
-      params.permit(:question_card_id)
+      params.permit(:question_card_id, :title)
     end
 end

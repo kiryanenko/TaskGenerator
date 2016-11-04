@@ -10,9 +10,11 @@ class CreateTasksGroups < ActiveRecord::Migration[5.0]
       t.timestamps
     end
 
-    create_table :tasks_groups_tasks, id: false do |t|
-      t.belongs_to :tasks_group, index: true
+    create_table :tasks_and_groups, id: false do |t|
+      t.belongs_to :tasks_group, index: true, counter_cache: true
       t.belongs_to :task, index: true
     end
+    # Добавление индекса уникальности на 2 столбца
+    add_index :tasks_and_groups, [:tasks_group, :task], unique: true
   end
 end

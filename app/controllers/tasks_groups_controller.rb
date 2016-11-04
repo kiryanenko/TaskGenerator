@@ -1,5 +1,6 @@
 class TasksGroupsController < ApplicationController
-  before_action :set_tasks_group, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: [:new, :show, :edit, :destroy]
+  before_action :set_tasks_group, only: [:show, :edit, :update, :destroy, :add_task]
 
   # GET /tasks_groups
   # GET /tasks_groups.json
@@ -24,9 +25,8 @@ class TasksGroupsController < ApplicationController
   # POST /tasks_groups
   # POST /tasks_groups.json
   def create
-    group = tasks_group_params
-    group[:user] = current_user.id
-    @tasks_group = TasksGroup.new(group)
+    @tasks_group = TasksGroup.new(tasks_group_params)
+    @tasks_group.user = current_user
 
     respond_to do |format|
       if @tasks_group.save
@@ -48,6 +48,18 @@ class TasksGroupsController < ApplicationController
         format.json { render :show, status: :ok, location: @tasks_group }
       else
         format.html { render :edit }
+        format.json { render json: @tasks_group.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /tasks_groups/1/add_task.json
+  def add_task
+    @tasks_group.tasks << Task.find( params.require(:task_id) )
+    respond_to do |format|
+      unless @tasks_group.errors.any?
+        format.json { render json: {msg: "Задача успешно добавлена в группу: #{@tasks_group.title}"}, status: :ok }
+      else
         format.json { render json: @tasks_group.errors, status: :unprocessable_entity }
       end
     end

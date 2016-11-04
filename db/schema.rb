@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20161101140930) do
   create_table "generations", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "question_card_id"
+    t.string   "title"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.index ["question_card_id"], name: "index_generations_on_question_card_id", using: :btree
@@ -53,12 +54,12 @@ ActiveRecord::Schema.define(version: 20161101140930) do
   create_table "question_cards", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "subject"
-    t.string   "title",                                                  null: false
+    t.string   "title",                                                              null: false
     t.text     "description"
-    t.text     "question_card", default: "<h1>Вариант № $V</h1><p></p>", null: false
+    t.text     "question_card", default: "<h1>Вариант № $V</h1><p>Текст билета</p>", null: false
     t.boolean  "removed",       default: false
-    t.datetime "created_at",                                             null: false
-    t.datetime "updated_at",                                             null: false
+    t.datetime "created_at",                                                         null: false
+    t.datetime "updated_at",                                                         null: false
     t.index ["user_id"], name: "index_question_cards_on_user_id", using: :btree
   end
 
@@ -81,6 +82,13 @@ ActiveRecord::Schema.define(version: 20161101140930) do
     t.index ["user_id"], name: "index_tasks_on_user_id", using: :btree
   end
 
+  create_table "tasks_and_groups", id: false, force: :cascade do |t|
+    t.integer "tasks_group_id"
+    t.integer "task_id"
+    t.index ["task_id"], name: "index_tasks_and_groups_on_task_id", using: :btree
+    t.index ["tasks_group_id"], name: "index_tasks_and_groups_on_tasks_group_id", using: :btree
+  end
+
   create_table "tasks_groups", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "subject"
@@ -90,13 +98,6 @@ ActiveRecord::Schema.define(version: 20161101140930) do
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
     t.index ["user_id"], name: "index_tasks_groups_on_user_id", using: :btree
-  end
-
-  create_table "tasks_groups_tasks", id: false, force: :cascade do |t|
-    t.integer "tasks_group_id"
-    t.integer "task_id"
-    t.index ["task_id"], name: "index_tasks_groups_tasks_on_task_id", using: :btree
-    t.index ["tasks_group_id"], name: "index_tasks_groups_tasks_on_tasks_group_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,5 +1,4 @@
 class TasksGroup < ApplicationRecord
-  def get_user
-    return User.find(user)
-  end
+  belongs_to :user
+  has_and_belongs_to_many :tasks, join_table: 'tasks_and_groups'
 end
