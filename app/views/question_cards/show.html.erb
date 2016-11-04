@@ -29,7 +29,7 @@
       <b>Билет:</b> <%= @question_card.title %>
     </td>
     <td width="220px" align="right">
-      <% if current_user.id == @question_card.user %>
+      <% if current_user == @question_card.user %>
         <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
           <i class="fa fa-edit"></i>
         </button>
@@ -42,7 +42,7 @@
       <!--<button type="button" class="btn btn-info btn-circle btn-outline" data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">-->
         <!--<i class="fa fa-tasks"></i>-->
       <!--</button>-->
-      <% unless current_user.id == @question_card.user %>
+      <% unless current_user == @question_card.user %>
         <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
           <i class="fa fa-plus"></i>
         </button>
@@ -59,7 +59,7 @@
     <td>
       <p>
         <strong>Пользователь:</strong>
-        <i><a target="_blank" href="http://<%= @question_card.get_user.email %>"><%= @question_card.get_user.email %></a> </i>
+        <i><a target="_blank" href="http://<%= @question_card.user.email %>"><%= @question_card.user.email %></a> </i>
       </p>
     </td>
     <td>

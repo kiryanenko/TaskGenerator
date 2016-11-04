@@ -1,5 +1,5 @@
 class Generation < ApplicationRecord
-  def user
-    return User.find(user_id)
-  end
+  belongs_to :user
+  belongs_to :question_card
+  has_many :variants
 end

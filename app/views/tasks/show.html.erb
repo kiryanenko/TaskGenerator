@@ -4,7 +4,7 @@
       <b>Задача:</b> <%= @task.title %>
     </td>
     <td width="220px" align="right">
-      <% if current_user.id == @task.user %>
+      <% if current_user == @task.user %>
           <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
             <i class="fa fa-edit"></i>
           </button>
@@ -18,7 +18,7 @@
         <i class="fa fa-plus-square"></i>
       </button>
 
-      <% unless current_user.id == @task.user %>
+      <% unless current_user == @task.user %>
           <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
             <i class="fa fa-plus"></i>
           </button>
@@ -35,7 +35,7 @@
     <td>
       <p>
         <strong>Пользователь:</strong>
-        <i><a target="_blank" href="http://<%= @task.get_user.email %>"><%= @task.get_user.email %></a> </i>
+        <i><a target="_blank" href="http://<%= @task.user.email %>"><%= @task.user.email %></a> </i>
       </p>
     </td>
     <td>

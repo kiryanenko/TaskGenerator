@@ -1,6 +1,6 @@
 class GenerationsController < ApplicationController
   before_filter :authenticate_user!
-  before_action :set_generation, only: [:show, :destroy, :question_card, :answers]
+  before_action :set_generation, only: [:show, :destroy, :question_cards, :answers]
 
   # GET /generations
   # GET /generations.json
@@ -11,22 +11,18 @@ class GenerationsController < ApplicationController
   # GET /generations/1
   # GET /generations/1.json
   def show
-    @question_card = QuestionCard.find(@generation.question_card_id)
   end
 
-  # GET /generations/1/question_card
-  # GET /generations/1/question_card.pdf
-  def question_card
-    template = QuestionCard.find(@generation.question_card_id).question_card
-    @cards = Variant.where(generation: @generation.id).map do |v|
+  # GET /generations/1/question_cards
+  # GET /generations/1/question_cards.pdf
+  def question_cards
+    template = @generation.question_card.question_card
+    @cards = @generation.variants.map do |v|
       card = template.gsub('$V', v.number.to_s)
 
       doc = Nokogiri::HTML(card)
       doc.css('.task').each do |task|
-        task.inner_html = Task.find( GeneratedTask.find_by(
-            task_in_card: task[:id].to_i,
-            variant_id: v.id
-        ).task_id ).task
+        task.inner_html = v.generated_tasks.find_by(task_in_card: task[:id].to_i).task.task
       end
       doc.to_html
     end
@@ -43,15 +39,12 @@ class GenerationsController < ApplicationController
   # GET /generations/1/answers
   # GET /generations/1/answers.pdf
   def answers
-    card = QuestionCard.find(@generation.question_card_id).question_card
-    @answers = Variant.where(generation: @generation.id).map do |v|
+    card = @generation.question_card.question_card
+    @answers = @generation.variants.map do |v|
       tasks = Nokogiri::HTML(card).css('.task').map do |task|
         {
             name: task[:task_name],
-            task: Task.find( GeneratedTask.find_by(
-              task_in_card: task[:id].to_i,
-              variant_id: v.id
-            ).task_id )
+            task: v.generated_tasks.find_by(task_in_card: task[:id].to_i).task
         }
       end
       {
@@ -81,19 +74,17 @@ class GenerationsController < ApplicationController
   # POST /generations
   # POST /generations.json
   def create
-    gen_params = params.permit(:question_card_id)
-    gen_params[:user_id] = current_user.id
-    @generation = Generation.new(gen_params)
+    @generation = Generation.new(generation_params)
+    @generation.user = current_user
 
     respond_to do |format|
       if @generation.save
-        card = QuestionCard.find(@generation.question_card_id).question_card
-        tasksInCard = Nokogiri::HTML(card).css('.task')
+        tasksInCard = Nokogiri::HTML(@generation.question_card.question_card).css('.task')
         params.require(:number_variants).to_i.times do |i|
-          variant = Variant.new(number: i + 1, generation: @generation.id)
+          variant = Variant.new(number: i + 1, generation: @generation)
           variant.save
           tasksInCard.each do |task|
-            GeneratedTask.new(variant_id: variant.id, task_in_card: task[:id].to_s, task_id: task[:task_id].to_s).save
+            GeneratedTask.new(variant: variant, task_in_card: task[:id].to_s, task_id: task[:task_id].to_s).save
           end
         end
 
@@ -137,7 +128,7 @@ class GenerationsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    # def generation_params
-    #   params.permit(:question_card_id, :page_layout_id, :number_variants)
-    # end
+    def generation_params
+      params.permit(:question_card_id)
+    end
 end

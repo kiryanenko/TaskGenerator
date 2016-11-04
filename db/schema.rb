@@ -53,12 +53,12 @@ ActiveRecord::Schema.define(version: 20161101140930) do
   create_table "question_cards", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "subject"
-    t.string   "title",                         null: false
+    t.string   "title",                                                  null: false
     t.text     "description"
-    t.text     "question_card",                 null: false
+    t.text     "question_card", default: "<h1>Вариант № $V</h1><p></p>", null: false
     t.boolean  "removed",       default: false
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+    t.datetime "created_at",                                             null: false
+    t.datetime "updated_at",                                             null: false
     t.index ["user_id"], name: "index_question_cards_on_user_id", using: :btree
   end
 

@@ -62,7 +62,7 @@
               <div class="form">
                 <div class="input-group">
                   <span class="input-group-addon">тип</span>
-                  <%= v.select :type,options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control' %>
+                  <%= v.select :variable_type_id, options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control' %>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@
                   <table><tr><td>
                     <%= v.text_field :to, class: 'form-control', placeholder: 'Нижняя граница'%>
                   </td><td>
-                    <%= v.select(:dimension_to, options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control') %>
+                    <%= v.select(:dimension_to_id, options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control') %>
                   </td></tr></table>
                 </div>
               </div>
@@ -86,7 +86,7 @@
                   <table><tr><td>
                     <%= v.text_field :from, class: 'form-control', placeholder: 'Верхняя граница'%>
                   </td><td>
-                    <%= v.select :dimension_from, options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control'%>
+                    <%= v.select :dimension_from_id, options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control'%>
                   </td></tr></table>
                 </div>
               </div>

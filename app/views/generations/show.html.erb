@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <h1 class="page-header">Сгенерированные билеты</h1>
 
 <table width="100%">
@@ -17,9 +16,9 @@
   </tr>
 </table>
 
-<h2><%= @question_card.title %></h2>
-<p><b>Предмет:</b> <%= @question_card.subject %></p>
-<p><b>Описание:</b> <%= @question_card.description %></p>
+<h2><%= @generation.question_card.title %></h2>
+<p><b>Предмет:</b> <%= @generation.question_card.subject %></p>
+<p><b>Описание:</b> <%= @generation.question_card.description %></p>
 <p><b>Количество вариантов:</b> <%=  %></p>
 
 <div class="panel panel-primary">
@@ -42,7 +41,7 @@
         <div class="row">
         <div class="col-md-4">
           <h4>Настройки генератора</h4>
-        <%= form_tag("/generations/#{@generation.id}/question_card.pdf", method: 'get', id: 'form-generator-cards') do %>
+        <%= form_tag("/generations/#{@generation.id}/question_cards.pdf", method: 'get', id: 'form-generator-cards') do %>
           <input type="checkbox" name="orientation" data-off-text="Альбомная" data-on-text="Книжная" data-label-text="Ориентация" checked><br><br>
           <script>$("[name='orientation']").bootstrapSwitch();</script>
           <%= label_tag('Компановка на странице') %>
@@ -57,7 +56,7 @@
             Предпросмотр
           </div>
           <div class="panel-body">
-          <%= raw @question_card.question_card %>
+          <%= raw @generation.question_card.question_card %>
             </div>
         </div>
       </div>
@@ -81,7 +80,7 @@
             Предпросмотр
           </div>
           <div class="panel-body">
-            <%= raw @question_card.question_card %>
+            <%= raw @generation.question_card.question_card %>
           </div>
         </div>
       </div>

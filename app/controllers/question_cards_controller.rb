@@ -26,17 +26,15 @@ class QuestionCardsController < ApplicationController
   # POST /question_cards
   # POST /question_cards.json
   def create
-    card = question_card_params
-    card[:user] = current_user.id
-    @question_card = QuestionCard.new(card)
+    @question_card = QuestionCard.new(question_card_params)
+    @question_card.user = current_user
+
+    doc = Nokogiri::HTML(@question_card.question_card)
+    doc.css('.task').each_with_index { |task, i| task['id'] = i.to_s }
+    @question_card.question_card = doc.to_html
 
     respond_to do |format|
       if @question_card.save
-        doc = Nokogiri::HTML(card[:question_card])
-        doc.css('.task').each_with_index { |task, i| task['id'] = i.to_s }
-        @question_card.question_card = doc.to_html
-        @question_card.save
-
         format.html { redirect_to @question_card, notice: 'Билет успешно создан.' }
         format.json { render :show, status: :created, location: @question_card }
       else

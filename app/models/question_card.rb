@@ -1,5 +1,3 @@
 class QuestionCard < ApplicationRecord
-  def get_user
-    return User.find(user)
-  end
+  belongs_to :user
 end

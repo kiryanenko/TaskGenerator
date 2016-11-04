@@ -13,8 +13,9 @@ class TasksController < ApplicationController
   def show
   end
 
+  # GET /tasks/my_tasks
   def my_tasks
-    @tasks = Task.where(user: current_user.id).map{ |task| {id: task.id, title: task.title} }
+    @tasks = Task.where(user_id: current_user.id).map { |task| {id: task.id, title: task.title} }
     respond_to do |format|
       format.json do
         render json: {type: @tasks.class.to_s, value: @tasks}
@@ -36,8 +37,7 @@ class TasksController < ApplicationController
   # POST /tasks.json
   def create
     task = task_params
-    task[:date] = Time.now
-    task[:user] = current_user.id
+    task[:user_id] = current_user.id
     @task = Task.new(task)
     variables = params.require(:task).permit(:variables).reject{ |variable|
       variable[:name] || variable[:type] || variable[:from] == '' || variable[:to] == ''

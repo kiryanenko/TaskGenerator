@@ -3,6 +3,7 @@ class CreateGenerations < ActiveRecord::Migration[5.0]
     create_table :generations do |t|
       t.belongs_to :user, index: true
       t.belongs_to :question_card, index: true
+      t.string :title
 
       t.timestamps
     end
