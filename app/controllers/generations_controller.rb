@@ -79,12 +79,19 @@ class GenerationsController < ApplicationController
 
     respond_to do |format|
       if @generation.save
-        tasksInCard = Nokogiri::HTML(@generation.question_card.question_card).css('.task')
+        tasks_in_card = Nokogiri::HTML(@generation.question_card.question_card).css('.task')
         params.require(:number_variants).to_i.times do |i|
           variant = Variant.new(number: i + 1, generation: @generation)
           variant.save
-          tasksInCard.each do |task|
-            GeneratedTask.new(variant: variant, task_in_card: task[:id].to_s, task_id: task[:task_id].to_s).save
+          tasks_in_card.each do |task|
+            task_id = task[:task_id].to_i
+            if task_id == 0
+              tasks = TasksGroup.find(task[:tasks_group_id].to_i).tasks.ids
+              generated_tasks = @generation.question_card.generated_tasks.map { |t| t.task.id }
+              tasks -= generated_tasks if tasks.count > generated_tasks.count
+              task_id = tasks.shuffle.first
+            end
+            GeneratedTask.new(variant: variant, task_in_card: task[:id].to_i, task_id: task_id).save
           end
         end
 
