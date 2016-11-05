@@ -1,5 +1,5 @@
 class TasksGroupsController < ApplicationController
-  before_filter :authenticate_user!, only: [:new, :show, :edit, :destroy]
+  before_filter :authenticate_user!, only: [:new, :show, :edit, :destroy, :my_groups]
   before_action :set_tasks_group, only: [:show, :edit, :update, :destroy, :add_task, :remove_task]
 
   # GET /tasks_groups
@@ -11,6 +11,16 @@ class TasksGroupsController < ApplicationController
   # GET /tasks_groups/1
   # GET /tasks_groups/1.json
   def show
+  end
+
+  # GET /tasks_groups/my_groups.json
+  def my_groups
+    @tasks = TasksGroup.where(user_id: current_user.id).map { |g| {id: g.id, title: g.title} }
+    respond_to do |format|
+      format.json do
+        render json: {type: @tasks.class.to_s, value: @tasks}
+      end
+    end
   end
 
   # GET /tasks_groups/new

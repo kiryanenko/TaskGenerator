@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   match 'tasks_groups/:id/add_task', to: 'tasks_groups#add_task', via: [:put]
   match 'tasks_groups/:id/remove_task', to: 'tasks_groups#remove_task', via: [:delete]
+  get 'tasks_groups/my_groups'
   resources :tasks_groups
 
   get 'tasks/my_tasks'
