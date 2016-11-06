@@ -1,0 +1,14 @@
+<% if list.size == 0 %>
+    <p><%= no_items %> Сделать это вы можете <a href="/<%= link %>/new">здесь</a></p>
+<% else %>
+    <div class="list-group">
+      <% list.each do |item| %>
+          <a href="/<%= link %>/<%= item.id %>" class="list-group-item list-group-item-action">
+            <span class="pull-right text-muted small"><em><%= item.updated_at.to_formatted_s(:short)   %></em></span>
+            <h4 class="list-group-item-heading"><%= item.title %></h4>
+            <p class="list-group-item-text"><%= item.description %></p>
+          </a>
+      <% end %>
+    </div>
+    <a href="/<%= link %>/my" class="btn btn-default btn-block">Посмотреть все</a>
+<% end %>

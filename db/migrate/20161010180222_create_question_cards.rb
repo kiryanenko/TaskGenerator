@@ -4,7 +4,7 @@ class CreateQuestionCards < ActiveRecord::Migration[5.0]
       t.belongs_to :user, index: true
       t.integer :subject
       t.string :title, null: false
-      t.text :description
+      t.text :description, limit: 300
       t.text :question_card, null: false, default: '<h1>Вариант № $V</h1><p>Текст билета</p>'
       t.boolean :removed, default: false
 

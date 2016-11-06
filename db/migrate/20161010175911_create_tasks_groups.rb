@@ -4,7 +4,7 @@ class CreateTasksGroups < ActiveRecord::Migration[5.0]
       t.belongs_to :user, index: true
       t.integer :subject
       t.string :title, null: false
-      t.text :description
+      t.text :description, limit: 300
       t.boolean :removed, default: false, null: false
 
       t.timestamps

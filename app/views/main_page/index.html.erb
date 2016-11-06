@@ -2,21 +2,21 @@
 
 <div class="row">
   <div class="col-lg-8">
-    <div class="panel panel-default">
+    <div class="panel panel-primary">
       <div class="panel-heading">
-        <a href="#">Обзор задач</a>
+        Обзор билетов
       </div>
       <div class="panel-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+        <%= render 'list', list: @question_cards, link: 'question_cards', no_items: 'Вы пока еще не создали ни одного белета.' %>
       </div>
     </div>
 
     <div class="panel panel-red">
       <div class="panel-heading">
-        Обзор билетов
+        Обзор задач
       </div>
       <div class="panel-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+        <%= render 'list', list: @tasks, link: 'tasks', no_items: 'Вы пока еще не создали ни одной задачи.' %>
       </div>
     </div>
   </div>
@@ -28,65 +28,29 @@
       </div>
       <!-- /.panel-heading -->
       <div class="panel-body">
-        <div class="list-group">
-          <a href="#" class="list-group-item">
-            <i class="fa fa-comment fa-fw"></i> New Comment
-            <span class="pull-right text-muted small"><em>4 minutes ago</em>
-                                    </span>
-          </a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-            <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                                    </span>
-          </a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-envelope fa-fw"></i> Message Sent
-            <span class="pull-right text-muted small"><em>27 minutes ago</em>
-                                    </span>
-          </a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-tasks fa-fw"></i> New Task
-            <span class="pull-right text-muted small"><em>43 minutes ago</em>
-                                    </span>
-          </a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-upload fa-fw"></i> Server Rebooted
-            <span class="pull-right text-muted small"><em>11:32 AM</em>
-                                    </span>
-          </a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-            <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                    </span>
-          </a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-warning fa-fw"></i> Server Not Responding
-            <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                    </span>
-          </a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-            <span class="pull-right text-muted small"><em>9:49 AM</em>
-                                    </span>
-          </a>
-          <a href="#" class="list-group-item">
-            <i class="fa fa-money fa-fw"></i> Payment Received
-            <span class="pull-right text-muted small"><em>Yesterday</em>
-                                    </span>
-          </a>
-        </div>
-        <!-- /.list-group -->
-        <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+        <% if @generations.size == 0 %>
+            <p><%= no_items %> Сделать это вы можете <a href="/<%= link %>/new">здесь</a></p>
+        <% else %>
+            <div class="list-group">
+              <% @generations.each do |g| %>
+                  <a href="/generations/<%= g.id %>" class="list-group-item list-group-item-action">
+                    <span class="pull-right text-muted small"><em><%= g.updated_at.to_formatted_s(:short) %></em></span>
+                    <%= g.title %>
+                  </a>
+              <% end %>
+            </div>
+            <a href="/generations/my" class="btn btn-default btn-block">Посмотреть все</a>
+        <% end %>
       </div>
       <!-- /.panel-body -->
     </div>
 
-    <div class="panel panel-primary">
+    <div class="panel panel-info">
       <div class="panel-heading">
         Обзор групп задач
       </div>
       <div class="panel-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+        <%= render 'list', list: @tasks_groups, link: 'tasks_groups', no_items: 'Вы пока еще не создали ни одной группы задач.' %>
       </div>
     </div>
   </div>

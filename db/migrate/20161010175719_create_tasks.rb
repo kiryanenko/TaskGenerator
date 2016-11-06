@@ -3,7 +3,7 @@ class CreateTasks < ActiveRecord::Migration[5.0]
     create_table :tasks do |t|
       t.belongs_to :user, index: true
       t.string :title, null: false
-      t.text :description
+      t.text :description, limit: 300
       t.text :task, null: false
       t.text :answer
       t.integer :subject
