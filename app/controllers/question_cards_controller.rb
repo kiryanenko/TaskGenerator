@@ -47,6 +47,7 @@ class QuestionCardsController < ApplicationController
   # PATCH/PUT /question_cards/1
   # PATCH/PUT /question_cards/1.json
   def update
+    @question_card = @question_card.do_before_update
     respond_to do |format|
       if @question_card.update(question_card_params)
         format.html { redirect_to @question_card, notice: 'Question card was successfully updated.' }
@@ -61,7 +62,7 @@ class QuestionCardsController < ApplicationController
   # DELETE /question_cards/1
   # DELETE /question_cards/1.json
   def destroy
-    @question_card.destroy
+    @question_card.remove
     respond_to do |format|
       format.html { redirect_to question_cards_url, notice: 'Question card was successfully destroyed.' }
       format.json { head :no_content }

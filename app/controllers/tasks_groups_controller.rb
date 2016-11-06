@@ -52,6 +52,7 @@ class TasksGroupsController < ApplicationController
   # PATCH/PUT /tasks_groups/1
   # PATCH/PUT /tasks_groups/1.json
   def update
+    @tasks_group = @tasks_group.do_before_update
     respond_to do |format|
       if @tasks_group.update(tasks_group_params)
         format.html { redirect_to @tasks_group, notice: 'Tasks group was successfully updated.' }
@@ -86,7 +87,7 @@ class TasksGroupsController < ApplicationController
   # DELETE /tasks_groups/1
   # DELETE /tasks_groups/1.json
   def destroy
-    @tasks_group.destroy
+    @tasks_group.remove
     respond_to do |format|
       format.html { redirect_to tasks_groups_url, notice: 'Tasks group was successfully destroyed.' }
       format.json { head :no_content }

@@ -4,10 +4,23 @@ class QuestionCard < ApplicationRecord
   has_many :variants, through: :generations
   has_many :generated_tasks, through: :variants
 
-  before_destroy do
-    unless self.generations.empty?
+  def remove
+    self.destroy unless if_linked { self.update(removed: true) }
+  end
+
+  def do_before_update
+    if (task = if_linked { Task.create(self.attributes.merge({:id => nil})) }).nil?
+      self
+    else
       self.update(removed: true)
-      throw :abort
+      task
+    end
+  end
+
+  private
+  def if_linked
+    unless self.generations.empty?
+      yield
     end
   end
 end

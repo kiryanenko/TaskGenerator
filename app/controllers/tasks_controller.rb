@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :show, :edit, :destroy]
-  before_action :set_task, only: [:show, :edit, :destroy]
+  before_action :set_task, only: [:show, :edit, :destroy, :update]
 
   # GET /tasks
   # GET /tasks.json
@@ -57,6 +57,7 @@ class TasksController < ApplicationController
   # PATCH/PUT /tasks/1
   # PATCH/PUT /tasks/1.json
   def update
+    @task = @task.do_before_update
     respond_to do |format|
       if @task.update(task_params)
         format.html { redirect_to @task, notice: 'Task was successfully updated.' }
@@ -71,7 +72,7 @@ class TasksController < ApplicationController
   # DELETE /tasks/1
   # DELETE /tasks/1.json
   def destroy
-    @task.destroy
+    @task.remove
     respond_to do |format|
       format.html { redirect_to tasks_url, notice: 'Задача была успешно удалена' }
       format.json { head :no_content }
