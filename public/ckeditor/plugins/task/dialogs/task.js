@@ -34,7 +34,7 @@ CKEDITOR.dialog.add('task', function(editor) {
                         var element = CKEDITOR.dom.element.createFromHtml(
                             '<div class="task" tasks_group_id="'+groupValue+'" task_name="'+taskName+'" ' +
                             'data-title="Блок с задачей № '+taskName+' из группы: '+data.title+'">' +
-                                '<p>' + data.tasks[0].task + '</p>' +
+                                '<p>' + (data.tasks.length > 0 ? data.tasks[0].task : 'В этой группе пока нет задач') + '</p>' +
                             '</div>'
                         );
                         editor.insertElement(element);

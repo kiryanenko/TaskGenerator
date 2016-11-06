@@ -56,29 +56,25 @@ class TasksController < ApplicationController
 
   # PATCH/PUT /tasks/1
   # PATCH/PUT /tasks/1.json
-  # def update
-  #   respond_to do |format|
-  #     if @task.update(task_params)
-  #       format.html { redirect_to @task, notice: 'Task was successfully updated.' }
-  #       format.json { render :show, status: :ok, location: @task }
-  #     else
-  #       format.html { render :edit }
-  #       format.json { render json: @task.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
+  def update
+    respond_to do |format|
+      if @task.update(task_params)
+        format.html { redirect_to @task, notice: 'Task was successfully updated.' }
+        format.json { render :show, status: :ok, location: @task }
+      else
+        format.html { render :edit }
+        format.json { render json: @task.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
   # DELETE /tasks/1
   # DELETE /tasks/1.json
   def destroy
+    @task.destroy
     respond_to do |format|
-      if @task.update(removed: true)
-        format.html { redirect_to tasks_url, notice: 'Task was successfully destroyed.' }
-        format.json { head :no_content }
-      else
-        format.html { render :show }
-        format.json { render json: @task.errors, status: :unprocessable_entity }
-      end
+      format.html { redirect_to tasks_url, notice: 'Задача была успешно удалена' }
+      format.json { head :no_content }
     end
   end
 
