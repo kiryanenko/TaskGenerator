@@ -4,7 +4,10 @@
   <div class="col-lg-8">
     <div class="panel panel-primary">
       <div class="panel-heading">
-        Обзор билетов
+        <table width="100%"><tr>
+          <td>Обзор билетов</td>
+          <td width="70px" align="right"><a href="/question_cards/new" class="btn btn-success btn-xs">Добавить</a></td>
+        </tr></table>
       </div>
       <div class="panel-body">
         <%= render 'list', list: @question_cards, link: 'question_cards', no_items: 'Вы пока еще не создали ни одного белета.' %>
@@ -13,7 +16,10 @@
 
     <div class="panel panel-red">
       <div class="panel-heading">
-        Обзор задач
+        <table width="100%"><tr>
+          <td>Обзор задач</td>
+          <td width="70px" align="right"><a href="/tasks/new" class="btn btn-success btn-xs">Добавить</a></td>
+        </tr></table>
       </div>
       <div class="panel-body">
         <%= render 'list', list: @tasks, link: 'tasks', no_items: 'Вы пока еще не создали ни одной задачи.' %>
@@ -35,7 +41,10 @@
               <% @generations.each do |g| %>
                   <a href="/generations/<%= g.id %>" class="list-group-item list-group-item-action">
                     <span class="pull-right text-muted small"><em><%= g.updated_at.to_formatted_s(:short) %></em></span>
-                    <%= g.title %>
+                    <h5 style="margin: 0px;">
+                      <%= g.title %><br>
+                      <small><%= g.variants.size %> вариантов</small>
+                    </h5>
                   </a>
               <% end %>
             </div>
@@ -47,7 +56,10 @@
 
     <div class="panel panel-info">
       <div class="panel-heading">
-        Обзор групп задач
+        <table width="100%"><tr>
+          <td>Обзор групп задач</td>
+          <td width="70px" align="right"><a href="/tasks_groups/new" class="btn btn-success btn-xs">Добавить</a></td>
+        </tr></table>
       </div>
       <div class="panel-body">
         <%= render 'list', list: @tasks_groups, link: 'tasks_groups', no_items: 'Вы пока еще не создали ни одной группы задач.' %>
