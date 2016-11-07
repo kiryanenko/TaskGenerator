@@ -35,7 +35,7 @@
       <!-- /.panel-heading -->
       <div class="panel-body">
         <% if @generations.size == 0 %>
-            <p><%= no_items %> Сделать это вы можете <a href="/<%= link %>/new">здесь</a></p>
+            <p>Вы пока еще не генерировали белеты</p>
         <% else %>
             <div class="list-group">
               <% @generations.each do |g| %>
