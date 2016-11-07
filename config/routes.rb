@@ -1,16 +1,20 @@
 Rails.application.routes.draw do
   get '/generations/:id/question_cards', to: 'generations#question_cards'
   get '/generations/:id/answers', to: 'generations#answers'
+  get 'generations/my', to: 'generations#my_generations'
   resources :generations
 
+  get 'question_cards/my', to: 'question_cards#my_cards'
   resources :question_cards
 
   match 'tasks_groups/:id/add_task', to: 'tasks_groups#add_task', via: [:put]
   match 'tasks_groups/:id/remove_task', to: 'tasks_groups#remove_task', via: [:delete]
   get 'tasks_groups/my_groups'
+  get 'tasks_groups/my', to: 'tasks_groups#my_groups'
   resources :tasks_groups
 
   get 'tasks/my_tasks'
+  get 'tasks/my', to: 'tasks#my_tasks'
   resources :tasks
 
   devise_for :users

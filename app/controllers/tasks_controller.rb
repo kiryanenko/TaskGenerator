@@ -14,9 +14,11 @@ class TasksController < ApplicationController
   end
 
   # GET /tasks/my_tasks
+  # GET /tasks/my
   def my_tasks
-    @tasks = Task.where(user_id: current_user.id).map { |task| {id: task.id, title: task.title} }
+    @tasks = current_user.tasks.where(removed: false)
     respond_to do |format|
+      format.html
       format.json do
         render json: {type: @tasks.class.to_s, value: @tasks}
       end

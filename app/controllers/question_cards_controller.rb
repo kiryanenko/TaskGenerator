@@ -9,6 +9,16 @@ class QuestionCardsController < ApplicationController
     @question_cards = QuestionCard.all
   end
 
+  def my_cards
+    @question_cards = current_user.question_cards.where(removed: false)
+    respond_to do |format|
+      format.html
+      format.json do
+        render json: @question_cards
+      end
+    end
+  end
+
   # GET /question_cards/1
   # GET /question_cards/1.json
   def show

@@ -1,0 +1,23 @@
+<h1 class="page-header">
+  <table width="100%"><tr>
+    <td>Ваши задачи:</td>
+    <td width="220px" align="right">
+      <a href="<%= new_task_path %>" type="button" class="btn btn-success"><i class="fa fa-plus"></i> Добавить новую</a>
+    </td>
+  </tr></table>
+</h1>
+
+<% if @tasks_groups.size == 0 %>
+    <p>Вы еще не добавили ни одной задачи. Сделать это вы можете <%= link_to 'здесь', new_tasks_group_path %></p>
+<% else %>
+    <div class="list-group">
+      <% @tasks_groups.each do |group| %>
+          <a href="/tasks_groups/<%= group.id %>" class="list-group-item list-group-item-action">
+            <span class="pull-right text-muted small"><em><%= group.updated_at.to_formatted_s(:short) %></em></span>
+            <h4 class="list-group-item-heading"><%= group.title %></h4>
+            <p class="list-group-item-text"><%= group.description %></p>
+          </a>
+      <% end %>
+    </div>
+
+<% end %>

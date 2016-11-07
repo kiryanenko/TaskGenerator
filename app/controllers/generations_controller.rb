@@ -8,6 +8,16 @@ class GenerationsController < ApplicationController
     @generations = Generation.all
   end
 
+  def my_generations
+    @generations = current_user.generations.sort { |a, b| b.updated_at <=> a.updated_at }
+    respond_to do |format|
+      format.html
+      format.json do
+        render json: @generations
+      end
+    end
+  end
+
   # GET /generations/1
   # GET /generations/1.json
   def show
