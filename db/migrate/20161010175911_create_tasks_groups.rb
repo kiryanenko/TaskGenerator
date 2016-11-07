@@ -15,6 +15,6 @@ class CreateTasksGroups < ActiveRecord::Migration[5.0]
       t.belongs_to :task, index: true
     end
     # Добавление индекса уникальности на 2 столбца
-    add_index :tasks_and_groups, [:tasks_group, :task], unique: true
+    add_index :tasks_and_groups, [:tasks_group_id, :task_id], unique: true
   end
 end
