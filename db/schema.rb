@@ -86,6 +86,7 @@ ActiveRecord::Schema.define(version: 20161101140930) do
     t.integer "tasks_group_id"
     t.integer "task_id"
     t.index ["task_id"], name: "index_tasks_and_groups_on_task_id", using: :btree
+    t.index ["tasks_group_id", "task_id"], name: "index_tasks_and_groups_on_tasks_group_id_and_task_id", unique: true, using: :btree
     t.index ["tasks_group_id"], name: "index_tasks_and_groups_on_tasks_group_id", using: :btree
   end
 
