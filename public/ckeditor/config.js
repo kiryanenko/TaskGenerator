@@ -10,7 +10,8 @@ CKEDITOR.editorConfig = function( config ) {
 
 	// Говорим CKEditor, что нужно загрузить наш плагин
 	config.extraPlugins = 'task';
-	config.extraAllowedContent = 'task';
+	// config.extraAllowedContent = 'task[task_id]';
+	config.allowedContent = true;
 
 	config.toolbarGroups = [
 		{ name: 'document', groups: [ 'mode', 'document', 'doctools' ] },

@@ -12,20 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %>
+    <%= f.label 'Название билета' %>
     <%= f.text_field :title, class: 'form-control', placeholder: :title %>
   </div>
     <div class="field">
-      <%= f.label :subject %>
+      <%= f.label 'Предмет' %>
       <%= f.number_field :subject, class: 'form-control', placeholder: :subject %>
     </div>
   <div class="field">
-    <%= f.label :description %>
+    <%= f.label 'Описание' %>
     <%= f.text_area :description, class: 'form-control', placeholder: :description %>
   </div>
 
   <div class="field">
-    <%= f.label :question_card %>
+    <%= f.label 'Текст билета' %>
     <%= f.text_area :question_card, id: "question_card", rows: 15, cols: 80 %>
     <script>
       // Replace the <textarea id="editor1"> with a CKEditor
@@ -34,6 +34,7 @@
     </script>
   </div>
 
+    <br>
   <div class="actions">
     <%= f.submit class: 'btn btn-default'%>
     <%= link_to 'Back', :back %>

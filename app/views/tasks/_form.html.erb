@@ -12,22 +12,22 @@
     <% end %>
 
     <div class="field">
-      <%= f.label :title %>
+      <%= f.label 'Название задачи' %>
       <%= f.text_field :title, class: 'form-control', placeholder: :title%>
     </div>
 
     <div class="field">
-      <%= f.label :subject %>
+      <%= f.label 'Предмет' %>
       <%= f.text_field :subject, class: 'form-control', placeholder: :subject %>
     </div>
 
     <div class="field">
-      <%= f.label :description %>
+      <%= f.label 'Описание' %>
       <%= f.text_area :description, class: 'form-control', placeholder: :description %>
     </div>
 
     <div class="field">
-      <%= f.label :task %>
+      <%= f.label 'Условие задачи' %>
       <%= f.text_area :task, id: "task", rows: 10, cols: 80 %>
       <script>
         // Replace the <textarea id="editor1"> with a CKEditor
@@ -107,7 +107,7 @@
       </script>
     </div>
 
-    <p>
+    <br>
     <div class="actions">
       <%= f.submit class: 'btn btn-default'%>
       <%= link_to 'Back', :back %>

@@ -1,4 +1,4 @@
-<h1 class="page-header">Сгенерированные билеты</h1>
+<h1 class="page-header">Сгенерированные билеты: <%= @generation.title %></h1>
 
 <table width="100%">
   <tr>
@@ -16,10 +16,10 @@
   </tr>
 </table>
 
-<h2><%= @generation.question_card.title %></h2>
+<h3><b>Билет:</b> <%= @generation.question_card.title %></h3>
 <p><b>Предмет:</b> <%= @generation.question_card.subject %></p>
 <p><b>Описание:</b> <%= @generation.question_card.description %></p>
-<p><b>Количество вариантов:</b> <%=  %></p>
+<p><b>Количество вариантов:</b> <%= @generation.variants.size %></p>
 
 <div class="panel panel-primary">
   <div class="panel-heading">

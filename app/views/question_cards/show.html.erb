@@ -32,9 +32,9 @@
     </td>
     <td width="220px" align="right">
       <% if current_user == @question_card.user %>
-        <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
+        <a href="<%= edit_question_card_path(@question_card) %>" type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
           <i class="fa fa-edit"></i>
-        </button>
+        </a>
 
         <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip" title="Удалить">
           <i class="fa fa-times"></i>

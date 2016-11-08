@@ -32,9 +32,9 @@
     </td>
     <td width="220px" align="right">
       <% if current_user == @task.user %>
-          <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
+          <a href="<%= edit_task_path(@task) %>" type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Редактировать">
             <i class="fa fa-edit"></i>
-          </button>
+          </a>
 
           <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip" title="Удалить">
             <i class="fa fa-trash-o"></i>
@@ -105,6 +105,3 @@
     <%= raw @task.answer %>
   </div>
 </div>
-
-<%= link_to 'Edit', edit_task_path(@task) %> |
-<%= link_to 'Back', tasks_path %>

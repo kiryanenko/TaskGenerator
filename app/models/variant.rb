@@ -1,4 +1,4 @@
 class Variant < ApplicationRecord
   belongs_to :generation
-  belongs_to :generated_task
+  has_many :generated_tasks
 end
