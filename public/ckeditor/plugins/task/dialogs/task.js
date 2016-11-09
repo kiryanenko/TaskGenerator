@@ -10,7 +10,7 @@ CKEDITOR.dialog.add('task', function(editor) {
                 var taskName = this.getContentElement('task', 'taskName').getInputElement().getValue();
                 $.ajax({
                     type: 'get',//тип запроса: get,post либо head
-                    url: '../tasks/' + taskValue + '.json',//url адрес файла обработчика
+                    url: '/tasks/' + taskValue + '.json',//url адрес файла обработчика
                     data: {},//параметры запроса
                     response: 'text',//тип возвращаемого ответа text либо xml
                     success: function (data) {//возвращаемый результат от сервера
@@ -27,7 +27,7 @@ CKEDITOR.dialog.add('task', function(editor) {
                 var taskName = this.getContentElement('group', 'taskName').getInputElement().getValue();
                 $.ajax({
                     type: 'get',//тип запроса: get,post либо head
-                    url: '../tasks_groups/'+groupValue+'.json',//url адрес файла обработчика
+                    url: '/tasks_groups/'+groupValue+'.json',//url адрес файла обработчика
                     data: {},//параметры запроса
                     response: 'text',//тип возвращаемого ответа text либо xml
                     success: function (data) {//возвращаемый результат от сервера
@@ -82,7 +82,7 @@ CKEDITOR.dialog.add('task', function(editor) {
             var dialog = this;
             $.ajax({
                 type:'get',//тип запроса: get,post либо head
-                url:'../tasks/my_tasks.json',//url адрес файла обработчика
+                url:'/tasks/my_tasks.json',//url адрес файла обработчика
                 data:{},//параметры запроса
                 response:'text',//тип возвращаемого ответа text либо xml
                 success:function (data) {//возвращаемый результат от сервера
@@ -93,7 +93,7 @@ CKEDITOR.dialog.add('task', function(editor) {
             });
             $.ajax({
                 type:'get',//тип запроса: get,post либо head
-                url:'../tasks_groups/my_groups.json',//url адрес файла обработчика
+                url:'/tasks_groups/my_groups.json',//url адрес файла обработчика
                 data:{},//параметры запроса
                 response:'text',//тип возвращаемого ответа text либо xml
                 success:function (data) {//возвращаемый результат от сервера
