@@ -23,5 +23,7 @@ class CreateVariables < ActiveRecord::Migration[5.0]
       t.float :to
       t.belongs_to :dimension_to, index: true
     end
+    add_foreign_key :variables, :dimensions, coloumn: 'dimension_from_id'
+    add_foreign_key :variables, :dimensions, coloumn: 'dimension_to_id'
   end
 end

@@ -73,9 +73,9 @@
                 <div class="input-group">
                   <span class="input-group-addon">от</span>
                   <table><tr><td>
-                    <%= v.text_field :to, class: 'form-control', placeholder: 'Нижняя граница'%>
+                    <%= v.text_field :from, class: 'form-control', placeholder: 'Нижняя граница'%>
                   </td><td>
-                    <%= v.select(:dimension_to_id, options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control') %>
+                    <%= v.collection_select :dimension_from_id, Dimension.all, :id, :type, class: 'form-control' %>
                   </td></tr></table>
                 </div>
               </div>
@@ -85,9 +85,9 @@
                 <div class="input-group">
                   <span class="input-group-addon">до</span>
                   <table><tr><td>
-                    <%= v.text_field :from, class: 'form-control', placeholder: 'Верхняя граница'%>
+                    <%= v.text_field :to, class: 'form-control', placeholder: 'Верхняя граница'%>
                   </td><td>
-                    <%= v.select :dimension_from_id, options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control'%>
+                    <%= v.collection_select :dimension_to_id, Dimension.all, :id, :type, class: 'form-control' %>
                   </td></tr></table>
                 </div>
               </div>
