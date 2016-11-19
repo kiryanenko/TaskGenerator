@@ -35,68 +35,68 @@
         CKEDITOR.replace( 'task' );
       </script>
     </div>
+    <br>
 
-
-
-
-    <h4><table width="100%"><tr>
-      <td>Переменные</td>
-      <td align="right" width="100px">
-        <button type="button" class="btn btn-success btn-sm">
-          <i class="fa fa-plus"></i> Добавить переменную
-        </button>
-      </td>
-    </tr></table></h4>
-
-    <%= f.fields_for :variables do |v| %>
-        <div class="alert alert-dismissable">
-          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-          <div class="row" style="margin-top: 20px">
-            <div class="col-md-3">
-              <div class="form">
-                <div class="input-group">
-                  <span class="input-group-addon">$</span>
-                  <%= v.text_field :name, class: 'form-control', placeholder: 'Имя переменной'%>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <table width="100%"><tr>
+          <td>Переменные</td>
+          <td align="right" width="100px">
+            <button type="button" class="btn btn-success btn-xs"><i class="fa fa-plus"></i> Добавить переменную</button>
+          </td>
+        </tr></table>
+      </div>
+      <ul class="list-group">
+        <%= f.fields_for :variables do |v| %>
+            <li class="list-group-item variable-form">
+              <button type="button" class="close" onclick="$(this).remove()">×</button>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form">
+                    <div class="input-group">
+                      <span class="input-group-addon">$</span>
+                      <%= v.text_field :name, class: 'form-control', placeholder: 'Имя переменной'%>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="form">
-                <div class="input-group">
-                  <span class="input-group-addon">тип</span>
-                  <%= v.collection_select :variable_type_id, VariableType.all, :id, :type, class: 'form-control' %>
+                <div class="col-md-2">
+                  <div class="form">
+                    <div class="input-group">
+                      <span class="input-group-addon">тип</span>
+                      <%= v.collection_select :variable_type_id, VariableType.all, :id, :type, {}, class: 'form-control' %>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="form">
-                <div class="input-group">
-                  <span class="input-group-addon">от</span>
-                  <table><tr><td>
-                    <%= v.text_field :from, class: 'form-control', placeholder: 'Нижняя граница'%>
-                  </td><td>
-                    <%= v.collection_select :dimension_from_id, Dimension.all, :id, :type, class: 'form-control' %>
-                  </td></tr></table>
+                <div class="col-md-3">
+                  <div class="form">
+                    <div class="input-group">
+                      <span class="input-group-addon">от</span>
+                      <table><tr><td>
+                        <%= v.text_field :from, class: 'form-control', placeholder: 'Нижняя граница'%>
+                      </td><td>
+                        <%= v.collection_select :dimension_from_id, Dimension.all, :id, :type, {}, class: 'form-control' %>
+                      </td></tr></table>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="form">
-                <div class="input-group">
-                  <span class="input-group-addon">до</span>
-                  <table><tr><td>
-                    <%= v.text_field :to, class: 'form-control', placeholder: 'Верхняя граница'%>
-                  </td><td>
-                    <%= v.collection_select :dimension_to_id, Dimension.all, :id, :type, class: 'form-control' %>
-                  </td></tr></table>
+                <div class="col-md-3">
+                  <div class="form">
+                    <div class="input-group">
+                      <span class="input-group-addon">до</span>
+                      <table><tr><td>
+                        <%= v.text_field :to, class: 'form-control', placeholder: 'Верхняя граница'%>
+                      </td><td>
+                        <%= v.collection_select :dimension_to_id, Dimension.all, :id, :type, {}, class: 'form-control' %>
+                      </td></tr></table>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-          </div>
-        </div>
-
-    <% end %>
+              </div>
+            </li>
+        <% end %>
+      </ul>
+    </div>
 
     <div class="field">
       <%= f.label 'Решение' %>
