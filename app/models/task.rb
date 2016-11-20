@@ -1,8 +1,8 @@
 class Task < ApplicationRecord
   has_many :variables
   has_many :calculated_variables
-  accepts_nested_attributes_for :variables
-  accepts_nested_attributes_for :calculated_variables
+  accepts_nested_attributes_for :variables, reject_if: lambda { |attributes| attributes['name'].blank? }
+  accepts_nested_attributes_for :calculated_variables, reject_if: lambda { |attributes| attributes['name'].blank? }
   belongs_to :user
   has_and_belongs_to_many :tasks_groups, join_table: 'tasks_and_groups'
   has_many :generated_tasks

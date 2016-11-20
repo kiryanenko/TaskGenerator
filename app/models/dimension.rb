@@ -1,2 +1,0 @@
-class Dimension < ApplicationRecord
-end

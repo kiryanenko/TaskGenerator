@@ -61,35 +61,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2">
-                  <div class="form">
-                    <div class="input-group">
-                      <span class="input-group-addon">тип</span>
-                      <%= v.collection_select :variable_type_id, VariableType.all, :id, :type, {}, class: 'form-control' %>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="form">
                     <div class="input-group">
                       <span class="input-group-addon">от</span>
-                      <table><tr><td>
-                        <%= v.number_field :from, class: 'form-control', placeholder: 'Нижняя граница'%>
-                      </td><td>
-                        <%= v.collection_select :dimension_from_id, Dimension.all, :id, :type, {}, class: 'form-control' %>
-                      </td></tr></table>
+                      <%= v.text_field :from, class: 'form-control', placeholder: 'Нижняя граница'%>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="form">
                     <div class="input-group">
                       <span class="input-group-addon">до</span>
-                      <table><tr><td>
-                        <%= v.number_field :to, class: 'form-control', placeholder: 'Верхняя граница'%>
-                      </td><td>
-                        <%= v.collection_select :dimension_to_id, Dimension.all, :id, :type, {}, class: 'form-control' %>
-                      </td></tr></table>
+                      <%= v.number_field :to, class: 'form-control', placeholder: 'Верхняя граница'%>
                     </div>
                   </div>
                 </div>
@@ -135,15 +119,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2">
-                  <div class="form">
-                    <div class="input-group">
-                      <span class="input-group-addon">тип</span>
-                      <%= v.collection_select :variable_type_id, VariableType.all, :id, :type, {}, class: 'form-control' %>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                   <div class="form">
                     <div class="input-group">
                       <span class="input-group-addon"><i>f<sub>x</sub></i></span>

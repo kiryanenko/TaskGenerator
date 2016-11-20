@@ -39,17 +39,12 @@ class TasksController < ApplicationController
   # POST /tasks
   # POST /tasks.json
   def create
-    # task = task_params
-    # task[:user_id] = current_user.id
     @task = Task.new(task_params)
     @task.user = current_user
-    # variables = params.require(:task).permit(:variables).reject{ |variable|
-    #   variable[:name] || variable[:type] || variable[:from] == '' || variable[:to] == ''
-    # }
 
     respond_to do |format|
-      if @task.save #&& variables.all?{ |variable| Variable.new(variable).save }
-        format.html { redirect_to @task, notice: 'Task was successfully created.' }
+      if @task.save
+        format.html { redirect_to @task, notice: 'Задача успешно создана!' }
         format.json { render :show, status: :created, location: @task }
       else
         format.html { render :new }
@@ -94,8 +89,8 @@ class TasksController < ApplicationController
     def task_params
       params.require(:task).permit(
           :title, :description, :task, :answer, :subject,
-          variables_attributes: [:name, :variable_type_id, :from, :dimension_from_id, :to, :dimension_to_id],
-          calculated_variables_attributes: [:name, :variable_type_id, :formula]
+          variables_attributes: [:id, :name, :from, :to],
+          calculated_variables_attributes: [:id, :name, :formula]
       )
     end
 end

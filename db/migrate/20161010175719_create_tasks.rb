@@ -6,7 +6,7 @@ class CreateTasks < ActiveRecord::Migration[5.0]
       t.text :description, limit: 300
       t.text :task, null: false
       t.text :answer
-      t.integer :subject
+      t.string :subject
       t.boolean :removed, default: false, null: false
 
       t.timestamps

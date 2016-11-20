@@ -2,7 +2,7 @@ class CreateTasksGroups < ActiveRecord::Migration[5.0]
   def change
     create_table :tasks_groups do |t|
       t.belongs_to :user, index: true
-      t.integer :subject
+      t.string :subject
       t.string :title, null: false
       t.text :description, limit: 300
       t.boolean :removed, default: false, null: false
