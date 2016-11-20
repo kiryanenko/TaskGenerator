@@ -4,9 +4,9 @@
     <% v[:tasks_in_card].each do |t| %>
         <h2>Задача № <%= t[:name] %></h2>
         <h3>Условие:</h3>
-        <%= raw t[:task].task  %>
+        <%= raw t[:task_text]  %>
         <h3>Решение:</h3>
-        <%= raw t[:task].answer  %>
+        <%= raw t[:answer]  %>
     <% end %>
     <hr>
 <% end %>

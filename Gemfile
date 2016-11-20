@@ -53,4 +53,4 @@ gem 'autoprefixer-rails'
 gem 'devise'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
-
+gem 'wolfram-alpha'
