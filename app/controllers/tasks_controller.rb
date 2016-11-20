@@ -28,7 +28,8 @@ class TasksController < ApplicationController
   # GET /tasks/new
   def new
     @task = Task.new
-    2.times { @task.variables.build}
+    2.times { @task.variables.build }
+    1.times { @task.calculated_variables.build }
   end
 
   # GET /tasks/1/edit
