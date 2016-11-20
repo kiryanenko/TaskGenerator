@@ -39,15 +39,16 @@ class TasksController < ApplicationController
   # POST /tasks
   # POST /tasks.json
   def create
-    task = task_params
-    task[:user_id] = current_user.id
-    @task = Task.new(task)
-    variables = params.require(:task).permit(:variables).reject{ |variable|
-      variable[:name] || variable[:type] || variable[:from] == '' || variable[:to] == ''
-    }
+    # task = task_params
+    # task[:user_id] = current_user.id
+    @task = Task.new(task_params)
+    @task.user = current_user
+    # variables = params.require(:task).permit(:variables).reject{ |variable|
+    #   variable[:name] || variable[:type] || variable[:from] == '' || variable[:to] == ''
+    # }
 
     respond_to do |format|
-      if @task.save && variables.all?{ |variable| Variable.new(variable).save }
+      if @task.save #&& variables.all?{ |variable| Variable.new(variable).save }
         format.html { redirect_to @task, notice: 'Task was successfully created.' }
         format.json { render :show, status: :created, location: @task }
       else
@@ -91,6 +92,10 @@ class TasksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.require(:task).permit(:title, :description, :task, :answer, :subject)
+      params.require(:task).permit(
+          :title, :description, :task, :answer, :subject,
+          variables_attributes: [:name, :variable_type_id, :from, :dimension_from_id, :to, :dimension_to_id],
+          calculated_variables_attributes: [:name, :variable_type_id, :formula]
+      )
     end
 end

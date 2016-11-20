@@ -18,9 +18,9 @@ class CreateVariables < ActiveRecord::Migration[5.0]
       t.belongs_to :task, index: true
       t.string :name, null: false
       t.belongs_to :variable_type, index: true
-      t.float :from
+      t.string :from
       t.belongs_to :dimension_from, index: true
-      t.float :to
+      t.string :to
       t.belongs_to :dimension_to, index: true
     end
     add_foreign_key :variables, :dimensions, coloumn: 'dimension_from_id'
