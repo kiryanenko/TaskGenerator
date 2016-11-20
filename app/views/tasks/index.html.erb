@@ -1,39 +1,42 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Tasks</h1>
+<h1 class="page-header">Задачи</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Task</th>
-      <th>Answer</th>
-      <th>Subject</th>
-      <th>Removed</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="list-group">
+  <% @tasks.each do |task| %>
+      <a href="/tasks/<%= task.id %>" class="list-group-item list-group-item-action">
+        <table width="100%"><tr>
+          <td><h3 class="list-group-item-heading"><%= task.title %></h3></td>
+          <td width="100px" align="right">
+            <% if current_user == task.user %>
+                <a href="<%= edit_task_path(task) %>" type="button" class="btn btn-warning btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Редактировать">
+                  <i class="fa fa-edit"></i>
+                </a>
 
-  <tbody>
-    <% @tasks.each do |task| %>
-      <tr>
-        <td><%= task.user %></td>
-        <td><%= task.title %></td>
-        <td><%= task.description %></td>
-        <td><%= task.task %></td>
-        <td><%= task.answer %></td>
-        <td><%= task.subject %></td>
-        <td><%= task.removed %></td>
-        <td><%= link_to 'Show', task %></td>
-        <td><%= link_to 'Edit', edit_task_path(task) %></td>
-        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+                <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip" title="Удалить">
+                  <i class="fa fa-trash-o"></i>
+                </button>
+            <% end %>
+
+            <button type="button" class="btn btn-success btn-circle btn-outline" data-toggle="modal" data-target="#addTaskModal"
+                    data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">
+              <i class="fa fa-plus-square"></i>
+            </button>
+
+            <% unless current_user == task.user %>
+                <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
+                  <i class="fa fa-plus"></i>
+                </button>
+            <% end %>
+          </td>
+        </tr></table>
+        <span class="pull-right text-muted small"><em><%= task.updated_at.to_formatted_s(:short) %></em></span>
+
+        <p class="list-group-item-text"><%= task.description %></p>
+      </a>
+  <% end %>
+</div>
 
 <br>
 
-<%= link_to 'New Task', new_task_path %>
+<%= will_paginate @tasks, renderer: BootstrapPagination::Rails %>

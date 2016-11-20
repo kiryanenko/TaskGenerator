@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161101140930) do
+ActiveRecord::Schema.define(version: 20161120210306) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,14 @@ ActiveRecord::Schema.define(version: 20161101140930) do
     t.integer "variant_id"
     t.index ["task_id"], name: "index_generated_tasks_on_task_id", using: :btree
     t.index ["variant_id"], name: "index_generated_tasks_on_variant_id", using: :btree
+  end
+
+  create_table "generated_variables", force: :cascade do |t|
+    t.integer "generated_task_id"
+    t.integer "variable_id"
+    t.float   "value",             null: false
+    t.index ["generated_task_id"], name: "index_generated_variables_on_generated_task_id", using: :btree
+    t.index ["variable_id"], name: "index_generated_variables_on_variable_id", using: :btree
   end
 
   create_table "generations", force: :cascade do |t|

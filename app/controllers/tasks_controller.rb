@@ -5,7 +5,12 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.all
+    query = params[:query]
+    if query.nil?
+      @tasks = Task.paginate(:page => params[:page], :per_page => 10)
+    else
+      @tasks = Task.search(query).paginate(:page => params[:page], :per_page => 10)
+    end
   end
 
   # GET /tasks/1

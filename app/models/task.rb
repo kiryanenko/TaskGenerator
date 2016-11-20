@@ -1,4 +1,6 @@
 class Task < ApplicationRecord
+  include PgSearch
+
   has_many :variables
   has_many :calculated_variables
   accepts_nested_attributes_for :variables, reject_if: lambda { |attributes| attributes['name'].blank? }
@@ -6,6 +8,8 @@ class Task < ApplicationRecord
   belongs_to :user
   has_and_belongs_to_many :tasks_groups, join_table: 'tasks_and_groups'
   has_many :generated_tasks
+
+  pg_search_scope :search, against: [:title, :description, :subject, :task, :answer]
 
   def remove
     self.destroy unless if_linked { self.update(removed: true) }
