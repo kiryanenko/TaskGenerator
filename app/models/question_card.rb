@@ -9,12 +9,16 @@ class QuestionCard < ApplicationRecord
   end
 
   def do_before_update
-    if (task = if_linked { Task.create(self.attributes.merge({:id => nil})) }).nil?
+    if (card = if_linked { self.create_copy }).nil?
       self
     else
       self.update(removed: true)
-      task
+      card
     end
+  end
+
+  def create_copy
+    return QuestionCard.new(self.attributes.merge({:id => nil}))
   end
 
   private

@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
-  before_filter :authenticate_user!, only: [:new, :edit, :destroy, :my_tasks, :create, :update]
-  before_action :set_task, only: [:show, :edit, :destroy, :update]
+  before_filter :authenticate_user!, only: [:new, :edit, :destroy, :my_tasks, :create, :update, :add_to_me]
+  before_action :set_task, only: [:show, :edit, :destroy, :update, :add_to_me]
   before_action :auth, only: [:edit, :destroy, :update]
 
   # GET /tasks
@@ -51,6 +51,22 @@ class TasksController < ApplicationController
     respond_to do |format|
       if @task.save
         format.html { redirect_to @task, notice: 'Задача успешно создана!' }
+        format.json { render :show, status: :created, location: @task }
+      else
+        format.html { render :new }
+        format.json { render json: @task.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # POST /tasks/1/add_to_me
+  def add_to_me
+    @task = @task.create_copy
+    @task.user = current_user
+
+    respond_to do |format|
+      if @task.save
+        format.html { redirect_to @task, notice: 'Задача успешно добавлена!' }
         format.json { render :show, status: :created, location: @task }
       else
         format.html { render :new }

@@ -49,14 +49,12 @@
           <!--<i class="fa fa-tasks"></i>-->
           <!--</button>-->
           <% unless current_user == @question_card.user %>
-              <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip"
-                      title="Добавить к себе">
+              <a href="<%= question_card_path @question_card %>/add_to_me" class="btn btn-success btn-circle"
+                 data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
                 <i class="fa fa-plus"></i>
-              </button>
+              </a>
           <% end %>
-          <button class="btn btn-primary" data-toggle="modal" data-target="#generateModal">
-            Сгенерировать
-          </button>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#generateModal">Сгенерировать</button>
         </td>
     <% end %>
   </tr></table>

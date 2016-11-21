@@ -11,12 +11,21 @@ class TasksGroup < ApplicationRecord
   end
 
   def do_before_update
-    if (task = if_linked { Task.create(self.attributes.merge({:id => nil})) }).nil?
+    if (group = if_linked { self.create_copy }).nil?
       self
     else
       self.update(removed: true)
-      task
+      group
     end
+  end
+
+  def create_copy
+    g = TasksGroup.new(self.attributes.merge({:id => nil}))
+    g.transaction do
+      g.save!
+      self.tasks.each { |t| g.tasks.create!(t.attributes.merge({:id => nil})) }
+    end
+    return g
   end
 
   private

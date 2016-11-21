@@ -1,6 +1,6 @@
 class QuestionCardsController < ApplicationController
-  before_filter :authenticate_user!, only: [:new, :edit, :destroy, :my_cards, :create, :update]
-  before_action :set_question_card, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: [:new, :edit, :destroy, :my_cards, :create, :update, :add_to_me]
+  before_action :set_question_card, only: [:show, :edit, :update, :destroy, :add_to_me]
   before_action :auth, only: [:edit, :update, :destroy]
 
   require 'nokogiri'
@@ -48,6 +48,22 @@ class QuestionCardsController < ApplicationController
     respond_to do |format|
       if @question_card.save
         format.html { redirect_to @question_card, notice: 'Билет успешно создан.' }
+        format.json { render :show, status: :created, location: @question_card }
+      else
+        format.html { render :new }
+        format.json { render json: @question_card.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # POST /question_card/1/add_to_me
+  def add_to_me
+    @question_card = @question_card.create_copy
+    @question_card.user = current_user
+
+    respond_to do |format|
+      if @question_card.save
+        format.html { redirect_to @question_card, notice: 'Билет успешно добавлен!' }
         format.json { render :show, status: :created, location: @question_card }
       else
         format.html { render :new }

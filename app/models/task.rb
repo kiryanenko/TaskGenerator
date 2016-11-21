@@ -16,12 +16,22 @@ class Task < ApplicationRecord
   end
 
   def do_before_update
-    if (task = if_linked { Task.create(self.attributes.merge({:id => nil})) }).nil?
+    if (task = if_linked { self.create_copy }).nil?
       self
     else
       self.update(removed: true)
       task
     end
+  end
+
+  def create_copy
+    task = Task.new(self.attributes.merge({:id => nil}))
+    task.transaction do
+      task.save!
+      self.variables.each { |v| task.variables.create!(v.attributes.merge({:id => nil})) }
+      self.calculated_variables.each { |v| task.calculated_variables.create!(v.attributes.merge({:id => nil})) }
+    end
+    return task
   end
 
   private

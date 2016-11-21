@@ -1,6 +1,7 @@
 class TasksGroupsController < ApplicationController
-  before_filter :authenticate_user!, only: [:new, :edit, :destroy, :my_groups, :create, :update, :remove_task, :add_task]
-  before_action :set_tasks_group, only: [:show, :edit, :update, :destroy, :add_task, :remove_task]
+  before_filter :authenticate_user!, only: [:new, :edit, :destroy, :my_groups, :create, :update, :remove_task,
+                                            :add_task, :add_to_me]
+  before_action :set_tasks_group, only: [:show, :edit, :update, :destroy, :add_task, :remove_task, :add_to_me]
   before_action :auth, only: [:edit, :update, :destroy, :add_task, :remove_task]
 
   # GET /tasks_groups
@@ -43,6 +44,22 @@ class TasksGroupsController < ApplicationController
     respond_to do |format|
       if @tasks_group.save
         format.html { redirect_to @tasks_group, notice: 'Tasks group was successfully created.' }
+        format.json { render :show, status: :created, location: @tasks_group }
+      else
+        format.html { render :new }
+        format.json { render json: @tasks_group.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # POST /tasks_groups/1/add_to_me
+  def add_to_me
+    @tasks_group = @tasks_group.create_copy
+    @tasks_group.user = current_user
+
+    respond_to do |format|
+      if @tasks_group.save
+        format.html { redirect_to @tasks_group, notice: 'Задача успешно добавлена!' }
         format.json { render :show, status: :created, location: @tasks_group }
       else
         format.html { render :new }

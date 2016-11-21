@@ -8,7 +8,7 @@
     <% unless current_user.nil? %>
         <td width="220px" align="right">
           <% if current_user == @task.user %>
-              <a href="<%= edit_task_path(@task) %>" type="button" class="btn btn-warning btn-circle"
+              <a href="<%= edit_task_path(@task) %>" class="btn btn-warning btn-circle"
                  data-placement="bottom" data-toggle="tooltip" title="Редактировать">
                 <i class="fa fa-edit"></i>
               </a>
@@ -24,10 +24,10 @@
           </button>
 
           <% unless current_user == @task.user %>
-              <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip"
-                      title="Добавить к себе">
+              <a href="<%= task_path @task %>/add_to_me" class="btn btn-success btn-circle" data-placement="bottom"
+                 data-toggle="tooltip" title="Добавить к себе">
                 <i class="fa fa-plus"></i>
-              </button>
+              </a>
           <% end %>
           <!--<button class="btn btn-primary" data-toggle="modal" data-target="#generateModal">-->
           <!--Сгенерировать-->
@@ -53,10 +53,7 @@
   </tr>
 </table>
 
-<h5>
-  <strong>Предмет: </strong>
-  <%= @task.subject %>
-</h5>
+<h5><strong>Предмет: </strong><%= @task.subject %></h5>
 
 <div class="panel panel-default">
   <div class="panel-heading">
