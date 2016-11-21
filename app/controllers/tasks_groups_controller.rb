@@ -1,6 +1,7 @@
 class TasksGroupsController < ApplicationController
-  before_filter :authenticate_user!, only: [:new, :show, :edit, :destroy, :my_groups]
+  before_filter :authenticate_user!, only: [:new, :edit, :destroy, :my_groups, :create, :update, :remove_task, :add_task]
   before_action :set_tasks_group, only: [:show, :edit, :update, :destroy, :add_task, :remove_task]
+  before_action :auth, only: [:edit, :update, :destroy, :add_task, :remove_task]
 
   # GET /tasks_groups
   # GET /tasks_groups.json
@@ -92,6 +93,12 @@ class TasksGroupsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to tasks_groups_url, notice: 'Tasks group was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def auth
+    unless current_user == @tasks_group.user
+      redirect_to '/', alert: 'У Вас нет прав.'
     end
   end
 

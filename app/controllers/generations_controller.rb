@@ -1,6 +1,7 @@
 class GenerationsController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, only: [:create, :destroy, :my_generations]
   before_action :set_generation, only: [:show, :destroy, :question_cards, :answers]
+  before_action :auth, only: [:destroy]
 
   # GET /generations
   # GET /generations.json
@@ -157,6 +158,12 @@ class GenerationsController < ApplicationController
     response = client.query ex
     result = response.find { |pod| pod.title == "Result" }
     return result.subpods[0].plaintext
+  end
+
+  def auth
+    unless current_user == @generation.user
+      redirect_to '/', alert: 'У Вас нет прав.'
+    end
   end
 
   private

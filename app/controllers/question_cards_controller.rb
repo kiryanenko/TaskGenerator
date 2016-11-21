@@ -1,5 +1,7 @@
 class QuestionCardsController < ApplicationController
-  before_action :set_question_card, only: [:show, :edit, :update, :destroy, :generate]
+  before_filter :authenticate_user!, only: [:new, :edit, :destroy, :my_cards, :create, :update]
+  before_action :set_question_card, only: [:show, :edit, :update, :destroy]
+  before_action :auth, only: [:edit, :update, :destroy]
 
   require 'nokogiri'
 
@@ -76,6 +78,12 @@ class QuestionCardsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to question_cards_url, notice: 'Question card was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def auth
+    unless current_user == @tasks_group.user
+      redirect_to '/', alert: 'У Вас нет прав.'
     end
   end
 

@@ -3,26 +3,31 @@
     <td>
       <b>Группа задач:</b> <%= @tasks_group.title %>
     </td>
-    <td width="200px" align="right">
-      <% if current_user == @tasks_group.user %>
-          <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip" title="Изменить">
-            <i class="fa fa-edit"></i>
-          </button>
+    <% unless current_user.nil? %>
+        <td width="200px" align="right">
+          <% if current_user == @tasks_group.user %>
+              <button type="button" class="btn btn-warning btn-circle" data-placement="bottom" data-toggle="tooltip"
+                      title="Изменить">
+                <i class="fa fa-edit"></i>
+              </button>
 
-          <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip" title="Удалить">
-            <i class="fa fa-trash-o"></i>
-          </button>
-      <% end %>
+              <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip"
+                      title="Удалить">
+                <i class="fa fa-trash-o"></i>
+              </button>
+          <% end %>
 
-      <!--<button type="button" class="btn btn-info btn-circle btn-outline" data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">-->
-      <!--<i class="fa fa-tasks"></i>-->
-      <!--</button>-->
-      <% unless current_user == @tasks_group.user %>
-          <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
-            <i class="fa fa-plus"></i>
-          </button>
-      <% end %>
-    </td>
+          <!--<button type="button" class="btn btn-info btn-circle btn-outline" data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">-->
+          <!--<i class="fa fa-tasks"></i>-->
+          <!--</button>-->
+          <% unless current_user == @tasks_group.user %>
+              <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip"
+                      title="Добавить к себе">
+                <i class="fa fa-plus"></i>
+              </button>
+          <% end %>
+        </td>
+    <% end %>
   </tr></table>
 </h1>
 
@@ -36,7 +41,7 @@
     </td>
     <td>
       <p style="text-align: right;">
-          <%= @tasks_group.created_at %>
+        <%= @tasks_group.created_at %>
       </p>
     </td>
   </tr>
@@ -65,26 +70,26 @@
     <div class="panel-group" id="tasks_in_group">
       <%= 'В данную группу еще не добавлены задачи' if @tasks_group.tasks.size == 0 %>
       <% @tasks_group.tasks.each_with_index do |task, i| %>
-        <div class="panel panel-default" id="task_<%= task.id %>">
-          <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#tasks_in_group" href="#collapse<%= i %>">
-                    <%= task.title %>
-                  </a>
-                    <button type="button" class="close" aria-hidden="true" data-toggle="confirmation"
-                            data-on-confirm="remove_task" group="<%= @tasks_group.id %>" task_id="<%= task.id %>"
-                            data-placement="left" title="Вы уверены, что хотите убрать задачу из группы?">×</button></a>
-                </h4>
-          </div>
-          <div id="collapse<%= i %>" class="panel-collapse collapse <%= 'in' if i == 0 %>">
-            <div class="panel-body">
-              <%= task.description %>
-              <div style="padding-top: 10px;">
-                <a href="/tasks/<%= task.id %>" ><button type="button" class="btn btn-default btn-sm">Перейти к задаче</button></a>
+          <div class="panel panel-default" id="task_<%= task.id %>">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#tasks_in_group" href="#collapse<%= i %>">
+                  <%= task.title %>
+                </a>
+                <button type="button" class="close" aria-hidden="true" data-toggle="confirmation"
+                        data-on-confirm="remove_task" group="<%= @tasks_group.id %>" task_id="<%= task.id %>"
+                        data-placement="left" title="Вы уверены, что хотите убрать задачу из группы?">×</button></a>
+              </h4>
+            </div>
+            <div id="collapse<%= i %>" class="panel-collapse collapse <%= 'in' if i == 0 %>">
+              <div class="panel-body">
+                <%= task.description %>
+                <div style="padding-top: 10px;">
+                  <a href="/tasks/<%= task.id %>" ><button type="button" class="btn btn-default btn-sm">Перейти к задаче</button></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       <% end %>
     </div>
   </div>

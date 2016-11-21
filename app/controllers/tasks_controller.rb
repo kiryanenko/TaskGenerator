@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
-  before_filter :authenticate_user!, only: [:new, :show, :edit, :destroy]
+  before_filter :authenticate_user!, only: [:new, :edit, :destroy, :my_tasks, :create, :update]
   before_action :set_task, only: [:show, :edit, :destroy, :update]
+  before_action :auth, only: [:edit, :destroy, :update]
 
   # GET /tasks
   # GET /tasks.json
@@ -80,6 +81,12 @@ class TasksController < ApplicationController
     respond_to do |format|
       format.html { redirect_to tasks_url, notice: 'Задача была успешно удалена' }
       format.json { head :no_content }
+    end
+  end
+
+  def auth
+    unless current_user == @task.user
+      redirect_to '/', alert: 'У Вас нет прав.'
     end
   end
 
