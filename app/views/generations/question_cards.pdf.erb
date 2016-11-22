@@ -1,4 +1,10 @@
 <meta charset="UTF-8">
 <% @cards.each do |card| %>
-  <%= raw card %>
+    <%= raw card %>
+    <% case params[:page_layout].to_i %>
+      <% when 0 %>
+          <hr>
+      <% when 1 %>
+          <div style="page-break-after: always"></div>
+    <% end %>
 <% end %>

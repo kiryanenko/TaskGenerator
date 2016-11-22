@@ -5,7 +5,7 @@ function add_task() {
 
     $.ajax({
         type: 'put',//тип запроса: get,post либо head
-        url: '../tasks_groups/'+group+'/add_task.json',//url адрес файла обработчика
+        url: '/tasks_groups/'+group+'/add_task.json',//url адрес файла обработчика
         data: { task_id: task_id },//параметры запроса
         response: 'text',//тип возвращаемого ответа text либо xml
         success: function (data) {//возвращаемый результат от сервера
@@ -23,7 +23,7 @@ function remove_task() {
 
     $.ajax({
         type: 'delete',//тип запроса: get,post либо head
-        url: '../tasks_groups/'+group+'/remove_task.json',//url адрес файла обработчика
+        url: '/tasks_groups/'+group+'/remove_task.json',//url адрес файла обработчика
         data: { task_id: task_id },//параметры запроса
         response: 'text',//тип возвращаемого ответа text либо xml
         success: function (data) {//возвращаемый результат от сервера

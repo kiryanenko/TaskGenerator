@@ -39,10 +39,11 @@ class GenerationsController < ApplicationController
     end
 
     respond_to do |format|
-      format.html
+      format.html { render layout: false }
       format.pdf do
-        render pdf: "question_card"   # Excluding ".pdf" extension.
-
+        orientation = params[:orientation] ? 'Portrait' : 'Landscape'
+        render pdf: "question_card",   # Excluding ".pdf" extension.
+          orientation: orientation
       end
     end
   end
@@ -79,10 +80,11 @@ class GenerationsController < ApplicationController
     end
 
     respond_to do |format|
-      format.html
+      format.html { render layout: false }
       format.pdf do
-        render pdf: "answers"   # Excluding ".pdf" extension.
-
+        orientation = params[:orientation] ? 'Portrait' : 'Landscape'
+        render pdf: "answers",   # Excluding ".pdf" extension.
+          orientation: orientation
       end
     end
   end
@@ -151,7 +153,7 @@ class GenerationsController < ApplicationController
     generated_variables.each { |v, res| ex.gsub!('$' + v, res.to_s) }
 
     options = { "format" => "plaintext" }
-    client = WolframAlpha::Client.new "UUHYPG-WUPR2YEXLQ", options
+    client = WolframAlpha::Client.new Rails.configuration.wolfram_api, options
     response = client.query ex + '+0'
     result = response.find { |pod| pod.title == "Result" }
     return result.subpods[0].plaintext

@@ -11,9 +11,10 @@
         <%= form_tag("/generations", method: 'post', id: 'form-generator') do %>
             <%= hidden_field_tag :question_card_id, @question_card.id %>
             <%= label_tag('Заголовок') %>
-            <%= text_field_tag :title, 1, class: 'form-control', placeholder: '(Сгенерированные задачи для дз)'  %><br>
+            <%= text_field_tag :title, '', class: 'form-control', placeholder: 'Сгенерированные задачи для дз'  %><br>
             <%= label_tag('Количество вариантов') %>
-            <%= number_field_tag :number_variants, 1, class: 'form-control' %>
+            <%= number_field_tag :number_variants, 1, class: 'form-control', min: 1,
+                                 max: Rails.configuration.max_variants %>
         <% end %>
       </div>
       <div class="modal-footer">
@@ -70,7 +71,7 @@
     </td>
     <td>
       <p style="text-align: right;">
-        <%= @question_card.created_at %>
+        <%= @question_card.created_at.to_formatted_s(:long) %>
       </p>
     </td>
   </tr>

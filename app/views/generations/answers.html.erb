@@ -8,5 +8,11 @@
         <h3>Решение:</h3>
         <%= raw t[:answer]  %>
     <% end %>
-    <hr>
+
+    <% case params[:page_layout].to_i %>
+      <% when 0 %>
+        <hr>
+      <% when 1 %>
+        <div style="page-break-after: always"></div>
+    <% end %>
 <% end %>

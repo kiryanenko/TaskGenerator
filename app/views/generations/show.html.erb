@@ -10,7 +10,7 @@
     </td>
     <td>
       <p style="text-align: right;">
-        <%= @generation.created_at %>
+        <%= @generation.created_at.to_formatted_s(:long) %>
       </p>
     </td>
   </tr>
@@ -45,19 +45,16 @@
           <input type="checkbox" name="orientation" data-off-text="Альбомная" data-on-text="Книжная" data-label-text="Ориентация" checked><br><br>
           <script>$("[name='orientation']").bootstrapSwitch();</script>
           <%= label_tag('Компановка на странице') %>
-          <%= select_tag :page_layout_id,  options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control' %>
+          <%= select_tag :page_layout, options_for_select(Rails.configuration.page_layouts), class: 'form-control' %>
               <br>
               <button type="submit" class="btn btn-success btn-block"><i class="fa fa-file-pdf-o"></i> Сгенерировать PDF'</button>
           <% end %>
         </div>
         </div><br>
-        <div class="panel panel-info">
-          <div class="panel-heading">
-            Предпросмотр
-          </div>
-          <div class="panel-body">
-          <%= raw @generation.question_card.question_card %>
-            </div>
+        <div class="panel panel-info" id="view-question_cards">
+          <div class="panel-heading"><span class="view-status"></span> Предпросмотр</div>
+          <div class="panel-body view-result" ></div>
+          <script>get_html("view-question_cards", '<%= generation_path(@generation) + '/question_cards' %>')</script>
         </div>
       </div>
 
@@ -69,19 +66,16 @@
                 <input type="checkbox" name="orientation" data-off-text="Альбомная" data-on-text="Книжная" data-label-text="Ориентация" checked><br><br>
                 <script>$("[name='orientation']").bootstrapSwitch();</script>
                 <%= label_tag('Компановка на странице') %>
-                <%= select_tag :page_layout_id,  options_for_select([['Lisbon', 1], ['Madrid', 2]]), class: 'form-control' %>
+                <%= select_tag :page_layout, options_for_select(Rails.configuration.page_layouts), class: 'form-control' %>
                 <br>
                 <button type="submit" class="btn btn-success btn-block"><i class="fa fa-file-pdf-o"></i> Сгенерировать PDF'</button>
             <% end %>
           </div>
         </div><br>
-        <div class="panel panel-info">
-          <div class="panel-heading">
-            Предпросмотр
-          </div>
-          <div class="panel-body">
-            <%= raw @generation.question_card.question_card %>
-          </div>
+        <div class="panel panel-info" id="view-answers">
+          <div class="panel-heading"><span class="view-status"></span> Предпросмотр</div>
+          <div class="panel-body view-result" ></div>
+          <script>get_html("view-answers", '<%= generation_path(@generation) + '/answers' %>')</script>
         </div>
       </div>
     </div>
