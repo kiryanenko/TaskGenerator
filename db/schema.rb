@@ -112,8 +112,9 @@ ActiveRecord::Schema.define(version: 20161120210306) do
   create_table "variables", force: :cascade do |t|
     t.integer "task_id"
     t.string  "name",    null: false
-    t.string  "from",    null: false
-    t.string  "to",      null: false
+    t.float   "from",    null: false
+    t.float   "to",      null: false
+    t.integer "round"
     t.index ["task_id"], name: "index_variables_on_task_id", using: :btree
   end
 

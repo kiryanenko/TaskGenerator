@@ -61,19 +61,27 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <div class="form">
                     <div class="input-group">
                       <span class="input-group-addon">от</span>
-                      <%= v.text_field :from, class: 'form-control', placeholder: 'Нижняя граница'%>
+                      <%= v.number_field :from, class: 'form-control', placeholder: 'Нижняя граница', step: 'any' %>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <div class="form">
                     <div class="input-group">
                       <span class="input-group-addon">до</span>
-                      <%= v.number_field :to, class: 'form-control', placeholder: 'Верхняя граница'%>
+                      <%= v.number_field :to, class: 'form-control', placeholder: 'Верхняя граница', step: 'any' %>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form">
+                    <div class="input-group">
+                      <span class="input-group-addon">0.0</span>
+                      <%= v.number_field :round, class: 'form-control', placeholder: 'Округление'%>
                     </div>
                   </div>
                 </div>

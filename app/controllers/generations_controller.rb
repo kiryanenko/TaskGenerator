@@ -60,7 +60,7 @@ class GenerationsController < ApplicationController
         answer = t.answer
         generated_variables = gen_task.generated_variables.map { |var| [var.variable.name, var.value] }.to_h
         t.calculated_variables.each do |var|
-          res = calculate(var.formula, generated_variables).to_f
+          res = calculate(var.formula, generated_variables)
           generated_variables[var.name] = res
           answer.gsub!('$' + var.name, res)
         end
@@ -108,13 +108,10 @@ class GenerationsController < ApplicationController
           end
           generated_task = GeneratedTask.create!(variant: variant, task_in_card: task[:id].to_i, task_id: task_id)
 
-          generated_variables = {}
           generated_task.task.variables.each do |v|
-            from = calculate(v.from, generated_variables).to_f
-            to = calculate(v.to, generated_variables).to_f
             rnd = Random.new
-            res = rnd.rand(from..to)
-            generated_variables[v.name] = res
+            res = rnd.rand(v.from .. v.to)
+            res = res.round(v.round) unless v.round.nil?
             GeneratedVariable.create!(generated_task: generated_task, variable: v, value: res)
           end
         end
@@ -145,17 +142,17 @@ class GenerationsController < ApplicationController
   def generate_task_text(generated_task)
     task_text = generated_task.task.task
     generated_task.generated_variables.each do |variable|
-      task_text.gsub!('$' + variable.variable.name, variable.value)
+      task_text.gsub!('$' + variable.variable.name, variable.value.to_s)
     end
     return task_text
   end
 
   def calculate(ex, generated_variables)
-    generated_variables.each { |v, res| ex.gsub!('$' + v, res) }
+    generated_variables.each { |v, res| ex.gsub!('$' + v, res.to_s) }
 
     options = { "format" => "plaintext" }
     client = WolframAlpha::Client.new "UUHYPG-WUPR2YEXLQ", options
-    response = client.query ex
+    response = client.query ex + '+0'
     result = response.find { |pod| pod.title == "Result" }
     return result.subpods[0].plaintext
   end

@@ -98,7 +98,7 @@ class QuestionCardsController < ApplicationController
   end
 
   def auth
-    unless current_user == @tasks_group.user
+    unless current_user == @question_card.user
       redirect_to '/', alert: 'У Вас нет прав.'
     end
   end

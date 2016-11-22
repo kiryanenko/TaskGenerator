@@ -117,7 +117,7 @@ class TasksController < ApplicationController
     def task_params
       params.require(:task).permit(
           :title, :description, :task, :answer, :subject,
-          variables_attributes: [:id, :name, :from, :to],
+          variables_attributes: [:id, :name, :from, :to, :round],
           calculated_variables_attributes: [:id, :name, :formula]
       )
     end
