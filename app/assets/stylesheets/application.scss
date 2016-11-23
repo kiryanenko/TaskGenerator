@@ -17,6 +17,12 @@
 @import "bootstrap";
 @import "bootstrap-switch";
 
+.btn-circle.btn-xs {
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+}
+
 .glyphicon-refresh-animate {
   -animation: spin .7s infinite linear;
   -ms-animation: spin .7s infinite linear;
@@ -37,4 +43,13 @@
 @-moz-keyframes spinm {
   from { -moz-transform: rotate(0deg);}
   to { -moz-transform: rotate(360deg);}
+}
+
+.list-group-item-title {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.list-group-item-description {
+  margin-bottom: 5px;
 }

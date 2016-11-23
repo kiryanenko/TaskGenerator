@@ -2,37 +2,59 @@
 
 <h1 class="page-header">Задачи</h1>
 
+<%= form_tag("/tasks", method: "get") do %>
+    <div class="input-group">
+      <%= text_field_tag :query, params[:query], class: "form-control ui-autocomplete-input", placeholder: "Поиск на сайте" %>
+      <span class="input-group-btn">
+			<button type="submit" class="btn btn-default"><i class="fa fa-search"></i> Найти</button>
+  </span>
+    </div>
+<% end %>
+<br><br>
+
 <div class="list-group">
   <% @tasks.each do |task| %>
       <a href="/tasks/<%= task.id %>" class="list-group-item list-group-item-action">
-        <table width="100%"><tr>
-          <td><h3 class="list-group-item-heading"><%= task.title %></h3></td>
-          <td width="100px" align="right">
-            <% if current_user == task.user %>
-                <a href="<%= edit_task_path(task) %>" type="button" class="btn btn-warning btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Редактировать">
-                  <i class="fa fa-edit"></i>
-                </a>
+        <table class="list-group-item-title"><tr><td>
+            <div style="float: right">
+            <% unless current_user.nil? %>
+                <% if current_user == task.user %>
+                    <a href="<%= edit_task_path(task) %>" type="button" class="btn btn-warning btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Редактировать">
+                      <i class="fa fa-edit"></i>
+                    </a>
 
-                <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip" title="Удалить">
-                  <i class="fa fa-trash-o"></i>
+                    <button type="button" class="btn btn-danger btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Удалить">
+                      <i class="fa fa-trash-o"></i>
+                    </button>
+                <% end %>
+
+                <button type="button" class="btn btn-success btn-circle btn-outline btn-xs" data-toggle="modal" data-target="#addTaskModal"
+                        data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">
+                  <i class="fa fa-plus-square"></i>
                 </button>
-            <% end %>
 
-            <button type="button" class="btn btn-success btn-circle btn-outline" data-toggle="modal" data-target="#addTaskModal"
-                    data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">
-              <i class="fa fa-plus-square"></i>
-            </button>
+                <% unless current_user == task.user %>
+                    <button type="button" class="btn btn-success btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                <% end %>
+            <% end %></div>
+            <h3 class="list-group-item-heading "><%= task.title %></h3>
+        </td></tr></table>
 
-            <% unless current_user == task.user %>
-                <button type="button" class="btn btn-success btn-circle" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
-                  <i class="fa fa-plus"></i>
-                </button>
-            <% end %>
-          </td>
-        </tr></table>
-        <span class="pull-right text-muted small"><em><%= task.updated_at.to_formatted_s(:short) %></em></span>
+        <p class="list-group-item-text list-group-item-description"><%= task.description %></p>
 
-        <p class="list-group-item-text"><%= task.description %></p>
+        <table width="100%">
+          <tr>
+            <td>
+              <small><i><b>Предмет:</b> <%= task.subject %></i></small><br>
+              <%= task.user.email %>
+            </td>
+            <td width="80px" valign="bottom">
+              <span class="pull-right text-muted small"><em><%= task.updated_at.to_formatted_s(:short) %></em></span>
+            </td>
+          </tr>
+        </table>
       </a>
   <% end %>
 </div>

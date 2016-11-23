@@ -7,7 +7,7 @@ class TasksController < ApplicationController
   # GET /tasks.json
   def index
     query = params[:query]
-    if query.nil?
+    if query.nil? or query.blank?
       @tasks = Task.paginate(:page => params[:page], :per_page => 10)
     else
       @tasks = Task.search(query).paginate(:page => params[:page], :per_page => 10)
