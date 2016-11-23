@@ -8,7 +8,12 @@ class QuestionCardsController < ApplicationController
   # GET /question_cards
   # GET /question_cards.json
   def index
-    @question_cards = QuestionCard.all
+    query = params[:query]
+    if query.nil? or query.blank?
+      @question_cards = QuestionCard.paginate(:page => params[:page], :per_page => 10)
+    else
+      @question_cards = QuestionCard.search(query).paginate(:page => params[:page], :per_page => 10)
+    end
   end
 
   def my_cards

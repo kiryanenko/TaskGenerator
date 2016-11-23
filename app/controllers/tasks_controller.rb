@@ -8,9 +8,9 @@ class TasksController < ApplicationController
   def index
     query = params[:query]
     if query.nil? or query.blank?
-      @tasks = Task.paginate(:page => params[:page], :per_page => 10)
+      @tasks = Task.where(removed: false).paginate(:page => params[:page], :per_page => 10)
     else
-      @tasks = Task.search(query).paginate(:page => params[:page], :per_page => 10)
+      @tasks = Task.search(query).where(removed: false).paginate(:page => params[:page], :per_page => 10)
     end
   end
 

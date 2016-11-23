@@ -1,8 +1,12 @@
 class QuestionCard < ApplicationRecord
+  include PgSearch
+
   belongs_to :user
   has_many :generations
   has_many :variants, through: :generations
   has_many :generated_tasks, through: :variants
+
+  pg_search_scope :search, against: [:title, :description, :subject, :question_card]
 
   def remove
     self.destroy unless if_linked { self.update(removed: true) }

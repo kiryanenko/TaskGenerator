@@ -1,37 +1,63 @@
-<p id="notice"><%= notice %></p>
+<h1 class="page-header">Билеты</h1>
 
-<h1>Question Cards</h1>
+<%= form_tag("/question_cards", method: "get") do %>
+    <div class="input-group">
+      <%= text_field_tag :query, params[:query], class: "form-control ui-autocomplete-input",
+                         placeholder: "Поиск на сайте" %>
+      <span class="input-group-btn">
+			  <button type="submit" class="btn btn-default"><i class="fa fa-search"></i> Найти</button>
+      </span>
+    </div><br>
 
-<table>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th>Subject</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Question card</th>
-      <th>Removed</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <ul class="nav nav-pills">
+      <li><button class="btn btn-primary btn-outline" type="submit" formaction="/tasks">Задачи</button></li>
+      <li class="pill-buttons"><button class="btn btn-primary" type="submit" formaction="/question_cards">Билеты
+      </button></li>
+      <li><button class="btn btn-primary btn-outline" type="submit" formaction="/tasks_groups">Группы задач</button>
+      </li>
+    </ul>
+<% end %>
+<br><br>
 
-  <tbody>
-    <% @question_cards.each do |question_card| %>
-      <tr>
-        <td><%= question_card.user %></td>
-        <td><%= question_card.subject %></td>
-        <td><%= question_card.title %></td>
-        <td><%= question_card.description %></td>
-        <td><%= question_card.question_card %></td>
-        <td><%= question_card.removed %></td>
-        <td><%= link_to 'Show', question_card %></td>
-        <td><%= link_to 'Edit', edit_question_card_path(question_card) %></td>
-        <td><%= link_to 'Destroy', question_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="list-group">
+  <% @question_cards.each do |card| %>
+      <a href="<%= question_card_path card %>" class="list-group-item list-group-item-action">
+        <table class="list-group-item-title"><tr><td>
+          <div style="float: right">
+            <% unless current_user.nil? %>
+                <% if current_user == card.user %>
+                    <a href="<%= edit_question_card_path(card) %>" type="button" class="btn btn-warning btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Редактировать">
+                      <i class="fa fa-edit"></i>
+                    </a>
+                    <button type="button" class="btn btn-danger btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Удалить">
+                      <i class="fa fa-trash-o"></i>
+                    </button>
+                <% else %>
+                    <button type="button" class="btn btn-success btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                <% end %>
+            <% end %></div>
+          <h3 class="list-group-item-heading "><%= card.title %></h3>
+        </td></tr></table>
+
+        <p class="list-group-item-text list-group-item-description"><%= card.description %></p>
+
+        <table width="100%">
+          <tr>
+            <td>
+              <small><i><b>Предмет:</b> <%= card.subject %></i></small><br>
+              <small><i><a target="_blank" href="http://<%= card.user.email %>"><%= card.user.email %></a></i></small>
+            </td>
+            <td width="80px" valign="bottom">
+              <span class="pull-right text-muted small"><em><%= card.updated_at.to_formatted_s(:short) %></em></span>
+            </td>
+          </tr>
+        </table>
+      </a>
+  <% end %>
+</div>
 
 <br>
 
-<%= link_to 'New Question Card', new_question_card_path %>
+<%= will_paginate @question_cards, renderer: BootstrapPagination::Rails %>

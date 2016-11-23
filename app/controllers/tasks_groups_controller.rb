@@ -7,7 +7,12 @@ class TasksGroupsController < ApplicationController
   # GET /tasks_groups
   # GET /tasks_groups.json
   def index
-    @tasks_groups = TasksGroup.all
+    query = params[:query]
+    if query.nil? or query.blank?
+      @tasks_groups = TasksGroup.where(removed: false).paginate(:page => params[:page], :per_page => 10)
+    else
+      @tasks_groups = TasksGroup.search(query).where(removed: false).paginate(:page => params[:page], :per_page => 10)
+    end
   end
 
   # GET /tasks_groups/my_groups.json

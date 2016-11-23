@@ -1,14 +1,21 @@
-<p id="notice"><%= notice %></p>
-
 <h1 class="page-header">Задачи</h1>
 
 <%= form_tag("/tasks", method: "get") do %>
     <div class="input-group">
       <%= text_field_tag :query, params[:query], class: "form-control ui-autocomplete-input", placeholder: "Поиск на сайте" %>
       <span class="input-group-btn">
-			<button type="submit" class="btn btn-default"><i class="fa fa-search"></i> Найти</button>
-  </span>
-    </div>
+			  <button type="submit" class="btn btn-default"><i class="fa fa-search"></i> Найти</button>
+      </span>
+    </div><br>
+
+    <ul class="nav nav-pills">
+      <li><button class="btn btn-primary" type="submit" formaction="/tasks">Задачи</button></li>
+      <li class="pill-buttons"><button class="btn btn-primary btn-outline" type="submit" formaction="/question_cards">
+        Билеты
+      </button></li>
+      <li><button class="btn btn-primary btn-outline" type="submit" formaction="/tasks_groups">Группы задач</button>
+      </li>
+    </ul>
 <% end %>
 <br><br>
 
@@ -19,22 +26,18 @@
             <div style="float: right">
             <% unless current_user.nil? %>
                 <% if current_user == task.user %>
-                    <a href="<%= edit_task_path(task) %>" type="button" class="btn btn-warning btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Редактировать">
+                    <a href="<%= edit_task_path(task) %>" type="button" class="btn btn-warning btn-circle btn-xs"
+                       data-placement="bottom" data-toggle="tooltip" title="Редактировать">
                       <i class="fa fa-edit"></i>
                     </a>
 
-                    <button type="button" class="btn btn-danger btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Удалить">
+                    <button type="button" class="btn btn-danger btn-circle btn-xs" data-placement="bottom"
+                            data-toggle="tooltip" title="Удалить">
                       <i class="fa fa-trash-o"></i>
                     </button>
-                <% end %>
-
-                <button type="button" class="btn btn-success btn-circle btn-outline btn-xs" data-toggle="modal" data-target="#addTaskModal"
-                        data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">
-                  <i class="fa fa-plus-square"></i>
-                </button>
-
-                <% unless current_user == task.user %>
-                    <button type="button" class="btn btn-success btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
+                <% else %>
+                    <button type="button" class="btn btn-success btn-circle btn-xs" data-placement="bottom"
+                            data-toggle="tooltip" title="Добавить к себе">
                       <i class="fa fa-plus"></i>
                     </button>
                 <% end %>
@@ -48,7 +51,7 @@
           <tr>
             <td>
               <small><i><b>Предмет:</b> <%= task.subject %></i></small><br>
-              <%= task.user.email %>
+              <small><i><a target="_blank" href="http://<%= task.user.email %>"><%= task.user.email %></a></i></small>
             </td>
             <td width="80px" valign="bottom">
               <span class="pull-right text-muted small"><em><%= task.updated_at.to_formatted_s(:short) %></em></span>
