@@ -13,9 +13,11 @@
                 <i class="fa fa-edit"></i>
               </a>
 
-              <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip" title="Удалить">
-                <i class="fa fa-trash-o"></i>
-              </button>
+                <a href="<%= task_path @task %>" class="btn btn-danger btn-circle" aria-hidden="true"
+                   data-toggle="confirmation" data-placement="bottom" data-method="delete"
+                   title="Вы уверены, что хотите удалить эту задачу?" data-copy-attributes="href data-method">
+                  <i class="fa fa-trash-o"></i>
+                </a>
           <% end %>
 
           <button type="button" class="btn btn-success btn-circle btn-outline" data-toggle="modal" data-target="#addTaskModal"

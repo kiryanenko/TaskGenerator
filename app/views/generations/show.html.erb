@@ -42,19 +42,24 @@
         <div class="col-md-4">
           <h4>Настройки генератора</h4>
         <%= form_tag("/generations/#{@generation.id}/question_cards.pdf", method: 'get', id: 'form-generator-cards') do %>
-          <input type="checkbox" name="orientation" data-off-text="Альбомная" data-on-text="Книжная" data-label-text="Ориентация" checked><br><br>
+          <input type="checkbox" name="orientation" data-off-text="Альбомная" data-on-text="Книжная"
+                 data-label-text="Ориентация" checked><br><br>
           <script>$("[name='orientation']").bootstrapSwitch();</script>
           <%= label_tag('Компановка на странице') %>
           <%= select_tag :page_layout, options_for_select(Rails.configuration.page_layouts), class: 'form-control' %>
               <br>
-              <button type="submit" class="btn btn-success btn-block"><i class="fa fa-file-pdf-o"></i> Сгенерировать PDF'</button>
+              <button type="submit" class="btn btn-success btn-block">
+                <i class="fa fa-file-pdf-o"></i> Сгенерировать PDF'
+              </button>
           <% end %>
         </div>
         </div><br>
         <div class="panel panel-info" id="view-question_cards">
           <div class="panel-heading"><span class="view-status"></span> Предпросмотр</div>
           <div class="panel-body view-result" ></div>
-          <script>get_html("view-question_cards", '<%= generation_path(@generation) + '/question_cards' %>')</script>
+          <script>
+            $().ready( get_html("view-question_cards", '<%= generation_path(@generation) + '/question_cards' %>') )
+          </script>
         </div>
       </div>
 
@@ -63,19 +68,22 @@
           <div class="col-md-4">
             <h4>Настройки генератора</h4>
             <%= form_tag("/generations/#{@generation.id}/answers.pdf", method: 'get', id: 'form-generator-answers') do %>
-                <input type="checkbox" name="orientation" data-off-text="Альбомная" data-on-text="Книжная" data-label-text="Ориентация" checked><br><br>
+                <input type="checkbox" name="orientation" data-off-text="Альбомная"
+                       data-on-text="Книжная" data-label-text="Ориентация" checked><br><br>
                 <script>$("[name='orientation']").bootstrapSwitch();</script>
                 <%= label_tag('Компановка на странице') %>
                 <%= select_tag :page_layout, options_for_select(Rails.configuration.page_layouts), class: 'form-control' %>
                 <br>
-                <button type="submit" class="btn btn-success btn-block"><i class="fa fa-file-pdf-o"></i> Сгенерировать PDF'</button>
+                <button type="submit" class="btn btn-success btn-block">
+                  <i class="fa fa-file-pdf-o"></i> Сгенерировать PDF'
+                </button>
             <% end %>
           </div>
         </div><br>
         <div class="panel panel-info" id="view-answers">
           <div class="panel-heading"><span class="view-status"></span> Предпросмотр</div>
           <div class="panel-body view-result" ></div>
-          <script>get_html("view-answers", '<%= generation_path(@generation) + '/answers' %>')</script>
+          <script>$().ready( get_html("view-answers", '<%= generation_path(@generation) + '/answers' %>') )</script>
         </div>
       </div>
     </div>
