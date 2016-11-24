@@ -1,0 +1,46 @@
+<a href="<%= task_path task %>" class="list-group-item list-group-item-action">
+  <table class="list-group-item-title"><tr><td>
+    <% unless current_user.nil? %>
+        <div style="float: right">
+          <% if current_user == task.user %>
+              <a href="<%= edit_task_path(task) %>" type="button" class="btn btn-warning btn-circle btn-xs"
+                 data-placement="bottom" data-toggle="tooltip" title="Редактировать">
+                <i class="fa fa-edit"></i>
+              </a>
+
+              <a href="javascript: document.getElementById('form-destroy_<%= task.id %>').submit()" aria-hidden="true"
+                 data-toggle="confirmation" data-placement="bottom" title="Вы уверены, что хотите удалить эту задачу?">
+                <button type="button" class="btn btn-danger btn-circle btn-xs" data-toggle="tooltip"
+                        data-placement="bottom" title="Удалить" data-trigger="hover">
+                  <i class="fa fa-trash-o"></i>
+                </button>
+              </a>
+          <% end %>
+          <a href="javascript: openModalAddTask(<%= task.id %>)" type="button" title="Добавить в группу с задачами"
+                  class="btn btn-success btn-circle btn-outline btn-xs" data-placement="bottom" data-toggle="tooltip">
+            <i class="fa fa-plus-square"></i>
+          </a>
+          <% unless current_user == task.user %>
+              <a href="<%= task_path task %>/add_to_me" class="btn btn-success btn-circle btn-xs"
+                 data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
+                <i class="fa fa-plus"></i>
+              </a>
+          <% end %>
+        </div>
+        <%= form_tag task_path(task), method: 'delete', id: 'form-destroy_' + task.id.to_s do end %>
+    <% end %>
+    <h4 class="list-group-item-heading "><%= task.title %></h4>
+  </td></tr></table>
+
+  <p class="list-group-item-text list-group-item-description"><%= task.description %></p>
+
+  <table width="100%"><tr>
+      <td><p class="list-group-item-buttom">
+        <small><i><b>Предмет:</b> <%= task.subject %></i></small><br>
+        <small><i><a target="_blank" href="http://<%= task.user.email %>"><%= task.user.email %></a></i></small>
+      </p></td>
+      <td width="80px" valign="bottom">
+        <span class="pull-right text-muted small"><em><%= task.updated_at.to_formatted_s(:short) %></em></span>
+      </td>
+  </tr></table>
+</a>

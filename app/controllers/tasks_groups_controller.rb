@@ -15,6 +15,7 @@ class TasksGroupsController < ApplicationController
     end
   end
 
+  # GET /tasks_groups/my_groups
   # GET /tasks_groups/my_groups.json
   def my_groups
     @tasks_groups = current_user.tasks_groups.where(removed: false)
@@ -23,6 +24,14 @@ class TasksGroupsController < ApplicationController
       format.json do
         render json: {type: @tasks_groups.class.to_s, value: @tasks_groups}
       end
+    end
+  end
+
+  # GET /tasks_groups/available_groups_for_add.json
+  def available_groups_for_add
+    @tasks_groups = current_user.tasks_groups.select { |g| !g.tasks.exists?(params[:task_id]) }
+    respond_to do |format|
+      format.json { render 'index' }
     end
   end
 

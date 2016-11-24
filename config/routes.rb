@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'tasks_groups/my_groups'
   get 'tasks_groups/my', to: 'tasks_groups#my_groups'
   get 'tasks_groups/:id/add_to_me', to: 'tasks_groups#add_to_me'
+  get 'tasks_groups/available_groups_for_add'
   resources :tasks_groups
 
   get 'tasks/my_tasks'

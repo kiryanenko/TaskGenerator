@@ -1,3 +1,5 @@
+<%= render 'add_task_to_group' %>
+
 <h1 class="page-header">Задачи</h1>
 
 <%= form_tag("/tasks", method: "get") do %>
@@ -9,59 +11,18 @@
     </div><br>
 
     <ul class="nav nav-pills">
-      <li><button class="btn btn-primary" type="submit" formaction="/tasks">Задачи</button></li>
-      <li class="pill-buttons"><button class="btn btn-primary btn-outline" type="submit" formaction="/question_cards">
-        Билеты
-      </button></li>
-      <li><button class="btn btn-primary btn-outline" type="submit" formaction="/tasks_groups">Группы задач</button>
+      <li><%= submit_tag 'Задачи', class: 'btn btn-primary', formaction: tasks_path %></li>
+      <li class="pill-buttons">
+        <%= submit_tag 'Билеты', class: 'btn btn-primary btn-outline', formaction: question_cards_path %>
       </li>
+      <li><%= submit_tag 'Группы задач', class: 'btn btn-primary btn-outline', formaction: tasks_groups_path %></li>
     </ul>
 <% end %>
 <br><br>
 
 <div class="list-group">
   <% @tasks.each do |task| %>
-      <a href="/tasks/<%= task.id %>" class="list-group-item list-group-item-action">
-        <table class="list-group-item-title"><tr><td>
-            <div style="float: right">
-            <% unless current_user.nil? %>
-                <% if current_user == task.user %>
-                    <a href="<%= edit_task_path(task) %>" type="button" class="btn btn-warning btn-circle btn-xs"
-                       data-placement="bottom" data-toggle="tooltip" title="Редактировать">
-                      <i class="fa fa-edit"></i>
-                    </a>
-
-                      <a href="javascript: document.getElementById('form-destroy_<%= task.id %>').submit()"
-                         class="btn btn-danger btn-circle btn-xs" aria-hidden="true" data-toggle="confirmation"
-                         data-placement="bottom" title="Вы уверены, что хотите удалить эту задачу?">
-                        <i class="fa fa-trash-o"></i>
-                      </a>
-                <% else %>
-                      <a href="<%= task_path task %>/add_to_me" class="btn btn-success btn-circle btn-xs"
-                         data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
-                        <i class="fa fa-plus"></i>
-                      </a>
-                <% end %>
-            <% end %>
-            </div>
-            <h3 class="list-group-item-heading "><%= task.title %></h3>
-            <%= form_tag task_path(task), method: 'delete', id: 'form-destroy_' + task.id.to_s do end %>
-        </td></tr></table>
-
-        <p class="list-group-item-text list-group-item-description"><%= task.description %></p>
-
-        <table width="100%">
-          <tr>
-            <td>
-              <small><i><b>Предмет:</b> <%= task.subject %></i></small><br>
-              <small><i><a target="_blank" href="http://<%= task.user.email %>"><%= task.user.email %></a></i></small>
-            </td>
-            <td width="80px" valign="bottom">
-              <span class="pull-right text-muted small"><em><%= task.updated_at.to_formatted_s(:short) %></em></span>
-            </td>
-          </tr>
-        </table>
-      </a>
+    <%= render 'list_item', task: task %>
   <% end %>
 </div>
 

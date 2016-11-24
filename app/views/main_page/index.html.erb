@@ -1,3 +1,5 @@
+<%= render 'tasks/add_task_to_group' %>
+
 <h1 class="page-header">Главная</h1>
 
 <div class="row">
@@ -18,11 +20,20 @@
       <div class="panel-heading">
         <table width="100%"><tr>
           <td>Обзор задач</td>
-          <td width="70px" align="right"><a href="/tasks/new" class="btn btn-success btn-xs">Добавить</a></td>
+          <td width="70px" align="right"><%= link_to 'Добавить', new_task_path, class: 'btn btn-success btn-xs' %></td>
         </tr></table>
       </div>
       <div class="panel-body">
-        <%= render 'list', list: @tasks, link: 'tasks', no_items: 'Вы пока еще не создали ни одной задачи.' %>
+        <% if @tasks.size == 0 %>
+            <p>Вы пока еще не создали ни одной задачи. Сделать это вы можете <%= link_to new_task_path, 'здесь' %></p>
+        <% else %>
+            <div class="list-group">
+              <% @tasks.each do |task| %>
+                  <%= render 'tasks/list_item', task: task %>
+              <% end %>
+            </div>
+            <%= link_to 'Посмотреть все', tasks_my_path, class: 'btn btn-default btn-block' %>
+        <% end %>
       </div>
     </div>
   </div>

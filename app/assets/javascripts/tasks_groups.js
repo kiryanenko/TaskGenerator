@@ -35,3 +35,25 @@ function remove_task() {
         }
     });
 }
+
+function openModalAddTask(task_id) {
+    $.ajax({
+        type: 'get',//тип запроса: get,post либо head
+        url: '/tasks_groups/available_groups_for_add.json',//url адрес файла обработчика
+        data: { task_id: task_id },//параметры запроса
+        response: 'text',//тип возвращаемого ответа text либо xml
+        success: function (data) {//возвращаемый результат от сервера
+            var form = document.forms['add_task_form'];
+            form.elements['task_id'].value = task_id;
+            var selectGroup = form.elements['group'];
+            selectGroup.innerHTML = '';
+            data.forEach(function (group) {
+                var opt =document.createElement('option');
+                opt.value = group.id;
+                opt.innerHTML = group.title;
+                selectGroup.append(opt);
+            });
+            $('#addTaskModal').modal();
+        }
+    });
+}

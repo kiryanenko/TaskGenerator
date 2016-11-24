@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f899de3c-2e22-427a-ad7b-11704ad7426e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/TaskGenerator.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__TaskGenerator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__TaskGenerator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/spec__TaskGenerator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/test__TaskGenerator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tasks/_list_item.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TaskGenerator.iml" afterPath="$PROJECT_DIR$/.idea/TaskGenerator.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/tasks_groups.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/tasks_groups.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tasks_groups_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tasks_groups_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main_page/index.html.erb" afterPath="$PROJECT_DIR$/app/views/main_page/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/_add_task_to_group.html.erb" afterPath="$PROJECT_DIR$/app/views/tasks/_add_task_to_group.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/index.html.erb" afterPath="$PROJECT_DIR$/app/views/tasks/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/show.html.erb" afterPath="$PROJECT_DIR$/app/views/tasks/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="TaskGenerator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +26,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TaskGenerator@Rails_console__TaskGenerator.coverage" NAME="Rails console: TaskGenerator Coverage Results" MODIFIED="1479846315762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TaskGenerator" />
-    <SUITE FILE_PATH="coverage/TaskGenerator@Development__TaskGenerator.coverage" NAME="Development: TaskGenerator Coverage Results" MODIFIED="1479898474075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TaskGenerator" />
+    <SUITE FILE_PATH="coverage/TaskGenerator@Development__TaskGenerator.coverage" NAME="Development: TaskGenerator Coverage Results" MODIFIED="1480010334528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TaskGenerator" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -40,7 +40,7 @@
       <file leaf-file-name="tasks_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1880">
+            <state relative-caret-position="28">
               <caret line="94" column="13" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="13" />
               <folding />
             </state>
@@ -50,38 +50,90 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tasks/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="20" selection-start-line="15" selection-start-column="16" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="300">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/generations/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/main_page/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tasks_groups/show.html.erb">
+      <file leaf-file-name="_list_item.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tasks/_list_item.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1720">
-              <caret line="86" column="48" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+            <state relative-caret-position="340">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#a#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks_groups_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tasks_groups_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="31" column="91" selection-start-line="31" selection-start-column="84" selection-end-line="31" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tasks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_add_task_to_group.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tasks/_add_task_to_group.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks_groups.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tasks_groups.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -113,7 +165,6 @@
         <option value="$PROJECT_DIR$/public/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/models/calculated_variable.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/tasks.js" />
         <option value="$PROJECT_DIR$/db/migrate/20161010192015_create_calculated_variables.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20161010175719_create_tasks.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20161010175911_create_tasks_groups.rb" />
@@ -123,14 +174,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20161120210306_create_generated_variables.rb" />
         <option value="$PROJECT_DIR$/app/models/generated_task.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/tasks/_add_task_to_group.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/models/task.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20161010184329_create_variables.rb" />
         <option value="$PROJECT_DIR$/app/views/tasks/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/question_cards/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/tasks_groups.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/generations.js" />
         <option value="$PROJECT_DIR$/app/controllers/generations_controller.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
@@ -138,21 +186,27 @@
         <option value="$PROJECT_DIR$/app/views/generations/question_cards.pdf.erb" />
         <option value="$PROJECT_DIR$/app/views/generations/question_cards.html.erb" />
         <option value="$PROJECT_DIR$/app/views/generations/answers.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/views/question_cards/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/question_cards_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/question_card.rb" />
         <option value="$PROJECT_DIR$/app/views/question_cards/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tasks_groups/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/tasks_groups_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/tasks_group.rb" />
-        <option value="$PROJECT_DIR$/app/views/tasks/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/generations/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/generations/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tasks_groups/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tasks/show.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tasks_groups_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/tasks.js" />
+        <option value="$PROJECT_DIR$/app/views/tasks/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/tasks/_add_task_to_group.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/tasks_groups.js" />
+        <option value="$PROJECT_DIR$/app/views/main_page/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/tasks/_list_item.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/tasks/index.html.erb" />
       </list>
     </option>
   </component>
@@ -198,6 +252,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -213,6 +270,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TaskGenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TaskGenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TaskGenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,28 +348,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="question_cards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -318,25 +367,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="generations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaskGenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="main_page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,11 +403,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TaskGenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TaskGenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TaskGenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TaskGenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -648,6 +716,8 @@
       <workItem from="1479929174765" duration="497000" />
       <workItem from="1479929876516" duration="18000" />
       <workItem from="1479929901471" duration="183000" />
+      <workItem from="1479930194607" duration="1842000" />
+      <workItem from="1480009431359" duration="14274000" />
     </task>
     <task id="LOCAL-00002" summary="add variable forms">
       <created>1479650957312</created>
@@ -730,30 +800,30 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106835000" />
+    <option name="totallyTimeSpent" value="122951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="1174" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2242268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23067011" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992566" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33367243" sideWeight="0.5173745" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639405" sideWeight="0.47812098" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27695167" sideWeight="0.48869276" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3336431" sideWeight="0.48262548" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27466938" sideWeight="0.48869276" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -807,29 +877,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/variable_type.rb" />
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20161010184802_create_subjects.rb" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20161010175719_create_tasks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/calculated_variable.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/variable.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -922,13 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20161010184329_create_variables.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -940,20 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tasks_groups.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tasks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1021,13 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/question_cards/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1063,24 +1082,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tasks_groups_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/task.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/_add_task_to_group.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1098,13 +1103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/generations/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
@@ -1112,18 +1110,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1880">
-          <caret line="94" column="13" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/generations/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="520">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1131,23 +1121,129 @@
     <entry file="file://$PROJECT_DIR$/app/views/tasks_groups/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1720">
-          <caret line="86" column="48" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+          <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/generations/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="101" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main_page/_list.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks_groups/_tasks_group.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks_groups/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="94" column="13" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/_add_task_to_group.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tasks_groups.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasks/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="20" selection-start-line="15" selection-start-column="16" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/controllers/tasks_groups_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        <state relative-caret-position="500">
+          <caret line="31" column="91" selection-start-line="31" selection-start-column="84" selection-end-line="31" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/_list_item.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main_page/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding />
         </state>
       </provider>

@@ -22,8 +22,8 @@
               </a>
           <% end %>
 
-          <button type="button" class="btn btn-success btn-circle btn-outline" data-toggle="modal"
-                  data-target="#addTaskModal" data-placement="bottom" data-toggle="tooltip"
+          <button onclick="openModalAddTask(<%= @task.id %>)" type="button"
+                  class="btn btn-success btn-circle btn-outline" data-placement="bottom" data-toggle="tooltip"
                   title="Добавить в группу с задачами">
             <i class="fa fa-plus-square"></i>
           </button>
