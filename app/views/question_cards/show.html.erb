@@ -1,3 +1,5 @@
+<%= form_tag question_card_path(@question_card), method: 'delete', id: 'form-destroy' do end %>
+
 <!-- .modal-dialog -->
 <div class="modal fade" id="generateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true" style="display: none;">
@@ -40,10 +42,11 @@
                 <i class="fa fa-edit"></i>
               </a>
 
-              <button type="button" class="btn btn-danger btn-circle" data-placement="bottom" data-toggle="tooltip"
-                      title="Удалить">
-                <i class="fa fa-times"></i>
-              </button>
+              <a href="javascript: document.getElementById('form-destroy').submit()" class="btn btn-danger btn-circle"
+                 aria-hidden="true" data-toggle="confirmation" data-placement="bottom"
+                 title="Вы уверены, что хотите удалить этот билет?">
+                <i class="fa fa-trash-o"></i>
+              </a>
           <% end %>
 
           <!--<button type="button" class="btn btn-info btn-circle btn-outline" data-placement="bottom" data-toggle="tooltip" title="Добавить в группу с задачами">-->
