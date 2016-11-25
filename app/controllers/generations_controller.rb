@@ -59,7 +59,11 @@ class GenerationsController < ApplicationController
         t = gen_task.task
 
         answer = t.answer
-        generated_variables = gen_task.generated_variables.map { |var| [var.variable.name, var.value] }.to_h
+        generated_variables = gen_task.generated_variables.map do |var|
+          answer.gsub!('$' + var.variable.name, var.value.to_s)
+          [var.variable.name, var.value]
+        end.to_h
+
         t.calculated_variables.each do |var|
           res = calculate(var.formula, generated_variables)
           generated_variables[var.name] = res
@@ -151,12 +155,13 @@ class GenerationsController < ApplicationController
 
   def calculate(ex, generated_variables)
     generated_variables.each { |v, res| ex.gsub!('$' + v, res.to_s) }
-
-    options = { "format" => "plaintext" }
-    client = WolframAlpha::Client.new Rails.configuration.wolfram_api, options
-    response = client.query ex + '+0'
-    result = response.find { |pod| pod.title == "Result" }
-    return result.subpods[0].plaintext
+    Rails.cache.fetch("#{Rails.configuration.cache_answer_key}/#{ex}", expires_in: 12.hours) do
+      options = { "format" => "plaintext" }
+      client = WolframAlpha::Client.new Rails.configuration.wolfram_api, options
+      response = client.query ex + '+0'
+      result = response.find { |pod| pod.title == "Result" }
+      result.subpods[0].plaintext
+    end
   end
 
   def auth

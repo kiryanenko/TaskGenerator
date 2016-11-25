@@ -29,11 +29,11 @@
 
   <table width="100%">
     <tr>
-      <td>
+      <td><p class="list-group-item-buttom">
         <small><i><b>Предмет:</b> <%= group.subject %></i></small><br>
         <small><i><b>Количество задач:</b> <%= group.tasks.size %></i></small><br>
         <small><i><a target="_blank" href="http://<%= group.user.email %>"><%= group.user.email %></a></i></small>
-      </td>
+      </p></td>
       <td width="80px" valign="bottom">
         <span class="pull-right text-muted small"><em><%= group.updated_at.to_formatted_s(:short) %></em></span>
       </td>
