@@ -1,33 +1,6 @@
 <%= form_tag question_card_path(@question_card), method: 'delete', id: 'form-destroy' do end %>
 
-<!-- .modal-dialog -->
-<div class="modal fade" id="generateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-     aria-hidden="true" style="display: none;">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title" id="myModalLabel">Сгенерировать билеты</h4>
-      </div>
-      <div class="modal-body">
-        <%= form_tag("/generations", method: 'post', id: 'form-generator') do %>
-            <%= hidden_field_tag :question_card_id, @question_card.id %>
-            <%= label_tag('Заголовок') %>
-            <%= text_field_tag :title, '', class: 'form-control', placeholder: 'Сгенерированные задачи для дз'  %><br>
-            <%= label_tag('Количество вариантов') %>
-            <%= number_field_tag :number_variants, 1, class: 'form-control', min: 1,
-                                 max: Rails.configuration.max_variants %>
-        <% end %>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" form="form-generator">Сгенерировать</button>
-      </div>
-    </div>
-    <!-- /.modal-content -->
-  </div>
-  <!-- /.modal-dialog -->
-</div>
+<%= render 'generations/generate_modal' %>
 
 <h1 class="page-header" >
   <table width="100%"><tr>
@@ -35,7 +8,7 @@
       <b>Билет:</b> <%= @question_card.title %>
     </td>
     <% unless current_user.nil? %>
-        <td width="220px" align="right">
+        <td width="230px" align="right">
           <% if current_user == @question_card.user %>
               <a href="<%= edit_question_card_path(@question_card) %>" type="button" class="btn btn-warning btn-circle"
                  data-placement="bottom" data-toggle="tooltip" title="Изменить">
@@ -58,7 +31,9 @@
                 <i class="fa fa-plus"></i>
               </a>
           <% end %>
-          <button class="btn btn-primary" data-toggle="modal" data-target="#generateModal">Сгенерировать</button>
+          <button onclick="openGenerateModal(<%= @question_card.id %>)" class="btn btn-primary">
+            <i class="fa fa-rocket"></i> Сгенерировать
+          </button>
         </td>
     <% end %>
   </tr></table>

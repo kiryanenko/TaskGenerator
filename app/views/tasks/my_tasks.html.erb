@@ -10,14 +10,10 @@
 <% if @tasks.size == 0 %>
     <p>Вы еще не добавили ни одной задачи. Сделать это вы можете <%= link_to 'здесь', new_task_path %></p>
 <% else %>
+    <%= render 'add_task_to_group' %>
     <div class="list-group">
       <% @tasks.each do |task| %>
-          <a href="/tasks/<%= task.id %>" class="list-group-item list-group-item-action">
-            <span class="pull-right text-muted small"><em><%= task.updated_at.to_formatted_s(:short) %></em></span>
-            <h4 class="list-group-item-heading"><%= task.title %></h4>
-            <p class="list-group-item-text"><%= task.description %></p>
-          </a>
+          <%= render 'list_item', task: task %>
       <% end %>
     </div>
-
 <% end %>

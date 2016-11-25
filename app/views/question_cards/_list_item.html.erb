@@ -1,0 +1,42 @@
+<a href="<%= question_card_path card %>" class="list-group-item list-group-item-action">
+  <table class="list-group-item-title"><tr><td>
+    <div style="float: right">
+      <% unless current_user.nil? %>
+          <% if current_user == card.user %>
+              <a href="<%= edit_question_card_path(card) %>" type="button" class="btn btn-warning btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Редактировать">
+                <i class="fa fa-edit"></i>
+              </a>
+              <a href="javascript: document.getElementById('form-destroy_<%= card.id %>').submit()"
+                 class="btn btn-danger btn-circle btn-xs" aria-hidden="true" data-toggle="confirmation"
+                 data-placement="bottom" title="Вы уверены, что хотите удалить этот билет?">
+                <i class="fa fa-trash-o"></i>
+              </a>
+          <% else %>
+              <a href="<%= question_card_path card %>/add_to_me" class="btn btn-success btn-circle btn-xs"
+                 data-placement="bottom" data-toggle="tooltip" title="Добавить к себе">
+                <i class="fa fa-plus"></i>
+              </a>
+          <% end %>
+          <a href="javascript: openGenerateModal(<%= card.id %>)" class="btn btn-primary btn-circle btn-xs">
+            <i class="fa fa-rocket"></i>
+          </a>
+      <% end %>
+    </div>
+    <h3 class="list-group-item-heading "><%= card.title %></h3>
+    <%= form_tag question_card_path(card), method: 'delete', id: 'form-destroy_' + card.id.to_s do end %>
+  </td></tr></table>
+
+  <p class="list-group-item-text list-group-item-description"><%= card.description %></p>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <small><i><b>Предмет:</b> <%= card.subject %></i></small><br>
+        <small><i><a target="_blank" href="http://<%= card.user.email %>"><%= card.user.email %></a></i></small>
+      </td>
+      <td width="80px" valign="bottom">
+        <span class="pull-right text-muted small"><em><%= card.updated_at.to_formatted_s(:short) %></em></span>
+      </td>
+    </tr>
+  </table>
+</a>

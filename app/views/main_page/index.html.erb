@@ -1,5 +1,3 @@
-<%= render 'tasks/add_task_to_group' %>
-
 <h1 class="page-header">Главная</h1>
 
 <div class="row">
@@ -8,11 +6,25 @@
       <div class="panel-heading">
         <table width="100%"><tr>
           <td>Обзор билетов</td>
-          <td width="70px" align="right"><a href="/question_cards/new" class="btn btn-success btn-xs">Добавить</a></td>
+          <td width="70px" align="right">
+            <%= link_to 'Добавить', new_question_card_path, class: 'btn btn-success btn-xs' %>
+          </td>
         </tr></table>
       </div>
       <div class="panel-body">
-        <%= render 'list', list: @question_cards, link: 'question_cards', no_items: 'Вы пока еще не создали ни одного белета.' %>
+        <% if @question_cards.size == 0 %>
+            <p>Вы пока еще не создали ни одного билета. Сделать это вы можете
+              <%= link_to 'здесь', new_question_card_path %>
+            </p>
+        <% else %>
+            <%= render 'generations/generate_modal' %>
+            <div class="list-group">
+              <% @question_cards.each do |card| %>
+                  <%= render 'question_cards/list_item', card: card %>
+              <% end %>
+            </div>
+            <%= link_to 'Посмотреть все', tasks_my_path, class: 'btn btn-default btn-block' %>
+        <% end %>
       </div>
     </div>
 
@@ -25,8 +37,9 @@
       </div>
       <div class="panel-body">
         <% if @tasks.size == 0 %>
-            <p>Вы пока еще не создали ни одной задачи. Сделать это вы можете <%= link_to new_task_path, 'здесь' %></p>
+            <p>Вы пока еще не создали ни одной задачи. Сделать это вы можете <%= link_to 'здесь', new_task_path %></p>
         <% else %>
+            <%= render 'tasks/add_task_to_group' %>
             <div class="list-group">
               <% @tasks.each do |task| %>
                   <%= render 'tasks/list_item', task: task %>
@@ -41,7 +54,7 @@
   <div class="col-lg-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <i class="fa fa-bell fa-fw"></i> История генераций билетов
+        <i class="fa fa-history fa-fw"></i> История генераций билетов
       </div>
       <!-- /.panel-heading -->
       <div class="panel-body">
@@ -68,7 +81,7 @@
     <div class="panel panel-info">
       <div class="panel-heading">
         <table width="100%"><tr>
-          <td>Обзор групп задач</td>
+          <td><i class="fa fa-list-alt fa-fw"></i> Обзор групп задач</td>
           <td width="70px" align="right"><a href="/tasks_groups/new" class="btn btn-success btn-xs">Добавить</a></td>
         </tr></table>
       </div>

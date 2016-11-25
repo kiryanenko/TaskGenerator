@@ -13,3 +13,9 @@ function get_html(el_id, link) {
         }
     });
 }
+
+function openGenerateModal(question_card_id) {
+    var form = document.forms['form-generator'];
+    form.elements['question_card_id'].value = question_card_id;
+    $('#generateModal').modal();
+}

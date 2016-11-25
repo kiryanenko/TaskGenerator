@@ -8,16 +8,12 @@
 </h1>
 
 <% if @question_cards.size == 0 %>
-    <p>Вы еще не добавили ни одной задачи. Сделать это вы можете <%= link_to 'здесь', new_task_path %></p>
+    <p>Вы еще не добавили ни одного билета. Сделать это вы можете <%= link_to 'здесь', new_question_card_path %></p>
 <% else %>
+    <%= render 'generations/generate_modal' %>
     <div class="list-group">
       <% @question_cards.each do |card| %>
-          <a href="/tasks/<%= card.id %>" class="list-group-item list-group-item-action">
-            <span class="pull-right text-muted small"><em><%= card.updated_at.to_formatted_s(:short) %></em></span>
-            <h4 class="list-group-item-heading"><%= card.title %></h4>
-            <p class="list-group-item-text"><%= card.description %></p>
-          </a>
+          <%= render 'list_item', card: card %>
       <% end %>
     </div>
-
 <% end %>
