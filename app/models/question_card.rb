@@ -6,6 +6,8 @@ class QuestionCard < ApplicationRecord
   has_many :variants, through: :generations
   has_many :generated_tasks, through: :variants
 
+  validates :question_card, :title, presence: true
+
   pg_search_scope :search, against: [:title, :description, :subject, :question_card]
 
   def remove

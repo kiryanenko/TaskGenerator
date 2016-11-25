@@ -4,6 +4,8 @@ class TasksGroup < ApplicationRecord
   belongs_to :user
   has_and_belongs_to_many :tasks, join_table: 'tasks_and_groups'
 
+  validates :title, presence: true
+
   pg_search_scope :search, against: [:title, :description, :subject]
 
   before_destroy do

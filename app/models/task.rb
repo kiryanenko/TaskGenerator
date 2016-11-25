@@ -9,6 +9,10 @@ class Task < ApplicationRecord
   has_and_belongs_to_many :tasks_groups, join_table: 'tasks_and_groups'
   has_many :generated_tasks
 
+  validates_associated :variables
+  validates_associated :calculated_variables
+  validates :task, :title, presence: true
+
   pg_search_scope :search, against: [:title, :description, :subject, :task, :answer]
 
   def remove
