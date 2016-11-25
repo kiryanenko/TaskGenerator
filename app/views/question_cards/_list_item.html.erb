@@ -22,7 +22,7 @@
           </a>
       <% end %>
     </div>
-    <h3 class="list-group-item-heading "><%= card.title %></h3>
+    <h4 class="list-group-item-heading "><%= card.title %></h4>
     <%= form_tag question_card_path(card), method: 'delete', id: 'form-destroy_' + card.id.to_s do end %>
   </td></tr></table>
 

@@ -82,11 +82,24 @@
       <div class="panel-heading">
         <table width="100%"><tr>
           <td><i class="fa fa-list-alt fa-fw"></i> Обзор групп задач</td>
-          <td width="70px" align="right"><a href="/tasks_groups/new" class="btn btn-success btn-xs">Добавить</a></td>
+          <td width="70px" align="right">
+            <%= link_to 'Добавить', new_tasks_group_path, class: 'btn btn-success btn-xs' %>
+          </td>
         </tr></table>
       </div>
       <div class="panel-body">
-        <%= render 'list', list: @tasks_groups, link: 'tasks_groups', no_items: 'Вы пока еще не создали ни одной группы задач.' %>
+        <% if @tasks_groups.size == 0 %>
+            <p>Вы пока еще не создали ни одной группы задачи. Сделать это вы можете
+              <%= link_to 'здесь', new_tasks_group_path %>
+            </p>
+        <% else %>
+            <div class="list-group">
+              <% @tasks_groups.each do |group| %>
+                  <%= render 'tasks_groups/list_item', group: group %>
+              <% end %>
+            </div>
+            <%= link_to 'Посмотреть все', tasks_groups_my_path, class: 'btn btn-default btn-block' %>
+        <% end %>
       </div>
     </div>
   </div>

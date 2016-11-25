@@ -12,7 +12,7 @@ function add_task() {
             document.getElementById('alert-info').innerHTML =
                 '<div class="alert alert-success alert-dismissable">' +
                     '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>' +
-                data.notice + '</div>';
+                data.notice + '</div>' + document.getElementById('alert-info').innerHTML;
         }
     });
 }
@@ -51,7 +51,7 @@ function openModalAddTask(task_id) {
                 var opt =document.createElement('option');
                 opt.value = group.id;
                 opt.innerHTML = group.title;
-                selectGroup.append(opt);
+                selectGroup.appendChild(opt);
             });
             $('#addTaskModal').modal();
         }

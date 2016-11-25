@@ -1,7 +1,23 @@
-// Place all the styles related to the QuestionCards controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.task {
+    position: relative;
+}
+
 .task:hover {
-  border: 2px dashed #77b2ff; /* Параметры границы */
-  background: #ffffca; /* Цвет фона */
+    border: 2px dashed #77b2ff; /* Параметры границы */
+    background: #ffffca; /* Цвет фона */
+}
+
+.task:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; top: 0px; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(0,42,167,0.6); /* Полупрозрачный цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 12px; /* Размер текста подсказки */
+    font-weight: bold;
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
 }

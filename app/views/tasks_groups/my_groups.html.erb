@@ -8,16 +8,14 @@
 </h1>
 
 <% if @tasks_groups.size == 0 %>
-    <p>Вы еще не добавили ни одной задачи. Сделать это вы можете <%= link_to 'здесь', new_tasks_group_path %></p>
+    <p>Вы пока еще не создали ни одной группы задачи. Сделать это вы можете
+      <%= link_to 'здесь', new_tasks_group_path %>
+    </p>
 <% else %>
     <div class="list-group">
       <% @tasks_groups.each do |group| %>
-          <a href="/tasks_groups/<%= group.id %>" class="list-group-item list-group-item-action">
-            <span class="pull-right text-muted small"><em><%= group.updated_at.to_formatted_s(:short) %></em></span>
-            <h4 class="list-group-item-heading"><%= group.title %></h4>
-            <p class="list-group-item-text"><%= group.description %></p>
-          </a>
+          <%= render 'tasks_groups/list_item', group: group %>
       <% end %>
     </div>
-
+    <%= link_to 'Посмотреть все', tasks_groups_my_path, class: 'btn btn-default btn-block' %>
 <% end %>

@@ -1,5 +1,3 @@
-<%= render 'add_task_to_group' %>
-
 <h1 class="page-header">Задачи</h1>
 
 <%= form_tag("/tasks", method: "get") do %>
@@ -20,6 +18,7 @@
 <% end %>
 <br><br>
 
+<%= render 'add_task_to_group' %>
 <div class="list-group">
   <% @tasks.each do |task| %>
     <%= render 'list_item', task: task %>
