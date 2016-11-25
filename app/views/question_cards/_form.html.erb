@@ -1,16 +1,11 @@
+<% if question_card.errors.any? %>
+    <%=	render 'layouts/error', error: "Перед сохранением было обнаружены #{question_card.errors.count} ошибки!" %>
+    <% question_card.errors.full_messages.each do |message| %>
+        <%=	render 'layouts/error', error: message %>
+    <% end %>
+<% end %>
+
 <%= form_for(question_card) do |f| %>
-  <% if question_card.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(question_card.errors.count, "error") %> prohibited this question_card from being saved:</h2>
-
-      <ul>
-      <% question_card.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
   <div class="field">
     <%= f.label 'Название билета' %>
     <%= f.text_field :title, class: 'form-control', placeholder: :title %>

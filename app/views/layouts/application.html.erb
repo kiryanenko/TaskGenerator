@@ -299,13 +299,11 @@
             </div>
             <div id="alert-danger">
               <% if alert %>
-                  <div class="alert alert-danger alert-dismissable">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                    <%= alert %>
-                  </div>
+                  <%=	render 'error', error: alert %>
               <% end %>
             </div>
             <%= yield %>
+            <br>
           </div>
           <!-- /.col-lg-12 -->
         </div>
