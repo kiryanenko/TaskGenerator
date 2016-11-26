@@ -59,3 +59,5 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem 'rmagick'
 gem 'rails_12factor', group: :production
+
+ruby "2.1.2"
