@@ -9,12 +9,7 @@
 <% else %>
     <div class="list-group">
       <% @generations.each do |g| %>
-          <a href="/generations/<%= g.id %>" class="list-group-item list-group-item-action">
-            <span class="pull-right text-muted small"><em><%= g.updated_at.to_formatted_s(:short) %></em></span>
-            <h4 class="list-group-item-heading"><%= g.title %><br>
-              <small>Сгенерироваано <%= g.variants.size %> вариантов</small>
-            </h4>
-          </a>
+          <%= render 'generations/list_item', generation: g %>
       <% end %>
     </div>
 

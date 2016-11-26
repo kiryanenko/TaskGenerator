@@ -8,10 +8,13 @@
                  title="Редактировать">
                 <i class="fa fa-edit"></i>
               </a>
-              <a href="javascript: document.getElementById('form-destroy_<%= group.id %>').submit()"
-                 class="btn btn-danger btn-circle btn-xs" aria-hidden="true" data-toggle="confirmation" data-placement="bottom"
+              <a href="javascript: document.getElementById('form-destroy-tasks_group_<%= group.id %>').submit()"
+                 aria-hidden="true" data-toggle="confirmation" data-placement="bottom"
                  title="Вы уверены, что хотите удалить эту группу задач?">
-                <i class="fa fa-trash-o"></i>
+                <button type="button" class="btn btn-danger btn-circle btn-xs" data-toggle="tooltip"
+                        data-placement="bottom" title="Удалить" data-trigger="hover">
+                  <i class="fa fa-trash-o"></i>
+                </button>
               </a>
           <% else %>
               <a href="<%= tasks_group_path group %>/add_to_me" class="btn btn-success btn-circle"
@@ -22,7 +25,7 @@
       <% end %>
     </div>
     <h4 class="list-group-item-heading"><%= group.title %></h4>
-    <%= form_tag tasks_group_path(group), method: 'delete', id: 'form-destroy_' + group.id.to_s do end %>
+    <%= form_tag tasks_group_path(group), method: 'delete', id: 'form-destroy-tasks_group_' + group.id.to_s do end %>
   </td></tr></table>
 
   <p class="list-group-item-text list-group-item-description"><%= group.description %></p>

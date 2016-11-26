@@ -140,7 +140,7 @@ class GenerationsController < ApplicationController
   def destroy
     @generation.destroy
     respond_to do |format|
-      format.html { redirect_to generations_url, notice: 'Generation was successfully destroyed.' }
+      format.html { redirect_to '/', notice: 'Сгенерированные варианты были успешно удалены.' }
       format.json { head :no_content }
     end
   end

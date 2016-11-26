@@ -8,7 +8,7 @@
                 <i class="fa fa-edit"></i>
               </a>
 
-              <a href="javascript: document.getElementById('form-destroy_<%= task.id %>').submit()" aria-hidden="true"
+              <a href="javascript: document.getElementById('form-destroy_task_<%= task.id %>').submit()" aria-hidden="true"
                  data-toggle="confirmation" data-placement="bottom" title="Вы уверены, что хотите удалить эту задачу?">
                 <button type="button" class="btn btn-danger btn-circle btn-xs" data-toggle="tooltip"
                         data-placement="bottom" title="Удалить" data-trigger="hover">
@@ -27,7 +27,7 @@
               </a>
           <% end %>
         </div>
-        <%= form_tag task_path(task), method: 'delete', id: 'form-destroy_' + task.id.to_s do end %>
+        <%= form_tag task_path(task), method: 'delete', id: 'form-destroy_task_' + task.id.to_s do end %>
     <% end %>
     <h4 class="list-group-item-heading "><%= task.title %></h4>
   </td></tr></table>

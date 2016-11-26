@@ -1,0 +1,21 @@
+<a href="<%= generation_path generation %>" class="list-group-item list-group-item-action">
+  <button href="javascript: document.getElementById('form-destroy_generation_<%= generation.id %>').submit()" class="close"
+     aria-hidden="true" data-toggle="confirmation" data-placement="left"
+     title="Вы уверены, что хотите удалить эти сгенерированные варианты?">×</button>
+  <%= form_tag generation_path(generation), method: 'delete', id: 'form-destroy_generation_' + generation.id.to_s do end %>
+
+  <h5 style="margin: 0px;">
+    <%= generation.title %>
+  </h5>
+
+  <table width="100%">
+    <tr>
+      <td><p class="list-group-item-buttom">
+        <small><%= generation.variants.size %> вариантов</small>
+      </p></td>
+      <td width="80px" valign="bottom">
+        <span class="pull-right text-muted small"><em><%= generation.updated_at.to_formatted_s(:short) %></em></span>
+      </td>
+    </tr>
+  </table>
+</a>

@@ -63,13 +63,7 @@
         <% else %>
             <div class="list-group">
               <% @generations.each do |g| %>
-                  <a href="/generations/<%= g.id %>" class="list-group-item list-group-item-action">
-                    <span class="pull-right text-muted small"><em><%= g.updated_at.to_formatted_s(:short) %></em></span>
-                    <h5 style="margin: 0px;">
-                      <%= g.title %><br>
-                      <small><%= g.variants.size %> вариантов</small>
-                    </h5>
-                  </a>
+                  <%= render 'generations/list_item', generation: g %>
               <% end %>
             </div>
             <a href="/generations/my" class="btn btn-default btn-block">Посмотреть все</a>

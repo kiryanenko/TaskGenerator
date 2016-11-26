@@ -6,10 +6,12 @@
               <a href="<%= edit_question_card_path(card) %>" type="button" class="btn btn-warning btn-circle btn-xs" data-placement="bottom" data-toggle="tooltip" title="Редактировать">
                 <i class="fa fa-edit"></i>
               </a>
-              <a href="javascript: document.getElementById('form-destroy_<%= card.id %>').submit()"
-                 class="btn btn-danger btn-circle btn-xs" aria-hidden="true" data-toggle="confirmation"
-                 data-placement="bottom" title="Вы уверены, что хотите удалить этот билет?">
-                <i class="fa fa-trash-o"></i>
+              <a href="javascript: document.getElementById('form-destroy_card_<%= card.id %>').submit()" aria-hidden="true"
+                 data-toggle="confirmation" data-placement="bottom" title="Вы уверены, что хотите удалить этот билет?">
+                <button type="button" class="btn btn-danger btn-circle btn-xs" data-toggle="tooltip"
+                        data-placement="bottom" title="Удалить" data-trigger="hover">
+                  <i class="fa fa-trash-o"></i>
+                </button>
               </a>
           <% else %>
               <a href="<%= question_card_path card %>/add_to_me" class="btn btn-success btn-circle btn-xs"
@@ -23,7 +25,7 @@
       <% end %>
     </div>
     <h4 class="list-group-item-heading "><%= card.title %></h4>
-    <%= form_tag question_card_path(card), method: 'delete', id: 'form-destroy_' + card.id.to_s do end %>
+    <%= form_tag question_card_path(card), method: 'delete', id: 'form-destroy_card_' + card.id.to_s do end %>
   </td></tr></table>
 
   <p class="list-group-item-text list-group-item-description"><%= card.description %></p>
