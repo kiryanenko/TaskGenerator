@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :images
+
   get '/generations/:id/question_cards', to: 'generations#question_cards'
   get '/generations/:id/answers', to: 'generations#answers'
   get 'generations/my', to: 'generations#my_generations'

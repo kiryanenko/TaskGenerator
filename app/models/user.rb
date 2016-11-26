@@ -7,4 +7,5 @@ class User < ApplicationRecord
   has_many :tasks
   has_many :generations
   has_many :question_cards
+  has_many :images
 end

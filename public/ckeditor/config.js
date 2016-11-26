@@ -33,4 +33,7 @@ CKEDITOR.editorConfig = function( config ) {
 	];
 
 	config.removeButtons = 'Source,Save,NewPage,Preview,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Flash';
+
+	config.filebrowserImageBrowseUrl = '/images';
+	config.filebrowserImageUploadUrl = '/images?'+$('meta[name="csrf-param"]').attr('content')+'='+encodeURIComponent($('meta[name="csrf-token"]').attr('content'));
 };

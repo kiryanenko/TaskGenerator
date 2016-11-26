@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <% @images.each do |image| %>
+        <img src="<%= image.get_thumb %>" data-src="<%= image.get_link %>" class="thumbnail preview" />
+    <% end %>
+  </div>
+</div>
