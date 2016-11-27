@@ -10,7 +10,6 @@ CKEDITOR.editorConfig = function( config ) {
 
 	// Говорим CKEditor, что нужно загрузить наш плагин
 	config.extraPlugins = 'task';
-	// config.extraAllowedContent = 'task[task_id]';
 	config.allowedContent = true;
 
 	config.toolbarGroups = [
@@ -32,7 +31,7 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'card', groups: [ 'task' ] }
 	];
 
-	config.removeButtons = 'Source,Save,NewPage,Preview,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Flash';
+	config.removeButtons = 'Source,Save,NewPage,Preview,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Flash,Mathjax,texzilla,mathedit,FMathEditor';
 
 	config.filebrowserImageBrowseUrl = '/images';
 	config.filebrowserImageUploadUrl = '/images?'+$('meta[name="csrf-param"]').attr('content')+'='+encodeURIComponent($('meta[name="csrf-token"]').attr('content'));

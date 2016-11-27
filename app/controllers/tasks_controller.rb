@@ -40,6 +40,8 @@ class TasksController < ApplicationController
 
   # GET /tasks/1/edit
   def edit
+    1.times { @task.variables.build } if @task.variables.size == 0
+    1.times { @task.calculated_variables.build } if @task.calculated_variables.size == 0
   end
 
   # POST /tasks
