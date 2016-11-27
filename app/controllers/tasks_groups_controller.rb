@@ -1,5 +1,5 @@
 class TasksGroupsController < ApplicationController
-  before_filter :authenticate_user!, only: [:new, :edit, :destroy, :my_groups, :create, :update, :remove_task,
+  before_action :authenticate_user!, only: [:new, :edit, :destroy, :my_groups, :create, :update, :remove_task,
                                             :add_task, :add_to_me]
   before_action :set_tasks_group, only: [:show, :edit, :update, :destroy, :add_task, :remove_task, :add_to_me]
   before_action :auth, only: [:edit, :update, :destroy, :add_task, :remove_task]
@@ -141,6 +141,6 @@ class TasksGroupsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tasks_group_params
-      params.require(:tasks_group).permit(:user, :subject, :title, :description, :date, :removed)
+      params.require(:tasks_group).permit(:user, :subject, :title, :description, :date)
     end
 end

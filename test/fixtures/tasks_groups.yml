@@ -1,17 +1,22 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  user: 1
-  subject: 1
+  user_id: 1
+  subject: MyString
   title: MyString
   description: MyText
-  date: 2016-10-10 20:59:11
   removed: false
 
 two:
-  user: 1
-  subject: 1
+  user_id: 1
+  subject: MyString
   title: MyString
   description: MyText
-  date: 2016-10-10 20:59:11
+  removed: false
+
+for_destroy:
+  user_id: 1
+  subject: MyString
+  title: MyString
+  description: MyText
   removed: false

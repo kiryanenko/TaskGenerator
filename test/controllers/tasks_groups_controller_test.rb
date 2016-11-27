@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class TasksGroupsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
+    sign_in users(:one)
     @tasks_group = tasks_groups(:one)
   end
 
@@ -17,7 +20,9 @@ class TasksGroupsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create tasks_group" do
     assert_difference('TasksGroup.count') do
-      post tasks_groups_url, params: { tasks_group: { date: @tasks_group.date, description: @tasks_group.description, removed: @tasks_group.removed, subject: @tasks_group.subject, title: @tasks_group.title, user: @tasks_group.user } }
+      post tasks_groups_url, params: { tasks_group: { description: @tasks_group.description,
+                                                      subject: @tasks_group.subject,
+                                                      title: @tasks_group.title } }
     end
 
     assert_redirected_to tasks_group_url(TasksGroup.last)
@@ -29,12 +34,15 @@ class TasksGroupsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get edit" do
+    p @tasks_group
     get edit_tasks_group_url(@tasks_group)
     assert_response :success
   end
 
   test "should update tasks_group" do
-    patch tasks_group_url(@tasks_group), params: { tasks_group: { date: @tasks_group.date, description: @tasks_group.description, removed: @tasks_group.removed, subject: @tasks_group.subject, title: @tasks_group.title, user: @tasks_group.user } }
+    patch tasks_group_url(@tasks_group), params: { tasks_group: { description: @tasks_group.description,
+                                                                  subject: @tasks_group.subject,
+                                                                  title: @tasks_group.title } }
     assert_redirected_to tasks_group_url(@tasks_group)
   end
 

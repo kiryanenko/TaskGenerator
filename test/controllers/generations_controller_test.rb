@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class GenerationsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
+    sign_in users(:one)
     @generation = generations(:one)
   end
 
@@ -10,14 +13,10 @@ class GenerationsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get new" do
-    get new_generation_url
-    assert_response :success
-  end
-
   test "should create generation" do
     assert_difference('Generation.count') do
-      post generations_url, params: { generation: { page_layout_id: @generation.page_layout_id, question_card_id: @generation.question_card_id, user_id: @generation.user_id } }
+      post generations_url, params: { question_card_id: @generation.question_card_id,
+                                      title: @generation.title, number_variants: 1 }
     end
 
     assert_redirected_to generation_url(Generation.last)
@@ -28,21 +27,11 @@ class GenerationsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get edit" do
-    get edit_generation_url(@generation)
-    assert_response :success
-  end
-
-  test "should update generation" do
-    patch generation_url(@generation), params: { generation: { page_layout_id: @generation.page_layout_id, question_card_id: @generation.question_card_id, user_id: @generation.user_id } }
-    assert_redirected_to generation_url(@generation)
-  end
-
   test "should destroy generation" do
     assert_difference('Generation.count', -1) do
       delete generation_url(@generation)
     end
 
-    assert_redirected_to generations_url
+    assert_redirected_to generations_my_url
   end
 end

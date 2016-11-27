@@ -3,11 +3,9 @@
 one:
   task: 1
   name: MyString
-  type: 1
   formula: MyString
 
 two:
   task: 1
   name: MyString
-  type: 1
   formula: MyString

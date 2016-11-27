@@ -1,5 +1,5 @@
 class GenerationsController < ApplicationController
-  before_filter :authenticate_user!, only: [:create, :destroy, :my_generations]
+  before_action :authenticate_user!, only: [:create, :destroy, :my_generations]
   before_action :set_generation, only: [:show, :destroy, :question_cards, :answers]
   before_action :auth, only: [:destroy]
 
@@ -140,7 +140,7 @@ class GenerationsController < ApplicationController
   def destroy
     @generation.destroy
     respond_to do |format|
-      format.html { redirect_to '/', notice: 'Сгенерированные варианты были успешно удалены.' }
+      format.html { redirect_to generations_my_url, notice: 'Сгенерированные варианты были успешно удалены.' }
       format.json { head :no_content }
     end
   end

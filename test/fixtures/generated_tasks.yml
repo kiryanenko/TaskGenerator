@@ -3,7 +3,9 @@
 one:
   variant: 1
   task: 1
+  task_in_card: 1
 
 two:
   variant: 1
   task: 1
+  task_in_card: 1
