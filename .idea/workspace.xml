@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f899de3c-2e22-427a-ad7b-11704ad7426e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main_page/help.html.erb" afterPath="$PROJECT_DIR$/app/views/main_page/help.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks_groups/_list_item.html.erb" afterPath="$PROJECT_DIR$/app/views/tasks_groups/_list_item.html.erb" />
     </list>
     <ignored path="TaskGenerator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,18 +31,18 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tasks_groups/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="132" selection-start-line="20" selection-start-column="132" selection-end-line="20" selection-end-column="132" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/question_cards/_form.html.erb">
+      <file leaf-file-name="_list_item.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/tasks_groups/_list_item.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="130" selection-start-line="18" selection-start-column="130" selection-end-line="18" selection-end-column="130" />
+            <state relative-caret-position="380">
+              <caret line="19" column="104" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -98,7 +98,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="help.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="help.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main_page/help.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -872,7 +872,6 @@
         <option value="$PROJECT_DIR$/app/views/generations/_list_item.erb" />
         <option value="$PROJECT_DIR$/app/views/question_cards/_list_item.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tasks/_list_item.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tasks_groups/_list_item.html.erb" />
         <option value="$PROJECT_DIR$/public/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/app/views/tasks/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/question_cards/edit.html.erb" />
@@ -915,6 +914,7 @@
         <option value="$PROJECT_DIR$/app/controllers/main_page_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/main_page/help.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/tasks_groups/_list_item.html.erb" />
       </list>
     </option>
   </component>
@@ -969,6 +969,28 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="TaskGenerator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="TaskGenerator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tasks_groups">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -1339,7 +1361,7 @@
       <workItem from="1480199867992" duration="5648000" />
       <workItem from="1480261539250" duration="11043000" />
       <workItem from="1480277039528" duration="148000" />
-      <workItem from="1480349107889" duration="10678000" />
+      <workItem from="1480349107889" duration="11362000" />
     </task>
     <task id="LOCAL-00002" summary="add variable forms">
       <created>1479650957312</created>
@@ -1509,11 +1531,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480385729844</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="help page header">
+      <created>1480386016859</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1480386016859</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174517000" />
+    <option name="totallyTimeSpent" value="175201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1602,7 +1631,8 @@
     <MESSAGE value="create tests" />
     <MESSAGE value="edit views" />
     <MESSAGE value="create help" />
-    <option name="LAST_COMMIT_MESSAGE" value="create help" />
+    <MESSAGE value="help page header" />
+    <option name="LAST_COMMIT_MESSAGE" value="help page header" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1611,7 +1641,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/fixtures/task_and_groups.yml" />
     <entry file="file://$PROJECT_DIR$/test/fixtures/images.yml" />
     <entry file="file://$PROJECT_DIR$/test/models/image_test.rb" />
     <entry file="file://$PROJECT_DIR$/test/models/question_card_test.rb">
@@ -1875,14 +1904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="20" column="132" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="132" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks_groups/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="132" selection-start-line="20" selection-start-column="132" selection-end-line="20" selection-end-column="132" />
           <folding />
         </state>
       </provider>
@@ -2674,6 +2695,22 @@
             <element signature="n#style#0;n#font#0;n#font#0;n#font#16;n#font#0;n#p#161;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#162;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks_groups/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks_groups/_list_item.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="104" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
+          <folding />
         </state>
       </provider>
     </entry>
