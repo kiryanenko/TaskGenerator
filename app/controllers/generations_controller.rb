@@ -58,26 +58,22 @@ class GenerationsController < ApplicationController
         task_text = generate_task_text( gen_task )
         t = gen_task.task
 
-        answer = t.answer
-        generated_variables = gen_task.generated_variables.map do |var|
-          answer.gsub!('$' + var.variable.name, var.value.to_s)
-          [var.variable.name, var.value]
-        end.to_h
+        generated_variables = gen_task.generated_variables.map { |var| [var.variable.name, var.value] }.to_h
 
         t.calculated_variables.each do |var|
           res = calculate(var.formula, generated_variables)
           generated_variables[var.name] = res
-          answer.gsub!('$' + var.name, res)
         end
+        answer = paste_variables(t.answer, generated_variables)
 
-        {
+        return {
             name: task[:task_name],
             task: t,
             task_text: task_text,
             answer: answer
         }
       end
-      {
+      return {
           variant: v.number,
           tasks_in_card: tasks
       }
@@ -145,16 +141,18 @@ class GenerationsController < ApplicationController
     end
   end
 
+  def paste_variables(text, variables)
+    variables.keys.sort { |a, b| b <=> a }.each { |name| text.gsub!('$' + name, variables[name].to_s) }
+    text
+  end
+
   def generate_task_text(generated_task)
-    task_text = generated_task.task.task
-    generated_task.generated_variables.each do |variable|
-      task_text.gsub!('$' + variable.variable.name, variable.value.to_s)
-    end
-    return task_text
+    variables = generated_task.generated_variables.map { |v| [v.variable.name, v.value] }.to_h
+    paste_variables(generated_task.task.task, variables)
   end
 
   def calculate(ex, generated_variables)
-    generated_variables.each { |v, res| ex.gsub!('$' + v, res.to_s) }
+    ex = paste_variables(ex, generated_variables)
     Rails.cache.fetch("#{Rails.configuration.cache_answer_key}/#{ex}", expires_in: 12.hours) do
       options = { "format" => "plaintext" }
       client = WolframAlpha::Client.new Rails.configuration.wolfram_api, options
