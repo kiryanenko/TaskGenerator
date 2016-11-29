@@ -8,20 +8,21 @@
 <%= form_for(tasks_group) do |f| %>
     <div class="field">
       <%= f.label 'Название группы задач' %>
-      <%= f.text_field :title, class: 'form-control', placeholder: :title%>
+      <%= f.text_field :title, class: 'form-control', placeholder: 'Название', required: 1 %>
     </div>
 
     <div class="field">
       <%= f.label 'Предмет' %>
-      <%= f.text_field :subject, class: 'form-control', placeholder: :subject %>
+      <%= f.text_field :subject, class: 'form-control', placeholder: 'Предмет' %>
     </div>
 
     <div class="field">
       <%= f.label 'Описание' %>
-      <%= f.text_area :description, class: 'form-control', placeholder: :description %>
+      <%= f.text_area :description, class: 'form-control', placeholder: 'Описание', maxlength: Rails.configuration.description_limit %>
     </div>
 <br>
   <div class="actions">
-    <%= f.submit class: 'btn btn-default'%>
+    <%= f.submit tasks_group.persisted? ? 'Изменить' : 'Создать', class: 'btn btn-default'%>
+    <%= link_to 'Назад', :back, class: 'btn btn-link' %>
   </div>
 <% end %>

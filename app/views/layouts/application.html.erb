@@ -257,12 +257,14 @@
           <ul class="nav" id="side-menu" style="margin: 0;">
             <li class="sidebar-search">
               <div class="input-group custom-search-form">
-                <input type="text" class="form-control" placeholder="Search...">
-                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">
-                                      <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
+                <%= form_tag(tasks_path, method: "get") do %>
+                    <div class="input-group">
+                      <%= text_field_tag :query, '', class: "form-control ui-autocomplete-input", placeholder: "Поиск..." %>
+                      <span class="input-group-btn">
+			                  <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                      </span>
+                    </div>
+                <% end %>
               </div>
               <!-- /input-group -->
             </li>

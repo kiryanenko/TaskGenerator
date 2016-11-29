@@ -10,9 +10,9 @@ class QuestionCardsController < ApplicationController
   def index
     query = params[:query]
     if query.nil? or query.blank?
-      @question_cards = QuestionCard.paginate(:page => params[:page], :per_page => 10)
+      @question_cards = QuestionCard.where(removed: false).paginate(:page => params[:page], :per_page => 10)
     else
-      @question_cards = QuestionCard.search(query).paginate(:page => params[:page], :per_page => 10)
+      @question_cards = QuestionCard.where(removed: false).search(query).paginate(:page => params[:page], :per_page => 10)
     end
   end
 

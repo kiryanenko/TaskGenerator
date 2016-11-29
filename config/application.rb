@@ -14,6 +14,7 @@ module TaskGenerator
     config.wolfram_api = 'UUHYPG-WUPR2YEXLQ'
     config.page_layouts = [['', 0], ['Билет на отдельной странице', 1]]
     config.max_variants = 200   # Максимальное количество генерируемых вариантов
+    config.description_limit = 300
     config.cache_answer_key = 'answer'
   end
 end

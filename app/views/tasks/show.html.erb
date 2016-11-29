@@ -52,7 +52,7 @@
     </td>
     <td>
       <p style="text-align: right;">
-        <%= @task.created_at %>
+        <%= @task.updated_at.to_formatted_s(:long) %>
       </p>
     </td>
   </tr>
