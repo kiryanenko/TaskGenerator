@@ -66,14 +66,14 @@ class GenerationsController < ApplicationController
         end
         answer = paste_variables(t.answer, generated_variables)
 
-        return {
+        {
             name: task[:task_name],
             task: t,
             task_text: task_text,
             answer: answer
         }
       end
-      return {
+      {
           variant: v.number,
           tasks_in_card: tasks
       }
