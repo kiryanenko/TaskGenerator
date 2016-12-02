@@ -17,4 +17,9 @@ class MainPageControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get help" do
+    get main_page_help_url
+    assert_response :success
+  end
+
 end

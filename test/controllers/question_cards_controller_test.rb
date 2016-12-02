@@ -4,13 +4,19 @@ class QuestionCardsControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
 
   setup do
-    sign_in users(:one)
+    @user = users(:one)
+    sign_in @user
     @question_card = question_cards(:one)
     @question_card_update = question_cards(:for_update)
   end
 
   test "should get index" do
     get question_cards_url
+    assert_response :success
+  end
+
+  test "should get my" do
+    get question_cards_my_url
     assert_response :success
   end
 
@@ -28,6 +34,15 @@ class QuestionCardsControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to question_card_url(QuestionCard.last)
+  end
+
+  test "should create copy to my" do
+    assert_difference('QuestionCard.count') do
+      get question_card_url(@question_card) + '/add_to_me'
+    end
+    card = QuestionCard.last
+    assert_equal card.user, @user
+    assert_redirected_to question_card_url(card)
   end
 
   test "should show question_card" do

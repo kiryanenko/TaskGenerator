@@ -4,12 +4,18 @@ class TasksGroupsControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
 
   setup do
-    sign_in users(:one)
+    @user = users(:one)
+    sign_in @user
     @tasks_group = tasks_groups(:one)
   end
 
   test "should get index" do
     get tasks_groups_url
+    assert_response :success
+  end
+
+  test "should get my" do
+    get tasks_groups_my_url
     assert_response :success
   end
 
@@ -24,8 +30,16 @@ class TasksGroupsControllerTest < ActionDispatch::IntegrationTest
                                                       subject: @tasks_group.subject,
                                                       title: @tasks_group.title } }
     end
-
     assert_redirected_to tasks_group_url(TasksGroup.last)
+  end
+
+  test "should create copy to my" do
+    assert_difference('TasksGroup.count') do
+      get tasks_group_url(@tasks_group) + '/add_to_me'
+    end
+    group = TasksGroup.last
+    assert_equal group.user, @user
+    assert_redirected_to tasks_group_url(group)
   end
 
   test "should show tasks_group" do
@@ -34,7 +48,6 @@ class TasksGroupsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get edit" do
-    p @tasks_group
     get edit_tasks_group_url(@tasks_group)
     assert_response :success
   end

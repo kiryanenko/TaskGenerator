@@ -4,12 +4,18 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
 
   setup do
-    sign_in users(:one)
+    @user = users(:one)
+    sign_in @user
     @task = tasks(:one)
   end
 
   test "should get index" do
     get tasks_url
+    assert_response :success
+  end
+
+  test "should get my" do
+    get tasks_my_url
     assert_response :success
   end
 
@@ -23,8 +29,16 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
       post tasks_url, params: { task: { answer: @task.answer, description: @task.description, subject: @task.subject,
                                         task: @task.task, title: @task.title } }
     end
-
     assert_redirected_to task_url(Task.last)
+  end
+
+  test "should create copy to my" do
+    assert_difference('Task.count') do
+      get task_url(@task) + '/add_to_me'
+    end
+    task = Task.last
+    assert_equal task.user, @user
+    assert_redirected_to task_url(task)
   end
 
   test "should show task" do
