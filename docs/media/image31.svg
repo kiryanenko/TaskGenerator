@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Создано Microsoft Visio, экспорт SVG image31.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="7.41129in" height="4.56476in"
+		viewBox="0 0 533.613 328.662" xml:space="preserve" color-interpolation-filters="sRGB" class="st12">
+	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st3 {fill:#000000;font-family:Calibri;font-size:1.16666em}
+		.st4 {fill:#ffffff}
+		.st5 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st6 {font-size:1em}
+		.st7 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.239976}
+		.st8 {fill:#000000;font-family:Calibri;font-size:1.00001em}
+		.st9 {marker-end:url(#mrkr3-91);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.239976}
+		.st10 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.086948582161584}
+		.st11 {marker-end:url(#mrkr3-91);stroke:#000000;stroke-dasharray:1.67983,1.19988;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.239976}
+		.st12 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend3">
+			<path d="M 2 1 L 0 0 L 2 -1 " style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr3-91" class="st10" v:arrowType="3" v:arrowSize="2" orient="auto" markerUnits="strokeWidth"
+				overflow="visible">
+			<use xlink:href="#lend3" transform="scale(-11.501050105011,-11.501050105011) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="9"
+				v:shadowOffsetY="-9" v:shadowType="1"/>
+		<v:layer v:name="Сеть" v:index="0"/>
+		<v:layer v:name="Соединительная линия" v:index="1"/>
+		<g id="group1-1" transform="translate(0.375,-175.662)" v:mID="1" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="visDescription" v:val="VT4(Используйте для добавления границы системы в схему системы.)"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<title>Граница</title>
+			<g id="shape2-2" v:mID="2" v:groupContext="shape">
+				<title>Лист.2</title>
+				<desc>Сервер</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="131.662" cy="184.662" width="230.41" height="18"/>
+				<rect x="0" y="184.662" width="263.324" height="144" rx="9" ry="9" class="st1"/>
+				<rect v:rectContext="textBkgnd" x="20.4579" y="176.263" width="42.8132" height="16.8" class="st2"/>
+				<text x="20.46" y="188.86" class="st3" v:langID="1049"><v:paragraph/><v:tabList/>Сервер</text>			</g>
+			<g id="shape4-6" v:mID="4" v:groupContext="shape" v:layerMember="0" transform="translate(178.284,-18.1417)">
+				<title>Хранилище данных</title>
+				<desc>БД PostgreSQL</desc>
+				<v:custProps>
+					<v:cp v:nameU="Manufacturer" v:lbl="Изготовитель" v:type="0" v:sortKey="1" v:invis="false" v:ask="false"
+							v:langID="1049" v:val="VT4()"/>
+					<v:cp v:nameU="ProductNumber" v:lbl="Код товара" v:type="0" v:sortKey="1" v:invis="false" v:ask="false"
+							v:langID="1049" v:val="VT4()"/>
+					<v:cp v:nameU="PartNumber" v:lbl="Код позиции" v:type="0" v:sortKey="1" v:invis="false" v:ask="false"
+							v:langID="1049" v:val="VT4()"/>
+					<v:cp v:nameU="ProductDescription" v:lbl="Описание товара" v:type="0" v:sortKey="1" v:invis="false"
+							v:ask="false" v:langID="1049" v:val="VT4()"/>
+					<v:cp v:nameU="AssetNumber" v:lbl="Инвентарный номер" v:type="0" v:sortKey="1" v:invis="false" v:ask="false"
+							v:langID="1049" v:val="VT4()"/>
+					<v:cp v:nameU="SerialNumber" v:lbl="Серийный номер" v:type="0" v:sortKey="1" v:invis="false" v:ask="false"
+							v:langID="1049" v:val="VT4()"/>
+					<v:cp v:nameU="Location" v:lbl="Расположение" v:type="0" v:sortKey="1" v:invis="false" v:ask="false"
+							v:langID="1049" v:val="VT4()"/>
+					<v:cp v:nameU="Building" v:lbl="Здание" v:type="0" v:sortKey="1" v:invis="false" v:ask="false" v:langID="1049"
+							v:val="VT4()"/>
+					<v:cp v:nameU="Room" v:lbl="Комната" v:type="0" v:sortKey="1" v:invis="false" v:ask="false" v:langID="1049"
+							v:val="VT4()"/>
+					<v:cp v:nameU="Department" v:lbl="Отдел" v:type="0" v:sortKey="1" v:invis="false" v:ask="false" v:langID="1049"
+							v:val="VT4()"/>
+				</v:custProps>
+				<v:userDefs>
+					<v:ud v:nameU="visDescription"
+							v:val="VT4(Используйте для добавления базы данных, источника данных или устройства накопления данных в схему системы.)"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<v:textRect cx="34.0772" cy="279.064" width="68.16" height="82.1587"/>
+				<path d="M0 229.47 L0 320.14 A34.0772 8.51929 -180 1 0 68.15 320.14 L68.15 229.47 A34.0772 8.51929 -180 0 0 0 229.47
+							 Z" class="st4"/>
+				<path d="M0 229.47 L0 320.14 A34.0772 8.51929 -180 1 0 68.15 320.14 L68.15 229.47 A34.0772 8.51929 -180 0 0 0 229.47"
+						class="st5"/>
+				<path d="M0 229.47 A34.0772 8.51929 -180 0 0 68.15 229.47" class="st5"/>
+				<text x="25.81" y="274.86" class="st3" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>БД<v:newlineChar/><tspan
+							x="1.6" dy="1.2em" class="st6" v:langID="1033">PostgreSQL</tspan></text>			</g>
+			<g id="group18-12" transform="translate(16.2313,-18.7441)" v:mID="18" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="visDescription" v:val="VT4(Используйте для добавления компонента системы в схему системы.)"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<title>Компонент</title>
+				<g id="shape19-13" v:mID="19" v:groupContext="shape" transform="translate(12.6,5.68434E-014)">
+					<title>Лист.19</title>
+					<rect x="0" y="287.059" width="135.28" height="41.6033" class="st1"/>
+				</g>
+				<g id="shape20-15" v:mID="20" v:groupContext="shape" transform="translate(0,-26.0021)">
+					<title>Лист.20</title>
+					<rect x="0" y="318.262" width="25.2" height="10.4008" class="st1"/>
+				</g>
+				<g id="shape21-17" v:mID="21" v:groupContext="shape" transform="translate(0,-5.20041)">
+					<title>Лист.21</title>
+					<rect x="0" y="318.262" width="25.2" height="10.4008" class="st1"/>
+				</g>
+				<g id="shape22-19" v:mID="22" v:groupContext="shape" transform="translate(25.2,5.68434E-014)">
+					<title>Лист.22</title>
+					<desc>Rails-приложение «Генератор задач»</desc>
+					<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+					<v:textRect cx="61.3399" cy="307.861" width="122.68" height="41.6033"/>
+					<rect x="0" y="287.059" width="122.68" height="41.6033" class="st1"/>
+					<text x="8.41" y="303.66" class="st3" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Rails<tspan
+								class="st6" v:langID="1049">-</tspan><tspan class="st6" v:langID="1049">приложение<v:newlineChar/><v:paragraph
+									v:horizAlign="1"/></tspan><tspan x="4.91" dy="1.2em" class="st6" v:langID="1049">«</tspan><tspan
+								class="st6" v:langID="1049">Генератор задач</tspan><tspan class="st6" v:langID="1049">»</tspan></text>				</g>
+			</g>
+			<g id="group25-27" transform="translate(17.6292,-75.1132)" v:mID="25" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="visDescription" v:val="VT4(Используйте для добавления компонента системы в схему системы.)"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<title>Компонент.25</title>
+				<g id="shape26-28" v:mID="26" v:groupContext="shape" transform="translate(12.6,5.68434E-014)">
+					<title>Лист.26</title>
+					<rect x="0" y="287.059" width="91.3621" height="41.6033" class="st1"/>
+				</g>
+				<g id="shape27-30" v:mID="27" v:groupContext="shape" transform="translate(0,-26.0021)">
+					<title>Лист.27</title>
+					<rect x="0" y="318.262" width="25.2" height="10.4008" class="st1"/>
+				</g>
+				<g id="shape28-32" v:mID="28" v:groupContext="shape" transform="translate(0,-5.20041)">
+					<title>Лист.28</title>
+					<rect x="0" y="318.262" width="25.2" height="10.4008" class="st1"/>
+				</g>
+				<g id="shape29-34" v:mID="29" v:groupContext="shape" transform="translate(25.2,5.68434E-014)">
+					<title>Лист.29</title>
+					<desc>Веб-сервер Puma</desc>
+					<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+					<v:textRect cx="39.3811" cy="307.861" width="78.77" height="41.6033"/>
+					<rect x="0" y="287.059" width="78.7621" height="41.6033" class="st1"/>
+					<text x="5.58" y="303.66" class="st3" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Веб-сервер<v:newlineChar/><v:paragraph
+								v:horizAlign="1"/><tspan x="23.14" dy="1.2em" class="st6" v:langID="1033">Puma</tspan></text>				</g>
+			</g>
+		</g>
+		<g id="group7-38" transform="translate(0.375,-0.375)" v:mID="7" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="visDescription" v:val="VT4(Используйте для добавления границы системы в схему системы.)"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<title>Граница.7</title>
+			<g id="shape8-39" v:mID="8" v:groupContext="shape">
+				<title>Лист.8</title>
+				<desc>Клиент</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="131.662" cy="247.875" width="230.41" height="10.0984"/>
+				<rect x="0" y="247.875" width="263.324" height="80.7874" rx="9" ry="9" class="st1"/>
+				<rect v:rectContext="textBkgnd" x="20.4579" y="239.475" width="42.1845" height="16.8" class="st2"/>
+				<text x="20.46" y="252.08" class="st3" v:langID="1049"><v:paragraph/><v:tabList/>Клиент</text>			</g>
+			<g id="group31-43" transform="translate(89.3947,-18.5669)" v:mID="31" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="visDescription" v:val="VT4(Используйте для добавления компонента системы в схему системы.)"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<title>Компонент</title>
+				<g id="shape32-44" v:mID="32" v:groupContext="shape" transform="translate(12.6,5.68434E-014)">
+					<title>Лист.32</title>
+					<rect x="0" y="292.662" width="71.9342" height="36" class="st1"/>
+				</g>
+				<g id="shape33-46" v:mID="33" v:groupContext="shape" transform="translate(0,-22.5)">
+					<title>Лист.33</title>
+					<rect x="0" y="319.662" width="25.2" height="9" class="st1"/>
+				</g>
+				<g id="shape34-48" v:mID="34" v:groupContext="shape" transform="translate(0,-4.5)">
+					<title>Лист.34</title>
+					<rect x="0" y="319.662" width="25.2" height="9" class="st1"/>
+				</g>
+				<g id="shape35-50" v:mID="35" v:groupContext="shape" transform="translate(25.2,5.68434E-014)">
+					<title>Лист.35</title>
+					<desc>Браузер</desc>
+					<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+					<v:textRect cx="29.6671" cy="310.662" width="59.34" height="36"/>
+					<rect x="0" y="292.662" width="59.3342" height="36" class="st1"/>
+					<text x="5.58" y="314.86" class="st3" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Браузер</text>				</g>
+			</g>
+		</g>
+		<g id="shape37-53" v:mID="37" v:groupContext="shape" transform="translate(0.375,-108.162)">
+			<title>Процесс</title>
+			<desc>Глобальная сеть</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visDescription" v:val="VT4(Используйте для добавления процесса в схему системы.)"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="131.662" cy="308.412" width="263.33" height="40.5"/>
+			<rect x="0" y="288.162" width="263.324" height="40.5" class="st1"/>
+			<text x="83.01" y="312.61" class="st3" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Глобальная сеть</text>		</g>
+		<g id="shape38-56" v:mID="38" v:groupContext="shape" v:layerMember="1" transform="translate(125.521,-81.1624)">
+			<title>Динамическая соединительная линия</title>
+			<path d="M7.09 328.66 L7.09 301.66" class="st7"/>
+		</g>
+		<g id="shape39-59" v:mID="39" v:groupContext="shape" v:layerMember="1" transform="translate(124.95,-148.662)">
+			<title>Динамическая соединительная линия.39</title>
+			<path d="M7.09 328.66 L7.09 301.66" class="st7"/>
+		</g>
+		<g id="shape40-62" v:mID="40" v:groupContext="shape" transform="translate(634.881,9) rotate(90)">
+			<title>Процесс.40</title>
+			<desc>Глобальная сеть</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visDescription" v:val="VT4(Используйте для добавления процесса в схему системы.)"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="72" cy="308.412" width="144" height="40.5"/>
+			<rect x="0" y="288.162" width="144" height="40.5" class="st1"/>
+			<text x="23.35" y="312.61" class="st3" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Глобальная сеть</text>		</g>
+		<g id="group46-65" transform="translate(389.238,-175.662)" v:mID="46" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="visDescription" v:val="VT4(Используйте для добавления границы системы в схему системы.)"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<title>Граница.46</title>
+			<g id="shape47-66" v:mID="47" v:groupContext="shape">
+				<title>Лист.47</title>
+				<desc>Внешний сервис</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="72" cy="184.662" width="126" height="18"/>
+				<rect x="0" y="184.662" width="144" height="144" rx="9" ry="9" class="st1"/>
+				<rect v:rectContext="textBkgnd" x="13.0001" y="177.463" width="84.4167" height="14.4001" class="st2"/>
+				<text x="13" y="188.26" class="st8" v:langID="1049"><v:paragraph/><v:tabList/>Внешний сервис</text>			</g>
+			<g id="group48-70" transform="translate(18.5454,-54)" v:mID="48" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="visDescription" v:val="VT4(Используйте для добавления компонента системы в схему системы.)"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<title>Компонент</title>
+				<g id="shape49-71" v:mID="49" v:groupContext="shape" transform="translate(12.6,5.68434E-014)">
+					<title>Лист.49</title>
+					<rect x="0" y="292.662" width="94.3092" height="36" class="st1"/>
+				</g>
+				<g id="shape50-73" v:mID="50" v:groupContext="shape" transform="translate(0,-22.5)">
+					<title>Лист.50</title>
+					<rect x="0" y="319.662" width="25.2" height="9" class="st1"/>
+				</g>
+				<g id="shape51-75" v:mID="51" v:groupContext="shape" transform="translate(0,-4.5)">
+					<title>Лист.51</title>
+					<rect x="0" y="319.662" width="25.2" height="9" class="st1"/>
+				</g>
+				<g id="shape52-77" v:mID="52" v:groupContext="shape" transform="translate(25.2,5.68434E-014)">
+					<title>Лист.52</title>
+					<desc>WolframAlpha</desc>
+					<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+					<v:textRect cx="40.8546" cy="310.662" width="81.71" height="36"/>
+					<rect x="0" y="292.662" width="81.7092" height="36" class="st1"/>
+					<text x="5.36" y="314.26" class="st8" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>WolframAlpha</text>				</g>
+			</g>
+		</g>
+		<g id="shape53-80" v:mID="53" v:groupContext="shape" v:layerMember="1" transform="translate(263.699,-240.576)">
+			<title>Динамическая соединительная линия.53</title>
+			<path d="M0 321.58 L42.52 321.58" class="st7"/>
+		</g>
+		<g id="shape54-83" v:mID="54" v:groupContext="shape" v:layerMember="1" transform="translate(346.718,-240.576)">
+			<title>Динамическая соединительная линия.54</title>
+			<path d="M0 321.58 L42.52 321.58" class="st7"/>
+		</g>
+		<g id="shape57-86" v:mID="57" v:groupContext="shape" v:layerMember="1" transform="translate(164.486,-238.832)">
+			<title>Динамическая соединительная линия.57</title>
+			<path d="M0 331.48 L0 340.01 L14.17 340.01" class="st9"/>
+		</g>
+		<g id="shape58-92" v:mID="58" v:groupContext="shape" v:layerMember="1" transform="translate(69.9853,-250.776)">
+			<title>Динамическая соединительная линия.58</title>
+			<path d="M0 328.66 L20.56 328.66 L20.56 343.43" class="st9"/>
+		</g>
+		<g id="shape61-97" v:mID="61" v:groupContext="shape" v:layerMember="1" transform="translate(164.486,-215.208)">
+			<title>Динамическая соединительная линия.61</title>
+			<path d="M0 328.66 L243.3 305.21" class="st11"/>
+		</g>
+	</g>
+</svg>
