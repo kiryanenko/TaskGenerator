@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Создано Microsoft Visio, экспорт SVG image1.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="6.65967in" height="4.93757in"
+		viewBox="0 0 479.496 355.505" xml:space="preserve" color-interpolation-filters="sRGB" class="st7">
+	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {stroke:#a5a5a5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st2 {fill:#ffffff;stroke:#fdbf01;stroke-linecap:round;stroke-linejoin:round;stroke-width:2}
+		.st3 {fill:#8d6a01;font-family:Calibri;font-size:1.00001em;font-weight:bold}
+		.st4 {font-size:1em}
+		.st5 {fill:#ffffff;stroke:#a5a5a5;stroke-linecap:round;stroke-linejoin:round;stroke-width:2}
+		.st6 {fill:#5c5c5c;font-family:Calibri;font-size:1.00001em}
+		.st7 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Соединительная линия" v:index="0"/>
+		<g id="shape3-1" v:mID="3" v:groupContext="shape" v:layerMember="0" transform="translate(88.3241,-115.249)">
+			<title>Динамическая соединительная линия.1017</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L134.42 386.93" class="st1"/>
+		</g>
+		<g id="shape5-4" v:mID="5" v:groupContext="shape" v:layerMember="0" transform="translate(222.74,-75.7363)">
+			<title>Динамическая соединительная линия.1016</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L-124.39 385.6" class="st1"/>
+		</g>
+		<g id="shape10-7" v:mID="10" v:groupContext="shape" v:layerMember="0" transform="translate(66.6749,-270.397)">
+			<title>Динамическая соединительная линия.1004</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L158.19 529.66" class="st1"/>
+		</g>
+		<g id="shape11-10" v:mID="11" v:groupContext="shape" v:layerMember="0" transform="translate(222.74,-222.324)">
+			<title>Динамическая соединительная линия.46</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 356.66 L-100.52 365.79 A2.3622 2.3622 -180 0 0 -105.22 366.21 L-130.69 368.53" class="st1"/>
+		</g>
+		<g id="shape14-13" v:mID="14" v:groupContext="shape" v:layerMember="0" transform="translate(253.867,-208.544)">
+			<title>Динамическая соединительная линия.51</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L52.09 407.8 A2.3622 2.3622 0 0 1 55.42 411.14 L150.56 506.65" class="st1"/>
+		</g>
+		<g id="shape17-16" v:mID="17" v:groupContext="shape" v:layerMember="0" transform="translate(222.74,-91.2648)">
+			<title>Динамическая соединительная линия.69</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L-147.78 256.33" class="st1"/>
+		</g>
+		<g id="shape18-19" v:mID="18" v:groupContext="shape" transform="translate(222.74,-187.284)">
+			<title>Субъект</title>
+			<desc>Гость</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="17.0079" cy="366.707" width="37.99" height="22.4037"/>
+			<path d="M6.8 355.51 L6.8 320.07 L6.8 334.25 L0 334.25 L0 305.9 L3.4 302.36 L30.61 302.36 L34.02 305.9 L34.02 334.25
+						 L27.21 334.25 L27.21 320.07 L27.21 355.51 L17.01 355.51 L17.01 327.16 L17.01 355.51 L6.8 355.51 ZM24.09
+						 291.73 A7.08661 7.08661 -180 1 0 9.92 291.73 A7.08661 7.08661 -180 1 0 24.09 291.73 Z" class="st2"/>
+			<text x="3.37" y="370.31" class="st3" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Гость</text>		</g>
+		<g id="shape19-22" v:mID="19" v:groupContext="shape" transform="translate(222.74,-44.4182)">
+			<title>Субъект.3</title>
+			<desc>Авторизованный пользователь</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="17.0079" cy="373.907" width="102.63" height="36.8038"/>
+			<path d="M6.8 355.51 L6.8 320.07 L6.8 334.25 L0 334.25 L0 305.9 L3.4 302.36 L30.61 302.36 L34.02 305.9 L34.02 334.25
+						 L27.21 334.25 L27.21 320.07 L27.21 355.51 L17.01 355.51 L17.01 327.16 L17.01 355.51 L6.8 355.51 ZM24.09
+						 291.73 A7.08661 7.08661 -180 1 0 9.92 291.73 A7.08661 7.08661 -180 1 0 24.09 291.73 Z" class="st2"/>
+			<text x="-27.59" y="370.31" class="st3" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Авторизованный <v:newlineChar/><tspan
+						x="-18.74" dy="1.2em" class="st4">пользователь</tspan></text>		</g>
+		<g id="shape22-26" v:mID="22" v:groupContext="shape" transform="translate(386.654,-105.283)">
+			<title>Вариант использования.7</title>
+			<desc>Просмотр билетов</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.6063" cy="337.103" width="81.22" height="36.8038"/>
+			<ellipse cx="40.6063" cy="337.103" rx="40.6063" ry="18.4019" class="st5"/>
+			<text x="15.33" y="333.5" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Просмотр <tspan
+						x="19.76" dy="1.2em" class="st4">билетов</tspan></text>		</g>
+		<g id="shape26-30" v:mID="26" v:groupContext="shape" transform="translate(376.024,-8.88194)">
+			<title>Вариант использования.11</title>
+			<desc>Просмотр сгенерированных вариантов</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="51.2362" cy="329.903" width="102.48" height="51.2039"/>
+			<ellipse cx="51.2362" cy="329.903" rx="51.2362" ry="25.602" class="st5"/>
+			<text x="25.96" y="319.1" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Просмотр<v:newlineChar/><tspan
+						x="5.98" dy="1.2em" class="st4">сгенерированных <v:newlineChar/></tspan><tspan x="24.65" dy="1.2em"
+						class="st4">вариантов</tspan></text>		</g>
+		<g id="shape29-35" v:mID="29" v:groupContext="shape" transform="translate(386.654,-267.891)">
+			<title>Вариант использования.15</title>
+			<desc>Просмотр задачи</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.6063" cy="337.103" width="81.22" height="36.8038"/>
+			<ellipse cx="40.6063" cy="337.103" rx="40.6063" ry="18.4019" class="st5"/>
+			<text x="15.33" y="333.5" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Просмотр <tspan
+						x="22.92" dy="1.2em" class="st4">задачи</tspan></text>		</g>
+		<g id="shape33-39" v:mID="33" v:groupContext="shape" transform="translate(11.6299,-269.285)">
+			<title>Вариант использования.26</title>
+			<desc>Поиск задач</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.6063" cy="338.497" width="81.22" height="34.0157"/>
+			<ellipse cx="40.6063" cy="338.497" rx="40.6063" ry="17.0079" class="st5"/>
+			<text x="9.35" y="342.1" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Поиск задач</text>		</g>
+		<g id="shape34-42" v:mID="34" v:groupContext="shape" transform="translate(11.6299,-105.283)">
+			<title>Вариант использования.27</title>
+			<desc>Поиск билетов</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.6063" cy="337.103" width="81.22" height="36.8038"/>
+			<ellipse cx="40.6063" cy="337.103" rx="40.6063" ry="18.4019" class="st5"/>
+			<text x="25.15" y="333.5" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Поиск <tspan x="19.76"
+						dy="1.2em" class="st4">билетов</tspan></text>		</g>
+		<g id="shape35-46" v:mID="35" v:groupContext="shape" transform="translate(11.6299,-187.284)">
+			<title>Вариант использования.28</title>
+			<desc>Поиск групп задач</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.6063" cy="337.103" width="81.22" height="36.8038"/>
+			<ellipse cx="40.6063" cy="337.103" rx="40.6063" ry="18.4019" class="st5"/>
+			<text x="25.15" y="333.5" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Поиск <v:newlineChar/><tspan
+						x="10.61" dy="1.2em" class="st4">групп задач</tspan></text>		</g>
+		<g id="shape36-50" v:mID="36" v:groupContext="shape" v:layerMember="0" transform="translate(256.756,-228.484)">
+			<title>Динамическая соединительная линия</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L137.99 308.72" class="st1"/>
+		</g>
+		<g id="shape37-53" v:mID="37" v:groupContext="shape" v:layerMember="0" transform="translate(222.74,-228.484)">
+			<title>Динамическая соединительная линия.45</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L-138.94 308.4" class="st1"/>
+		</g>
+		<g id="shape38-56" v:mID="38" v:groupContext="shape" v:layerMember="0" transform="translate(256.756,-213.735)">
+			<title>Динамическая соединительная линия.38</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L68.6 391.74 A2.3622 2.3622 0 0 1 72.78 393.94 L144.06 431.59" class="st1"/>
+		</g>
+		<g id="shape40-59" v:mID="40" v:groupContext="shape" v:layerMember="0" transform="translate(420.173,-27.3973)">
+			<title>Динамическая соединительная линия.64</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+		</g>
+		<g id="shape41-60" v:mID="41" v:groupContext="shape" v:layerMember="0" transform="translate(256.756,-75.7363)">
+			<title>Динамическая соединительная линия.65</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L124.39 385.6" class="st1"/>
+		</g>
+		<g id="shape44-63" v:mID="44" v:groupContext="shape" v:layerMember="0" transform="translate(256.756,-83.8271)">
+			<title>Динамическая соединительная линия.80</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L96.13 333.03 A2.3622 2.3622 0 1 1 100.73 331.96 L134.42 324.08" class="st1"/>
+		</g>
+		<g id="shape45-66" v:mID="45" v:groupContext="shape" transform="translate(126.362,-320.489)">
+			<title>Вариант использования.1000</title>
+			<desc>Регистрация</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.6063" cy="338.497" width="81.22" height="34.0157"/>
+			<ellipse cx="40.6063" cy="338.497" rx="40.6063" ry="17.0079" class="st5"/>
+			<text x="8.98" y="342.1" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Регистрация</text>		</g>
+		<g id="shape46-69" v:mID="46" v:groupContext="shape" transform="translate(279.575,-320.489)">
+			<title>Вариант использования.1001</title>
+			<desc>Аторизация</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.6063" cy="338.497" width="81.22" height="34.0157"/>
+			<ellipse cx="40.6063" cy="338.497" rx="40.6063" ry="17.0079" class="st5"/>
+			<text x="10.5" y="342.1" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Аторизация</text>		</g>
+		<g id="shape47-72" v:mID="47" v:groupContext="shape" v:layerMember="0" transform="translate(177.392,-321.059)">
+			<title>Динамическая соединительная линия.1002</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L51.12 436.13" class="st1"/>
+		</g>
+		<g id="shape48-75" v:mID="48" v:groupContext="shape" v:layerMember="0" transform="translate(308.745,-321.178)">
+			<title>Динамическая соединительная линия.1003</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L-56.58 436.25" class="st1"/>
+		</g>
+		<g id="shape49-78" v:mID="49" v:groupContext="shape" v:layerMember="0" transform="translate(256.756,-222.255)">
+			<title>Динамическая соединительная линия.1007</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 356.65 L100.14 366.12 A2.3622 2.3622 0 0 1 104.85 366.56 L125.68 368.53" class="st1"/>
+		</g>
+		<g id="shape50-81" v:mID="50" v:groupContext="shape" v:layerMember="0" transform="translate(256.756,-228.484)">
+			<title>Динамическая соединительная линия.1008</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L137.99 308.72" class="st1"/>
+		</g>
+		<g id="shape51-84" v:mID="51" v:groupContext="shape" transform="translate(381.197,-186.587)">
+			<title>Вариант использования.1009</title>
+			<desc>Просмотр группы задач</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="46.063" cy="337.103" width="92.13" height="36.8038"/>
+			<ellipse cx="46.063" cy="337.103" rx="46.063" ry="18.4019" class="st5"/>
+			<text x="20.78" y="333.5" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Просмотр <tspan
+						x="12.08" dy="1.2em" class="st4">группы задач</tspan></text>		</g>
+		<g id="shape52-88" v:mID="52" v:groupContext="shape" v:layerMember="0" transform="translate(222.74,-213.735)">
+			<title>Динамическая соединительная линия.1010</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L-68.6 391.74 A2.3622 2.3622 -180 1 0 -72.78 393.94 L-100.04 408.34 A2.3622 2.3622 -180 1 0 -104.21
+						 410.54 L-144.06 431.59" class="st1"/>
+		</g>
+		<g id="shape54-91" v:mID="54" v:groupContext="shape" transform="translate(1,-8.88194)">
+			<title>Вариант использования.1015</title>
+			<desc>Просмотр истории генераций</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="51.2362" cy="329.903" width="102.48" height="51.2039"/>
+			<ellipse cx="51.2362" cy="329.903" rx="51.2362" ry="25.602" class="st5"/>
+			<text x="25.96" y="319.1" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Просмотр <tspan
+						x="30.33" dy="1.2em" class="st4">истории </tspan><tspan x="24.22" dy="1.2em" class="st4">генераций</tspan></text>		</g>
+		<g id="shape55-96" v:mID="55" v:groupContext="shape" v:layerMember="0" transform="translate(411.804,-269.277)">
+			<title>Динамическая соединительная линия.1018</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 355.51 L-157.17 528.54" class="st1"/>
+		</g>
+	</g>
+</svg>
